@@ -1,27 +1,111 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-	--background: #ffffff;
-	--foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
+	--font-sans: var(--font-geist-sans), system-ui, sans-serif;
+	--font-mono: var(--font-geist-mono), "JetBrains Mono", monospace;
+
+	--color-teal: var(--teal);
+	--color-teal-dark: var(--teal-dark);
+	--color-teal-light: var(--teal-light);
+	--color-teal-pale: var(--teal-pale);
+
+	--color-text: var(--text);
+	--color-text-muted: var(--text-muted);
+
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-	--color-brand: oklch(60% 0.18 250);
+	--color-border: var(--border);
+
+	--color-leaf-1: var(--leaf-1);
+	--color-leaf-2: var(--leaf-2);
+	--color-leaf-3: var(--leaf-3);
+	--color-leaf-4: var(--leaf-4);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+:root {
+	--teal: #0d9488;
+	--teal-dark: #134e4a;
+	--teal-light: #5eead4;
+	--teal-pale: rgba(13, 148, 136, 0.08);
+
+	--text: #1a2e2a;
+	--text-muted: #5f7a76;
+
+	--background: #dbfaf459;
+	--foreground: #1a2e2a;
+	--border: rgba(13, 148, 136, 0.12);
+
+	--glow-teal: 0 0 24px rgba(13, 148, 136, 0);
+	--glow-green: 0 0 16px rgba(94, 234, 212, 0);
+
+	/* ===== Leaf Colors ===== */
+	--leaf-1: #14b8a6;
+	--leaf-2: #0d9488;
+	--leaf-3: #0f766e;
+	--leaf-4: #2dd4bf;
+
+	/* ===== Navigation Colors ===== */
+	--nav-bg-color: rgb(237 249 246 / 0.9);
+	--nav-border-color: #5ee0cb;
+	--nav-teal: #115e59;
+	--nav-bg-btn: rgba(187, 247, 237, 0.623);
+	--nav-bg-hover: rgba(187, 247, 237, 0.233);
+
+	/* ===== footer Colors ===== */
+	--color-ft-bg: rgb(199, 235, 225);
+}
+
+.dark {
+	--teal: #5ee0cb;
+	--teal-dark: #00a888;
+	--teal-light: #00ff87;
+	--teal-pale: rgba(0, 212, 170, 0.06);
+
+	--text: #e2e8f0;
+	--text-muted: #94a3b8;
+
+	--background: #0b0f1a;
+	--foreground: #e2e8f0;
+	--border: rgba(0, 212, 170, 0.18);
+
+	--glow-teal: 0 0 24px rgba(0, 212, 170, 0.35);
+	--glow-green: 0 0 16px rgba(0, 255, 135, 0.25);
+
+	/* ===== Navigation Colors ===== */
+	--nav-bg-color: rgba(11, 15, 26, 0.85);
+	--nav-border-color: #5ee0cb;
+	--nav-teal: #5ee0cb;
+	--nav-bg-btn: rgba(11, 15, 26, 0);
+	--nav-bg-hover: rgba(11, 15, 26, 0);
+
+	/* ===== footer Colors ===== */
+	--color-ft-bg: #111827;
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+
+/* page transition */
+.page-transition {
+	opacity: 1;
+	transform: translateY(0);
+	filter: blur(0px);
+	transition:
+		opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+		transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+		filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+	@starting-style {
+		opacity: 0;
+		transform: translateY(12px);
+		filter: blur(4px);
+	}
 }
