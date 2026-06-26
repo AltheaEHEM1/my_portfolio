@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron, Rajdhani, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 import MatrixBackground from "../components/background/hero-background";
@@ -17,6 +17,24 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
+const orbitron = Orbitron({
+	variable: "--font-orbitron",
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const rajdhani = Rajdhani({
+	variable: "--font-rajdhani",
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700"],
+});
+
+const spaceMono = Space_Mono({
+	variable: "--font-space-mono",
+	subsets: ["latin"],
+	weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
 	title: "Althea | Portfolio",
 	description:
@@ -31,7 +49,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+			className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${rajdhani.variable} ${spaceMono.variable} h-full antialiased`}
 		>
 			<body className="min-h-full flex flex-col relative bg-background text-foreground">
 				{/* Background Design */}
@@ -42,7 +60,11 @@ export default function RootLayout({
 
 				{/* Main Content Safe Layer */}
 				<main className="relative z-10">
-					<PageAnimateProvider>{children}</PageAnimateProvider>
+					<PageAnimateProvider>
+						<div className="w-full">
+							{children}
+						</div>
+					</PageAnimateProvider>
 				</main>
 
 				{/* Footer */}

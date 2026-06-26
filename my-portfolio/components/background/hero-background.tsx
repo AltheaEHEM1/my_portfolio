@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import HeroBackgroundDark from "./hero-background-dark";
 import HeroBackgroundLight from "./hero-background-light";
