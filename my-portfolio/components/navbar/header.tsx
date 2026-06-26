@@ -5,11 +5,9 @@ import { usePathname } from "next/navigation";
 import type React from "react";
 import { useEffect, useState } from "react";
 
-
 export default function NavHeader(): React.JSX.Element {
 	const pathname = usePathname();
-	const [_isDarkMode, setIsDarkMode] = useState<boolean>(false);
-	const [isPressed, setIsPressed] = useState<boolean>(false);
+	const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
 	const navItems = [
@@ -34,12 +32,9 @@ export default function NavHeader(): React.JSX.Element {
 	// Close mobile menu on page transition
 	useEffect(() => {
 		setIsMenuOpen(false);
-	}, [pathname]);
+	}, []);
 
 	const toggleDarkMode = () => {
-		setIsPressed(true);
-		setTimeout(() => setIsPressed(false), 500);
-
 		const isDark = document.documentElement.classList.contains("dark");
 		if (isDark) {
 			document.documentElement.classList.remove("dark");
@@ -53,82 +48,105 @@ export default function NavHeader(): React.JSX.Element {
 	};
 
 	return (
-		<nav className="w-full bg-(--nav-bg-color) backdrop-blur-md border-b border-(--nav-border-color) transition-colors duration-300">
-			<div className="max-w-7xl mx-auto px-6 h-17 flex items-center justify-between">
-				<button
-					type="button" // FIX: Added type="button" to satisfy a11y lint
-					onClick={toggleDarkMode}
+		<nav className="sticky top-0 z-50 w-full bg-(--nav-bg-color) backdrop-blur-md transition-colors duration-300">
+			<div className=" max-w-7xl mx-auto px-6 h-17 flex items-center justify-between">
+				{/* Logo */}
+				<Link
+					href="/"
 					className="focus:outline-none select-none cursor-pointer group"
-					aria-label="Toggle theme"
+					aria-label="Home"
 				>
-					<span
-						className={`inline-block font-mono font-bold text-lg tracking-wide transition-all duration-500 ease-out ${isPressed ? "scale-95 opacity-30" : "hover:scale-105"}`}
-					>
-						<span className={isPressed ? "" : "text-teal"}>&lt;&nbsp;</span>
-						<span className={isPressed ? "" : "text-teal-dark"}>AAJ.Asis</span>
-						<span className={isPressed ? "" : "text-teal"}>&nbsp;/&gt;</span>
+					<span className="inline-block font-valorant font-semibold text-xl tracking-widest uppercase">
+						<span className="font-sans text-[var(--nav-teal)]">&lt;</span>
+						<span className="text-[var(--nav-teal)] mx-0.5">
+							AAJ.ASIS
+						</span>
+						<span className="font-sans text-[var(--nav-teal)]">/&gt;</span>
 					</span>
-				</button>
 
-				{/* Desktop Navigation */}
-				<div className="hidden md:flex items-center">
-					<ul className="flex items-center space-x-0.5 sm:space-x-1">
-						{navItems.map((item) => {
-							const isActive = pathname === item.href;
-							return (
-								<li key={item.name}>
-									<Link
-										href={item.href}
-										className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all duration-300 ${
-											isActive
-												? "bg-(--nav-bg-btn) text-(--nav-teal) font-semibold"
+				</Link>
+
+				{/* Right Side Navigation & Theme Toggle */}
+				<div className="flex items-center space-x-4">
+					{/* Desktop Navigation */}
+					<div className="hidden md:flex items-center">
+						<ul className="flex items-center space-x-1">
+							{navItems.map((item) => {
+								const isActive = pathname === item.href;
+								return (
+									<li key={item.name}>
+										<Link
+											href={item.href}
+											className={`px-4 py-2.5 text-xs font-semibold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
+												? "bg-(--nav-bg-btn) text-(--nav-teal)"
 												: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-										}`}
-									>
-										{item.name}
-									</Link>
-								</li>
-							);
-						})}
-					</ul>
-				</div>
+												}`}
+										>
+											{item.name}
+										</Link>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
 
-				{/* Hamburger Button for Mobile */}
-				<button
-					type="button"
-					onClick={() => setIsMenuOpen(!isMenuOpen)}
-					className="md:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-(--nav-bg-hover) hover:text-(--nav-teal) transition-colors focus:outline-none cursor-pointer"
-					aria-expanded={isMenuOpen}
-					aria-label="Toggle menu"
-				>
-					<svg
-						className="h-6 w-6 fill-none stroke-current"
-						viewBox="0 0 24 24"
+					{/* Theme Toggle Button */}
+					<button
+						type="button"
+						onClick={toggleDarkMode}
+						className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-(--nav-bg-hover) hover:text-(--nav-teal) dark:hover:text-teal-200 transition-all duration-300 focus:outline-none cursor-pointer"
+						aria-label="Toggle theme"
 					>
-						{isMenuOpen ? (
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								d="M6 18L18 6M6 6l12 12"
-							/>
+						{isDarkMode ? (
+							<svg className="h-5 w-5 fill-none stroke-current" viewBox="0 0 24 24">
+								<title>Light Mode</title>
+								<circle cx="12" cy="12" r="4" strokeWidth="2" />
+								<path strokeWidth="2" strokeLinecap="round" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+							</svg>
 						) : (
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								d="M4 6h16M4 12h16M4 18h16"
-							/>
+							<svg className="h-5 w-5 fill-none stroke-current" viewBox="0 0 24 24">
+								<title>Dark Mode</title>
+								<path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+							</svg>
 						)}
-					</svg>
-				</button>
+					</button>
+
+					{/* Hamburger Button for Mobile */}
+					<button
+						type="button"
+						onClick={() => setIsMenuOpen(!isMenuOpen)}
+						className="md:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-(--nav-bg-hover) hover:text-(--nav-teal) transition-colors focus:outline-none cursor-pointer"
+						aria-expanded={isMenuOpen}
+						aria-label="Toggle menu"
+					>
+						<svg className="h-6 w-6 fill-none stroke-current" viewBox="0 0 24 24">
+							<title>Menu Icon</title>
+							{isMenuOpen ? (
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							) : (
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
+									d="M4 6h16M4 12h16M4 18h16"
+								/>
+							)}
+						</svg>
+					</button>
+				</div>
 			</div>
 
 			{/* Mobile Menu Dropdown */}
 			<div
-				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-					isMenuOpen ? "max-h-64 border-t border-(--nav-border-color) opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-				}`}
+				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
+					? "max-h-64 border-t border-(--nav-border-color) opacity-100"
+					: "max-h-0 opacity-0 pointer-events-none"
+					}`}
 			>
 				<ul className="px-4 py-3 space-y-1 bg-(--nav-bg-color) backdrop-blur-md">
 					{navItems.map((item) => {
@@ -137,11 +155,10 @@ export default function NavHeader(): React.JSX.Element {
 							<li key={item.name}>
 								<Link
 									href={item.href}
-									className={`block px-4 py-2.5 text-sm font-medium rounded-xl transition-all duration-300 ${
-										isActive
-											? "bg-(--nav-bg-btn) text-(--nav-teal) font-semibold"
-											: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-									}`}
+									className={`block px-4 py-2.5 text-xs font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
+										? "bg-(--nav-bg-btn) text-(--nav-teal)"
+										: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+										}`}
 								>
 									{item.name}
 								</Link>

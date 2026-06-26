@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import { useEffect, useRef } from "react";
 
@@ -76,7 +74,7 @@ export default function HeroBackgroundDark(): React.JSX.Element {
 			if (!ctx) return;
 
 			ctx.clearRect(0, 0, W, H);
-			ctx.font = `${FONT_SIZE}px 'JetBrains Mono', monospace`;
+			ctx.font = `${FONT_SIZE}px 'Oxanium', monospace`;
 
 			for (const col of matrixCols) {
 				col.y += col.speed;
