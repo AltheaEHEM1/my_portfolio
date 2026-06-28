@@ -48,22 +48,19 @@ export default function NavHeader(): React.JSX.Element {
 	};
 
 	return (
-		<nav className="sticky top-0 z-50 w-full bg-(--nav-bg-color) backdrop-blur-md transition-colors duration-300">
-			<div className=" max-w-7xl mx-auto px-6 h-17 flex items-center justify-between">
+		<nav className="sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-300">
+			<div className=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 				{/* Logo */}
 				<Link
 					href="/"
 					className="focus:outline-none select-none cursor-pointer group"
 					aria-label="Home"
 				>
-					<span className="inline-block font-valorant font-semibold text-xl tracking-widest uppercase">
+					<span className="inline-block font-valorant text-2xl tracking-widest uppercase">
 						<span className="font-sans text-[var(--nav-teal)]">&lt;</span>
-						<span className="text-[var(--nav-teal)] mx-0.5">
-							AAJ.ASIS
-						</span>
+						<span className="text-[var(--nav-teal)] mx-0.5">AAJ.ASIS</span>
 						<span className="font-sans text-[var(--nav-teal)]">/&gt;</span>
 					</span>
-
 				</Link>
 
 				{/* Right Side Navigation & Theme Toggle */}
@@ -77,9 +74,9 @@ export default function NavHeader(): React.JSX.Element {
 									<li key={item.name}>
 										<Link
 											href={item.href}
-											className={`px-4 py-2.5 text-xs font-semibold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
+											className={`px-4 py-2.5 text-sm tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
 												? "bg-(--nav-bg-btn) text-(--nav-teal)"
-												: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+												: "text-(--nav-text-color) hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
 												}`}
 										>
 											{item.name}
@@ -94,19 +91,34 @@ export default function NavHeader(): React.JSX.Element {
 					<button
 						type="button"
 						onClick={toggleDarkMode}
-						className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-(--nav-bg-hover) hover:text-(--nav-teal) dark:hover:text-teal-200 transition-all duration-300 focus:outline-none cursor-pointer"
+						className="p-2 rounded-xl text-(--nav-text-color) hover:bg-(--nav-bg-hover) hover:text-(--nav-teal) dark:hover:text-teal-200 transition-all duration-300 focus:outline-none cursor-pointer"
 						aria-label="Toggle theme"
 					>
 						{isDarkMode ? (
-							<svg className="h-5 w-5 fill-none stroke-current" viewBox="0 0 24 24">
+							<svg
+								className="h-5 w-5 fill-none stroke-current"
+								viewBox="0 0 24 24"
+							>
 								<title>Light Mode</title>
 								<circle cx="12" cy="12" r="4" strokeWidth="2" />
-								<path strokeWidth="2" strokeLinecap="round" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+								<path
+									strokeWidth="2"
+									strokeLinecap="round"
+									d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+								/>
 							</svg>
 						) : (
-							<svg className="h-5 w-5 fill-none stroke-current" viewBox="0 0 24 24">
+							<svg
+								className="h-5 w-5 fill-none stroke-current"
+								viewBox="0 0 24 24"
+							>
 								<title>Dark Mode</title>
-								<path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+								<path
+									strokeWidth="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+								/>
 							</svg>
 						)}
 					</button>
@@ -119,7 +131,10 @@ export default function NavHeader(): React.JSX.Element {
 						aria-expanded={isMenuOpen}
 						aria-label="Toggle menu"
 					>
-						<svg className="h-6 w-6 fill-none stroke-current" viewBox="0 0 24 24">
+						<svg
+							className="h-6 w-6 fill-none stroke-current"
+							viewBox="0 0 24 24"
+						>
 							<title>Menu Icon</title>
 							{isMenuOpen ? (
 								<path
@@ -155,7 +170,7 @@ export default function NavHeader(): React.JSX.Element {
 							<li key={item.name}>
 								<Link
 									href={item.href}
-									className={`block px-4 py-2.5 text-xs font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
+									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
 										? "bg-(--nav-bg-btn) text-(--nav-teal)"
 										: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
 										}`}
