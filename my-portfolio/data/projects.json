@@ -1,0 +1,581 @@
+[
+	{
+		"id": 1,
+		"title": "Faith, Hope, Love",
+		"subtitle": "FHL - Internal Project",
+		"role": "Frontend Developer",
+		"description": "The Faith Hope Love Clinic Website is an online healthcare information and service platform designed to provide patients with convenient access to clinic information, medical services, and communication channels. The system serves as a centralized digital interface that enables users to explore available healthcare services, learn about the clinic, and easily connect with medical professionals.",
+		"link": "https://faithhopelove-clinic.vercel.app",
+		"images": [
+			"failth-hope-love/FaithHopeLove1.png",
+			"failth-hope-love/FaithHopeLove2.png",
+			"failth-hope-love/FaithHopeLove3.png",
+			"failth-hope-love/FaithHopeLove4.png",
+			"failth-hope-love/FaithHopeLove5.png",
+			"failth-hope-love/FaithHopeLove6.png"
+		],
+		"features": [
+			{
+				"icon": "HomeIcon",
+				"name": "Dashboard (Home Page)",
+				"description": "A dynamic central hub providing quick access to clinic highlights, essential services, and patient resources."
+			},
+			{
+				"icon": "InformationCircleIcon",
+				"name": "About Management",
+				"description": "Showcases the clinic’s mission, vision, and heritage, building a foundation of trust with patients."
+			},
+			{
+				"icon": "SparklesIcon",
+				"name": "Specializations / Services Management",
+				"description": "Detailed showcase of diverse medical specializations and healthcare services offered by the clinic."
+			},
+			{
+				"icon": "ChatBubbleBottomCenterTextIcon",
+				"name": "Testimonials Management",
+				"description": "Integrated feedback system featuring patient testimonials and success stories to validate service quality."
+			},
+			{
+				"icon": "AcademicCapIcon",
+				"name": "Certificates and Affiliations Display",
+				"description": "Highlights official medical certifications, professional affiliations, and industry recognitions."
+			},
+			{
+				"icon": "PhoneIcon",
+				"name": "Contact Information Module",
+				"description": "Centralized contact hub with integrated maps, emergency contact details, and direct communication channels."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Search Function Module",
+				"description": "Advanced search functionality enabling patients to quickly locate specific services, doctors, or medical departments."
+			},
+			{
+				"icon": "Bars3Icon",
+				"name": "Navigation Menu Module",
+				"description": "Seamless and responsive navigation structure designed for intuitive user journeys across the entire platform."
+			},
+			{
+				"icon": "QueueListIcon",
+				"name": "Footer Information Module",
+				"description": "Comprehensive footer containing site-wide links, social media integration, and essential legal information."
+			}
+		]
+	},
+
+	{
+		"id": 2,
+		"title": "GFMIC E-Commerce",
+		"subtitle": "GFMIC - E-Commerce Platform",
+		"role": "Frontend Developer",
+		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
+		"link": "https://gfmic-ecommerce.vercel.app",
+		"images": [
+			"GfmicEcommerce/GfmicEcommerce1.png",
+			"GfmicEcommerce/GfmicEcommerce2.png",
+			"GfmicEcommerce/GfmicEcommerce3.png",
+			"GfmicEcommerce/GfmicEcommerce4.png",
+			"GfmicEcommerce/GfmicEcommerce5.png",
+			"GfmicEcommerce/GfmicEcommerce6.png",
+			"GfmicEcommerce/GfmicEcommerce7.png",
+			"GfmicEcommerce/GfmicEcommerce8.png",
+			"GfmicEcommerce/GfmicEcommerce9.png",
+			"GfmicEcommerce/gfmic-ecommerce.png"
+		],
+		"features": [
+			{
+				"icon": "UserGroupIcon",
+				"name": "User Management",
+				"description": "Comprehensive tools for handling customer profiles, roles, and secure authentication flows."
+			},
+			{
+				"icon": "ArchiveBoxIcon",
+				"name": "Product Management",
+				"description": "Easily add, categorize, and track product listings, variations, and rich media assets."
+			},
+			{
+				"icon": "ClipboardDocumentListIcon",
+				"name": "Inventory & Order Management",
+				"description": "Track stock levels, fulfill customer orders, and manage automated shipping updates in real-time."
+			},
+			{
+				"icon": "CreditCardIcon",
+				"name": "Payment System Integration",
+				"description": "Secure, seamless checkout experiences with unified support for major payment gateways."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Dashboard & Analytics",
+				"description": "Interactive data visualizations offering key insights into sales performance and customer trends."
+			},
+			{
+				"icon": "BellAlertIcon",
+				"name": "Notification System",
+				"description": "Automated email and in-app alerts to keep users updated on order statuses and promotions."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Search & Filtering",
+				"description": "High-performance queries and faceted search to quickly connect buyers with exactly what they want."
+			},
+			{
+				"icon": "PaintBrushIcon",
+				"name": "User Interface (UI/UX)",
+				"description": "Modern, responsive, and accessible interface built to maximize conversion rates across all devices."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Security Features",
+				"description": "Robust data protection frameworks, automated threat mitigation, and secure transaction handling."
+			},
+			{
+				"icon": "Cog8ToothIcon",
+				"name": "Admin Panel",
+				"description": "A centralized control hub to manage the entire storefront operation efficiently from one place."
+			},
+			{
+				"icon": "BoltIcon",
+				"name": "Scalability & Performance Optimization",
+				"description": "Optimized system architecture ensuring lightning-fast load times even during high-traffic events."
+			}
+		]
+	},
+
+	{
+		"id": 3,
+		"title": "GFMIC Academy",
+		"subtitle": "GFMIC - Learning Management System",
+		"role": "Frontend Developer",
+		"description": "The GFMIC Learning Management System integrated with the Mentorship & Peer Matching System is a web-based platform designed to centralize and enhance digital learning and mentorship processes. It provides a structured environment where instructors can create and manage courses, upload learning materials, conduct assessments and monitor student progress, while students can conveniently access content, complete activities and track their performance.",
+		"link": "https://gfmic-academy.vercel.app",
+		"images": ["gfmic-academy/Gfmic_academy_1.png"],
+		"features": [
+			{
+				"icon": "UserCircleIcon",
+				"name": "User Registration and Authentication",
+				"description": "Secure enrollment and multi-role access control for students, instructors, and administrators."
+			},
+			{
+				"icon": "AcademicCapIcon",
+				"name": "Course Management",
+				"description": "Comprehensive tools for organizing curriculum, uploading materials, and managing course lifecycle."
+			},
+			{
+				"icon": "BookOpenIcon",
+				"name": "Enrollment System",
+				"description": "Automated course subscription workflows with support for various enrollment verification methods."
+			},
+			{
+				"icon": "CreditCardIcon",
+				"name": "Payment System",
+				"description": "Secure integration for course fees and membership payments using unified payment gateways."
+			},
+			{
+				"icon": "VideoCameraIcon",
+				"name": "Multimedia Learning Support",
+				"description": "Interactive learning environment supporting video lectures, digital docs, and downloadable resources."
+			},
+			{
+				"icon": "PencilSquareIcon",
+				"name": "Assessment and Quiz Management",
+				"description": "Dynamic testing engine for creating quizzes, automated grading, and instant performance feedback."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Progress Tracking and Analytics",
+				"description": "Real-time visualization of learning milestones, grade reports, and student engagement data."
+			},
+			{
+				"icon": "BellAlertIcon",
+				"name": "Notification System",
+				"description": "Automated alerts for new course materials, upcoming assessments, and enrollment status updates."
+			},
+			{
+				"icon": "TrophyIcon",
+				"name": "Certificate Generation",
+				"description": "One-click generation of verifiable digital certificates upon successful course completion."
+			},
+			{
+				"icon": "UserGroupIcon",
+				"name": "Mentorship Matching System",
+				"description": "AI-driven algorithms to connect learners with compatible mentors based on skills and interests."
+			},
+			{
+				"icon": "WindowIcon",
+				"name": "Learning Management Portal",
+				"description": "A streamlined, intuitive dashboard where students can access all active courses and resources."
+			},
+			{
+				"icon": "Cog8ToothIcon",
+				"name": "Administrative Configurations",
+				"description": "Centralized panel for system-wide settings, user roles, and platform customization."
+			},
+			{
+				"icon": "ArrowDownTrayIcon",
+				"name": "Search, Filter, and Data Export",
+				"description": "High-performance queries for finding content and exporting academic reports in multiple formats."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Dashboard Overview",
+				"description": "A high-level summary of active enrollments, recent activity, and upcoming deadlines."
+			},
+			{
+				"icon": "IdentificationIcon",
+				"name": "Profile Management",
+				"description": "Personalized user profiles for tracking individual learning paths and professional achievements."
+			}
+		]
+	},
+
+	{
+		"id": 4,
+		"title": "Yo - etz | AI Interview",
+		"subtitle": "// 004 - INTERNAL PROJECT",
+		"role": "Frontend Developer",
+		"description": "The AI-Assisted Initial Interview System is a structured digital pre-interview platform designed to support and enhance the admissions process of the Polytechnic University of the Philippines (QC and Caloocan campuses).\n\nThe system standardizes how applicant interviews are conducted by providing a controlled environment for structured and semi-structured questioning, ensuring consistency, fairness, and documentation across all academic programs.\n\nApplicants complete an AI-guided video interview, where their responses are recorded, transcribed, and summarized into a structured report. These reports are then made accessible to faculty members to support the final face-to-face evaluation.\n\nThis platform does not replace faculty decision-making. Instead, it serves as a support tool that improves transparency, reduces bias from memory-based evaluations, and ensures that all applicants are assessed using a consistent baseline.",
+		"link": "https://yo-etz-ai-interview.vercel.app",
+		"images": [
+			"yoetz/AiINterview.jpg",
+			"yoetz/ApplicantList.jpg",
+			"yoetz/Dashboard.jpg",
+			"yoetz/FacultyLogin.jpg",
+			"yoetz/Profile.jpg",
+			"yoetz/QuestionsFinal.jpg",
+			"yoetz/StudentLogin.jpg",
+			"yoetz/Submission.jpg",
+			"yoetz/SubmissionSuccess.jpg"
+		],
+		"features": [
+			{
+				"icon": "CpuChipIcon",
+				"name": "AI-Guided Interviews",
+				"description": "Structured, program-based questions with intelligent follow-ups for a consistent and engaging interview experience."
+			},
+			{
+				"icon": "SparklesIcon",
+				"name": "AI-Powered Insights",
+				"description": "Instant transcription, structured summaries, and key insights—turning responses into meaningful data."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Instant Interview Reports",
+				"description": "Downloadable, well-structured reports combining transcripts and summaries for easy review."
+			},
+			{
+				"icon": "Cog6ToothIcon",
+				"name": "Centralized Administration",
+				"description": "Manage question banks, interview settings, and applicant eligibility—all in one place."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Transparent & Traceable",
+				"description": "Built-in audit logs ensure every action is recorded, secure, and accountable."
+			}
+		]
+	},
+
+	{
+		"id": 5,
+		"title": "StewardFM",
+		"subtitle": "Facility Management System",
+		"role": "Frontend Developer",
+		"description": "StewardFM is a comprehensive facility management system designed to streamline operations, maintenance tracking, and resource allocation for organizations. It provides an intuitive dashboard for managing assets, scheduling maintenance tasks, and generating insightful reports for facility administrators.",
+		"link": "https://stewardfm.vercel.app",
+		"images": [
+			"stewardfm/StewardFm1.png",
+			"stewardfm/StewardFm2.png",
+			"stewardfm/StewardFm3.png"
+		],
+		"contributors": [
+			{ "memberId": "rechelle-salas", "roles": ["Project Manager"] },
+			{ "memberId": "rafael-parungao", "roles": ["Backend Developer"] },
+			{ "memberId": "jerriniash-alpajora", "roles": ["Backend Developer"] },
+			{ "memberId": "rozelle-de-omania", "roles": ["Quality Assurance"] },
+			{ "memberId": "kimberly-kho", "roles": ["Frontend Developer"] }
+		],
+		"features": [
+			{
+				"icon": "CubeIcon",
+				"name": "Asset Lifecycle Management",
+				"description": "Comprehensive tracking of organizational resources from specialized acquisition to final decommissioning."
+			},
+			{
+				"icon": "CalendarDaysIcon",
+				"name": "Preventive Maintenance",
+				"description": "Automated scheduling and tracking of routine upkeep to ensure operational continuity."
+			},
+			{
+				"icon": "WrenchIcon",
+				"name": "Work Order Tracking",
+				"description": "Streamlined maintenance request system with efficient assignment and status monitoring."
+			},
+			{
+				"icon": "HomeIcon",
+				"name": "Facility Resource Allocation",
+				"description": "Optimized management of physical spaces, rooms, and equipment across multiple locations."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Reporting & Insights",
+				"description": "Data-driven dashboards providing deep visibility into facility health and operational costs."
+			}
+		]
+	},
+
+	{
+		"id": 6,
+		"title": "PUP Smart-Track",
+		"subtitle": "006 - INTERNAL PROJECT",
+		"role": "Frontend Developer",
+		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
+		"link": "https://pup-smart-track.vercel.app",
+		"images": [
+			"pup-smart-track/PupSmartTrack1.png",
+			"pup-smart-track/PupSmartTrack2.png",
+			"pup-smart-track/PupSmartTrack3.png",
+			"pup-smart-track/PupSmartTrack4.png",
+			"pup-smart-track/PupSmartTrack5.png",
+			"pup-smart-track/PupSmartTrack6.png",
+			"pup-smart-track/PupSmartTrack7.png",
+			"pup-smart-track/PupSmartTrack8.png",
+			"pup-smart-track/PupSmartTrack9.png"
+		],
+		"features": [
+			{
+				"icon": "SquaresPlusIcon",
+				"name": "Asset Management (Master Data)",
+				"description": "Centralized repository for all organizational assets, ensuring data integrity and a single source of truth."
+			},
+			{
+				"icon": "DeviceTabletIcon",
+				"name": "ICT Equipment Management (ICS)",
+				"description": "Maintain a dynamic registry of IT equipments, allowing for seamless updates and real-time tracking of digital infrastructure."
+			},
+			{
+				"icon": "ArrowPathIcon",
+				"name": "Asset Status Management",
+				"description": "Real-time visibility into the lifecycle of assets, from active use and repair to disposal."
+			},
+			{
+				"icon": "BuildingOfficeIcon",
+				"name": "Offices Management",
+				"description": "Organize and map assets across different office locations and personnel."
+			},
+			{
+				"icon": "ComputerDesktopIcon",
+				"name": "Office Equipment Inventory",
+				"description": "A comprehensive listing of general workspace resources to support daily functions."
+			},
+			{
+				"icon": "WrenchScrewdriverIcon",
+				"name": "Maintenance Management",
+				"description": "Schedule and track routine upkeep for buildings, grounds, and equipments."
+			},
+			{
+				"icon": "ClipboardDocumentCheckIcon",
+				"name": "Maintenance Request & Approval",
+				"description": "Streamlined workflow for reporting issues and obtaining formal authorization for repairs."
+			},
+			{
+				"icon": "TrashIcon",
+				"name": "Disposal Management",
+				"description": "Standardized procedures for decommissioning assets while maintaining regulatory compliance."
+			},
+			{
+				"icon": "ArrowsRightLeftIcon",
+				"name": "Bulk Disposal Processing",
+				"description": "Efficiently manage the simultaneous disposal of multiple assets to save time and administrative effort."
+			},
+			{
+				"icon": "MapPinIcon",
+				"name": "Local Disposal Processing",
+				"description": "Easily manage the removal or disposal of assets directly at their specific branch or office location."
+			},
+			{
+				"icon": "UserCheckIcon",
+				"name": "Accountability Clearance",
+				"description": "Verify that all assigned equipment is returned or accounted for during personnel offboarding."
+			},
+			{
+				"icon": "HandThumbUpIcon",
+				"name": "Request & Order Approval",
+				"description": "Multi-level authorization workflows for new acquisitions and internal asset requests."
+			},
+			{
+				"icon": "BellIcon",
+				"name": "Notifications System",
+				"description": "Automated alerts for maintenance schedules, pending approvals, and low inventory levels."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Reporting & Compliance",
+				"description": "Generate comprehensive audit-ready reports to meet organizational standards."
+			},
+			{
+				"icon": "UserGroupIcon",
+				"name": "Transfer of Accountability",
+				"description": "Formally reassign asset responsibility between employees or office locations."
+			}
+		]
+	},
+
+	{
+		"id": 7,
+		"title": "Bitbo AI",
+		"subtitle": "AI-Powered Platform",
+		"role": "Frontend Developer",
+		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
+		"link": "https://bitbo-ai.vercel.app",
+		"images": ["BitboAI/BITBO AI.png"],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Dashboard",
+				"description": "Provides an overview of system activities, statistics, and quick access to core modules."
+			},
+			{
+				"icon": "UsersIcon",
+				"name": "Residents Management",
+				"description": "Stores, updates, and manages resident profiles, household records, and demographic information."
+			},
+			{
+				"icon": "DocumentTextIcon",
+				"name": "Local Laws Management",
+				"description": "Organizes barangay ordinances, resolutions, and local policy documents for easy access."
+			},
+			{
+				"icon": "ClipboardDocumentListIcon",
+				"name": "Case Management",
+				"description": "Tracks complaints, disputes, and incident records with status monitoring and case history."
+			},
+			{
+				"icon": "BuildingStorefrontIcon",
+				"name": "Business Registration and Evaluation",
+				"description": "Handles business permit applications, registration details, and compliance evaluation."
+			},
+			{
+				"icon": "HomeModernIcon",
+				"name": "Building Registration and Evaluation",
+				"description": "Manages building records, ownership details, and inspection or assessment results."
+			},
+			{
+				"icon": "DocumentCheckIcon",
+				"name": "Permits and Certification Clearances Management",
+				"description": "Processes barangay clearances, certifications, and permit requests efficiently."
+			},
+			{
+				"icon": "HeartIcon",
+				"name": "Health Services Management",
+				"description": "Maintains health-related records, medical assistance requests, and service schedules."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Reports Management",
+				"description": "Generates downloadable reports and summaries for monitoring and decision-making."
+			},
+			{
+				"icon": "UserCircleIcon",
+				"name": "Account Management",
+				"description": "Controls user accounts, access levels, and authentication settings."
+			},
+			{
+				"icon": "ArrowPathRoundedSquareIcon",
+				"name": "Data Migration",
+				"description": "Transfers and imports existing records into the system securely and accurately."
+			},
+			{
+				"icon": "Cog6ToothIcon",
+				"name": "System Configuration",
+				"description": "Allows administrators to customize system settings, preferences, and operational rules."
+			}
+		]
+	},
+
+	{
+		"id": 8,
+		"title": "Flor De Grace",
+		"subtitle": "Business Management System",
+		"role": "Frontend Developer",
+		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"link": "https://flor-de-grace.vercel.app",
+		"images": [
+			"flor-de-grace/FlorDeGrace_1.png",
+			"flor-de-grace/FlorDeGrace_2.png"
+		],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Student Management",
+				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Faculty Management",
+				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Class & Schedule Management",
+				"description": "Assignment of faculty to subjects and sections with built-in conflict detection and scheduling validation."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Attendance Tracking",
+				"description": "Daily attendance recording with multiple status options (Present, Absent, Late, Excused) and remarks."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Leave Management",
+				"description": "Faculty leave request submission with admin approval and tracking workflows."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Academic Structure Setup",
+				"description": "Management of academic years, grade levels, subjects, and sections in a centralized system."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Reports & Monitoring",
+				"description": "Access to basic reports and system insights to support administrative decision-making."
+			}
+		]
+	},
+
+	{
+		"id": 9,
+		"title": "SRG Website",
+		"subtitle": "Organization Portfolio",
+		"role": "Frontend Developer",
+		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
+		"link": "https://srg-website.vercel.app",
+		"images": ["srg-website/SrgWebsite1.png"],
+		"features": [
+			{
+				"icon": "IdentificationIcon",
+				"name": "Member Portfolio Hub",
+				"description": "A centralized platform showcasing individual member skills, experiences, and academic history."
+			},
+			{
+				"icon": "PhotoIcon",
+				"name": "Visual Project Gallery",
+				"description": "A dynamic showcase of organizational innovations, ongoing initiatives, and successful project completions."
+			},
+			{
+				"icon": "CalendarIcon",
+				"name": "Interactive Timeline",
+				"description": "An engaging journey through SRG's legacy, tracking growth and milestones across different generations."
+			},
+			{
+				"icon": "DevicePhoneMobileIcon",
+				"name": "Responsive Experience",
+				"description": "Modern, mobile-first design ensuring a premium user experience across all devices and screen sizes."
+			},
+			{
+				"icon": "UserGroupIcon",
+				"name": "Team Profiles",
+				"description": "Detailed visual profiles for every SRG member, highlighting their unique contributions and roles."
+			}
+		]
+	}
+]

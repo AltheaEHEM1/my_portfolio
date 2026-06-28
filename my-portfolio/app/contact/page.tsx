@@ -1,9 +1,6 @@
-//import React from "react";
+import HeroSection from "@/components/hero/hero";
 
 const Contact = () => {
-<<<<<<< Updated upstream
-	return <div>page</div>;
-=======
 	return (
 		<HeroSection
 			subtitle="----// 001 - GET TO KNOW ME"
@@ -11,7 +8,6 @@ const Contact = () => {
 			description="this is the contact page"
 		/>
 	);
->>>>>>> Stashed changes
-};
 
+};
 export default Contact;

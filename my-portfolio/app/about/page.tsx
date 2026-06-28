@@ -1,7 +1,13 @@
-//import React from "react";
+import HeroSection from "@/components/hero/hero";
 
 const About = () => {
-	return <div>page</div>;
+	return (
+		<HeroSection
+			subtitle="----// 001 - GET TO KNOW ME"
+			title="About"
+			description="This is the about page"
+		/>
+	);
 };
 
 export default About;
