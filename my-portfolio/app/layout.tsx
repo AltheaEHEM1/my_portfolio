@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Orbitron, Rajdhani, Space_Mono } from "next/font/google";
+import {
+	Geist,
+	Geist_Mono,
+	Orbitron,
+	Rajdhani,
+	Space_Mono,
+} from "next/font/google";
 import "./globals.css";
 
 import MatrixBackground from "../components/background/hero-background";
 import Footer from "../components/footer/footer";
 import NavHeader from "../components/navbar/header";
 import PageAnimateProvider from "./page-animate-provider";
+import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -59,13 +66,14 @@ export default function RootLayout({
 				<NavHeader />
 
 				{/* Main Content Safe Layer */}
-				<main className="relative z-10">
+				<main className="relative z-10 mb-10">
 					<PageAnimateProvider>
-						<div className="w-full">
-							{children}
-						</div>
+						<div className="w-full">{children}</div>
 					</PageAnimateProvider>
 				</main>
+
+				{/* Scroll to Top Button */}
+				<ScrollToTop />
 
 				{/* Footer */}
 				<footer className="mt-auto">

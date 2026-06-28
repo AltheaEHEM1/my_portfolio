@@ -1,10 +1,16 @@
+"use client";
+
 import type React from "react";
+import { ChevronUp } from "lucide-react";
 
 export default function Footer(): React.JSX.Element {
 	const currentYear: number = new Date().getFullYear();
+	const scrollToTop = (): void => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
 
 	return (
-		<footer className="w-full bg-(--color-ft-bg) border-t border-(--nav-border-color) py-6 transition-colors duration-300 relative overflow-hidden group/footer">
+		<footer className="w-full bg-(--color-ft-bg) py-6 transition-colors duration-300 relative overflow-hidden group/footer">
 			{/* Subtle top background glow indicator */}
 			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1px bg-linear-to-r from-transparent via-teal to-transparent opacity-0 group-hover/footer:opacity-100 transition-opacity duration-700" />
 
@@ -18,7 +24,7 @@ export default function Footer(): React.JSX.Element {
 				</span>
 
 				{/* Main Copyright Text */}
-				<p className="font-oxanium text-xs tracking-wide text-text transition-colors duration-300">
+				<p className="font-valorant text-xs tracking-wide text-text transition-colors duration-300">
 					&copy; {currentYear}{" "}
 					<span className="font-medium opacity-80">Althea Amor J. Asis</span>.
 					Built with passion &amp; curiosity.
@@ -28,7 +34,10 @@ export default function Footer(): React.JSX.Element {
 				<div className="flex gap-4 font-valorant text-xs">
 					{[
 						{ label: "GitHub", href: "https://github.com/AltheaEHEM1" },
-						{ label: "LinkedIn", href: "https://www.linkedin.com/in/althea-amor-j-asis-b73426238?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+						{
+							label: "LinkedIn",
+							href: "https://www.linkedin.com/in/althea-amor-j-asis-b73426238?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+						},
 						{ label: "Email", href: "mailto:altheaamor18@gmail.com" },
 					].map((link) => (
 						<a
