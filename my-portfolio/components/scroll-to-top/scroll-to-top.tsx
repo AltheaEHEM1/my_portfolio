@@ -24,8 +24,14 @@ export default function ScrollToTop(): React.JSX.Element {
                 />
 
                 {/* Decorative Lines */}
-                <div className="w-[1.5px] h-6 bg-[rgb(var(--glow-color))]/60 shadow-[var(--glow-shadow)]"></div>
-                <div className="w-[1.5px] h-4 bg-[rgb(var(--glow-color))]/20 mt-1"></div>
+                <div
+                    className="w-[1.5px] h-6 shadow-[0_0_12px_rgba(16,185,129,0.3)]"
+                    style={{ backgroundColor: "rgba(var(--glow-color), 0.6)" }}
+                />
+                <div
+                    className="w-[1.5px] h-4 mt-1"
+                    style={{ backgroundColor: "rgba(var(--glow-color), 0.2)" }}
+                />
             </div>
 
             {/* Label */}
