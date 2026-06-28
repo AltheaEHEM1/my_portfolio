@@ -1,4 +1,3 @@
-
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 import type * as React from "react";
@@ -64,5 +63,5 @@ function Button({
 		/>
 	);
 }
-export { Button, buttonVariants };
 
+export { Button, buttonVariants };

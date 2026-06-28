@@ -88,9 +88,12 @@
 	--radius-3xl: calc(var(--radius) * 2.2);
 	--radius-4xl: calc(var(--radius) * 2.6);
 
-
 	/* this is for scroll to top */
 	--color-glow: var(--glow-color);
+
+	/* Spacing */
+	--space-section: clamp(3rem, 6vw, 6rem);
+	--space-content: clamp(1.5rem, 3vw, 3rem);
 }
 
 :root {
@@ -122,10 +125,6 @@
 
 	/* ===== footer Colors ===== */
 	--color-ft-bg: rgb(199, 235, 225);
-
-	/* Spacing */
-	--space-section: clamp(3rem, 6vw, 6rem);
-	--space-content: clamp(1.5rem, 3vw, 3rem);
 
 	/* Radius */
 	--radius-card: 1rem;
@@ -171,8 +170,6 @@
 	--sidebar-accent-foreground: oklch(0.205 0 0);
 	--sidebar-border: oklch(0.922 0 0);
 	--sidebar-ring: oklch(0.708 0 0);
-
-
 }
 
 .dark {
@@ -289,5 +286,33 @@ body {
 
 	html {
 		@apply font-sans;
+	}
+
+	section {
+		display: block;
+		width: 100%;
+		max-width: 80rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		/* mobile */
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	@media (min-width: 640px) {
+		section {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		section {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
 	}
 }

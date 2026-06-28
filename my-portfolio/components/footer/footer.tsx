@@ -1,16 +1,12 @@
 "use client";
 
 import type React from "react";
-import { ChevronUp } from "lucide-react";
 
 export default function Footer(): React.JSX.Element {
 	const currentYear: number = new Date().getFullYear();
-	const scrollToTop = (): void => {
-		window.scrollTo({ top: 0, behavior: "smooth" });
-	}
 
 	return (
-		<footer className="w-full bg-(--color-ft-bg) py-6 transition-colors duration-300 relative overflow-hidden group/footer">
+		<footer className="w-full bg-(--color-ft-bg) py-5 transition-colors duration-300 relative overflow-hidden group/footer">
 			{/* Subtle top background glow indicator */}
 			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1px bg-linear-to-r from-transparent via-teal to-transparent opacity-0 group-hover/footer:opacity-100 transition-opacity duration-700" />
 

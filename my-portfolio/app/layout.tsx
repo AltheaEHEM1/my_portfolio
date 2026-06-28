@@ -11,8 +11,8 @@ import "./globals.css";
 import MatrixBackground from "../components/background/hero-background";
 import Footer from "../components/footer/footer";
 import NavHeader from "../components/navbar/header";
-import PageAnimateProvider from "./page-animate-provider";
 import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
+import PageAnimateProvider from "./page-animate-provider";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",

@@ -49,17 +49,17 @@ export default function NavHeader(): React.JSX.Element {
 
 	return (
 		<nav className="sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-300">
-			<div className=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+			<div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
 				{/* Logo */}
 				<Link
 					href="/"
 					className="focus:outline-none select-none cursor-pointer group"
 					aria-label="Home"
 				>
-					<span className="inline-block font-valorant text-2xl tracking-widest uppercase">
-						<span className="font-sans text-[var(--nav-teal)]">&lt;</span>
-						<span className="text-[var(--nav-teal)] mx-0.5">AAJ.ASIS</span>
-						<span className="font-sans text-[var(--nav-teal)]">/&gt;</span>
+					<span className="inline-block font-valorant text-lg tracking-widest uppercase">
+						<span className="font-sans text-(--nav-teal)">&lt;</span>
+						<span className="text-(--nav-teal) mx-0.5">AAJ.ASIS</span>
+						<span className="font-sans text-(--nav-teal)">/&gt;</span>
 					</span>
 				</Link>
 
@@ -74,10 +74,11 @@ export default function NavHeader(): React.JSX.Element {
 									<li key={item.name}>
 										<Link
 											href={item.href}
-											className={`px-4 py-2.5 text-sm tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
-												? "bg-(--nav-bg-btn) text-(--nav-teal)"
-												: "text-(--nav-text-color) hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-												}`}
+											className={`px-4 py-2.5 text-xs tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${
+												isActive
+													? "bg-(--nav-bg-btn) text-(--nav-teal)"
+													: "text-(--nav-text-color) hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+											}`}
 										>
 											{item.name}
 										</Link>
@@ -158,10 +159,11 @@ export default function NavHeader(): React.JSX.Element {
 
 			{/* Mobile Menu Dropdown */}
 			<div
-				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
-					? "max-h-64 border-t border-(--nav-border-color) opacity-100"
-					: "max-h-0 opacity-0 pointer-events-none"
-					}`}
+				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+					isMenuOpen
+						? "max-h-64 border-t border-(--nav-border-color) opacity-100"
+						: "max-h-0 opacity-0 pointer-events-none"
+				}`}
 			>
 				<ul className="px-4 py-3 space-y-1 bg-(--nav-bg-color) backdrop-blur-md">
 					{navItems.map((item) => {
@@ -170,10 +172,11 @@ export default function NavHeader(): React.JSX.Element {
 							<li key={item.name}>
 								<Link
 									href={item.href}
-									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
-										? "bg-(--nav-bg-btn) text-(--nav-teal)"
-										: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-										}`}
+									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${
+										isActive
+											? "bg-(--nav-bg-btn) text-(--nav-teal)"
+											: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+									}`}
 								>
 									{item.name}
 								</Link>
