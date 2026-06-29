@@ -1,3 +1,11 @@
-export default function Home() {
-	return <div className="flex flex-col items-start gap-4">page home</div>;
-}
+import IntroPage from "./home/intro-page";
+
+const Home = () => {
+	return (
+		<div>
+			<IntroPage />
+		</div>
+	);
+};
+
+export default Home;
