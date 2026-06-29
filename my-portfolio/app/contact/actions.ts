@@ -65,7 +65,7 @@ export async function submitContact(
             
             <h3 style="margin-top: 20px;">Message:</h3>
             <p style="background-color: #ffffff; border-left: 4px solid #0d9488; padding: 10px; font-style: italic;">
-                ${message.replace(/\n/g, '<br />')}
+                ${message.replace(/\n/g, "<br />")}
             </p>
             
             <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;" />
