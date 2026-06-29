@@ -1,30 +1,39 @@
 [
-  {
-    "category": "Design & Prototyping",
-    "items": ["Figma", "Canva", "Lucid", "Draw.io"]
-  },
-  {
-    "category": "Web & App Development",
-    "items": ["React", "Next.js", "Tailwind CSS", "Bootstrap", "FlutterFlow (With the help of AI)"]
-  },
-  {
-    "category": "DevOps & Environment",
-    "items": ["Docker", "Git", "GitHub", "GitHub Desktop"]
-  },
-  {
-    "category": "Management Tools",
-    "items": ["Jira", "Notion", "ClickUp"]
-  },
-  {
-    "category": "Productivity Suites",
-    "items": ["Microsoft Office (Word, Excel, OneNote)", "Google Workspace (Docs, Sheets)"]
-  },
-  {
-    "category": "Communication",
-    "items": ["Microsoft Teams", "Zoom", "Google Meet", "Discord"]
-  },
-  {
-    "category": "Automation & Testing",
-    "items": ["mabl"]
-  }
+	{
+		"category": "Design & Prototyping",
+		"items": ["Figma", "Canva", "Lucid", "Draw.io"]
+	},
+	{
+		"category": "Web & App Development",
+		"items": [
+			"React",
+			"Next.js",
+			"Tailwind CSS",
+			"Bootstrap",
+			"FlutterFlow (With the help of AI)"
+		]
+	},
+	{
+		"category": "DevOps & Environment",
+		"items": ["Docker", "Git", "GitHub", "GitHub Desktop"]
+	},
+	{
+		"category": "Management Tools",
+		"items": ["Jira", "Notion", "ClickUp"]
+	},
+	{
+		"category": "Productivity Suites",
+		"items": [
+			"Microsoft Office (Word, Excel, OneNote)",
+			"Google Workspace (Docs, Sheets)"
+		]
+	},
+	{
+		"category": "Communication",
+		"items": ["Microsoft Teams", "Zoom", "Google Meet", "Discord"]
+	},
+	{
+		"category": "Automation & Testing",
+		"items": ["mabl"]
+	}
 ]

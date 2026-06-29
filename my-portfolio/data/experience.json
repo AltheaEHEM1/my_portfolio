@@ -1,0 +1,42 @@
+[
+	{
+		"id": "srg-2026",
+		"role": "Frontend Developer",
+		"period": "2025 – 2026",
+		"company": "Software Research Group – PUPQC",
+		"location": "Quezon City, Philippines",
+		"description": "Developed responsive web applications using React and Tailwind CSS. Focused on optimizing performance and user experience.",
+		"images": [
+			"/assets/contact_bg.png",
+			"/assets/github_bg.png",
+			"/assets/linkedin_bg.png"
+		]
+	},
+	{
+		"id": "gfmic-2026",
+		"role": "GFMIC Technical Support",
+		"period": "2026",
+		"company": "Government Financial Management Innovators Circle, Inc.",
+		"location": "Philippines",
+		"description": "Provided technical assistance for financial management systems, ensuring system stability and supporting administrative operations.",
+		"images": ["/support1.jpg", "/support2.jpg", "/support3.jpg"]
+	},
+	{
+		"id": "vprdt-2026",
+		"role": "Vice President Research and Development",
+		"period": "2024 – 2025",
+		"company": "Commonwealth Information Technology – PUPQC",
+		"location": "Quezon City, Philippines",
+		"description": "Led R&D initiatives, oversaw project roadmaps, and mentored team members in implementing emerging technologies.",
+		"images": ["/rd1.jpg", "/rd2.jpg"]
+	},
+	{
+		"id": "commits-2026",
+		"role": "CommITs Creatives",
+		"period": "2024 – 2025",
+		"company": "Commonwealth Information Technology – PUPQC",
+		"location": "Quezon City, Philippines",
+		"description": "Designed visual assets and branding materials for various organizational projects and events.",
+		"images": ["/creative1.jpg", "/creative2.jpg"]
+	}
+]
