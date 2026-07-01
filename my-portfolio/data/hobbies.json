@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"title": "Cycling",
+		"description": "Exploring new routes and enjoying the outdoors on two wheels.",
+		"image": "/assets/hobbies/bike.png"
+	},
+	{
+		"id": 2,
+		"title": "Billiards",
+		"description": "Mastering angles and precision in every shot.",
+		"image": "/assets/hobbies/billiards.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Guitar",
+		"description": "Expressing creativity through music and melody.",
+		"image": "/assets/hobbies/guitar.png"
+	},
+	{
+		"id": 4,
+		"title": "Rubik's Cube",
+		"description": "Solving puzzles and keeping the mind sharp.",
+		"image": "/assets/hobbies/rubiks.png"
+	},
+	{
+		"id": 5,
+		"title": "Taekwondo",
+		"description": "Discipline, fitness, and martial arts mastery.",
+		"image": "/assets/hobbies/tkd.png"
+	}
+]

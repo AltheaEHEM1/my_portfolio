@@ -3,7 +3,9 @@
 		"id": 1,
 		"title": "Faith, Hope, Love",
 		"subtitle": "FHL - Internal Project",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "The Faith Hope Love Clinic Website is an online healthcare information and service platform designed to provide patients with convenient access to clinic information, medical services, and communication channels. The system serves as a centralized digital interface that enables users to explore available healthcare services, learn about the clinic, and easily connect with medical professionals.",
 		"link": "https://faithhopelove-clinic.vercel.app",
 		"images": [
@@ -67,7 +69,9 @@
 		"id": 2,
 		"title": "GFMIC E-Commerce",
 		"subtitle": "GFMIC - E-Commerce Platform",
+		"category": "Capstone",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
 		"link": "https://gfmic-ecommerce.vercel.app",
 		"images": [
@@ -142,97 +146,12 @@
 	},
 
 	{
-		"id": 3,
-		"title": "GFMIC Academy",
-		"subtitle": "GFMIC - Learning Management System",
-		"role": "Frontend Developer",
-		"description": "The GFMIC Learning Management System integrated with the Mentorship & Peer Matching System is a web-based platform designed to centralize and enhance digital learning and mentorship processes. It provides a structured environment where instructors can create and manage courses, upload learning materials, conduct assessments and monitor student progress, while students can conveniently access content, complete activities and track their performance.",
-		"link": "https://gfmic-academy.vercel.app",
-		"images": ["gfmic-academy/Gfmic_academy_1.png"],
-		"features": [
-			{
-				"icon": "UserCircleIcon",
-				"name": "User Registration and Authentication",
-				"description": "Secure enrollment and multi-role access control for students, instructors, and administrators."
-			},
-			{
-				"icon": "AcademicCapIcon",
-				"name": "Course Management",
-				"description": "Comprehensive tools for organizing curriculum, uploading materials, and managing course lifecycle."
-			},
-			{
-				"icon": "BookOpenIcon",
-				"name": "Enrollment System",
-				"description": "Automated course subscription workflows with support for various enrollment verification methods."
-			},
-			{
-				"icon": "CreditCardIcon",
-				"name": "Payment System",
-				"description": "Secure integration for course fees and membership payments using unified payment gateways."
-			},
-			{
-				"icon": "VideoCameraIcon",
-				"name": "Multimedia Learning Support",
-				"description": "Interactive learning environment supporting video lectures, digital docs, and downloadable resources."
-			},
-			{
-				"icon": "PencilSquareIcon",
-				"name": "Assessment and Quiz Management",
-				"description": "Dynamic testing engine for creating quizzes, automated grading, and instant performance feedback."
-			},
-			{
-				"icon": "ChartBarIcon",
-				"name": "Progress Tracking and Analytics",
-				"description": "Real-time visualization of learning milestones, grade reports, and student engagement data."
-			},
-			{
-				"icon": "BellAlertIcon",
-				"name": "Notification System",
-				"description": "Automated alerts for new course materials, upcoming assessments, and enrollment status updates."
-			},
-			{
-				"icon": "TrophyIcon",
-				"name": "Certificate Generation",
-				"description": "One-click generation of verifiable digital certificates upon successful course completion."
-			},
-			{
-				"icon": "UserGroupIcon",
-				"name": "Mentorship Matching System",
-				"description": "AI-driven algorithms to connect learners with compatible mentors based on skills and interests."
-			},
-			{
-				"icon": "WindowIcon",
-				"name": "Learning Management Portal",
-				"description": "A streamlined, intuitive dashboard where students can access all active courses and resources."
-			},
-			{
-				"icon": "Cog8ToothIcon",
-				"name": "Administrative Configurations",
-				"description": "Centralized panel for system-wide settings, user roles, and platform customization."
-			},
-			{
-				"icon": "ArrowDownTrayIcon",
-				"name": "Search, Filter, and Data Export",
-				"description": "High-performance queries for finding content and exporting academic reports in multiple formats."
-			},
-			{
-				"icon": "Squares2X2Icon",
-				"name": "Dashboard Overview",
-				"description": "A high-level summary of active enrollments, recent activity, and upcoming deadlines."
-			},
-			{
-				"icon": "IdentificationIcon",
-				"name": "Profile Management",
-				"description": "Personalized user profiles for tracking individual learning paths and professional achievements."
-			}
-		]
-	},
-
-	{
 		"id": 4,
 		"title": "Yo - etz | AI Interview",
 		"subtitle": "// 004 - INTERNAL PROJECT",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "The AI-Assisted Initial Interview System is a structured digital pre-interview platform designed to support and enhance the admissions process of the Polytechnic University of the Philippines (QC and Caloocan campuses).\n\nThe system standardizes how applicant interviews are conducted by providing a controlled environment for structured and semi-structured questioning, ensuring consistency, fairness, and documentation across all academic programs.\n\nApplicants complete an AI-guided video interview, where their responses are recorded, transcribed, and summarized into a structured report. These reports are then made accessible to faculty members to support the final face-to-face evaluation.\n\nThis platform does not replace faculty decision-making. Instead, it serves as a support tool that improves transparency, reduces bias from memory-based evaluations, and ensures that all applicants are assessed using a consistent baseline.",
 		"link": "https://yo-etz-ai-interview.vercel.app",
 		"images": [
@@ -279,20 +198,15 @@
 		"id": 5,
 		"title": "StewardFM",
 		"subtitle": "Facility Management System",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "StewardFM is a comprehensive facility management system designed to streamline operations, maintenance tracking, and resource allocation for organizations. It provides an intuitive dashboard for managing assets, scheduling maintenance tasks, and generating insightful reports for facility administrators.",
 		"link": "https://stewardfm.vercel.app",
 		"images": [
 			"stewardfm/StewardFm1.png",
 			"stewardfm/StewardFm2.png",
 			"stewardfm/StewardFm3.png"
-		],
-		"contributors": [
-			{ "memberId": "rechelle-salas", "roles": ["Project Manager"] },
-			{ "memberId": "rafael-parungao", "roles": ["Backend Developer"] },
-			{ "memberId": "jerriniash-alpajora", "roles": ["Backend Developer"] },
-			{ "memberId": "rozelle-de-omania", "roles": ["Quality Assurance"] },
-			{ "memberId": "kimberly-kho", "roles": ["Frontend Developer"] }
 		],
 		"features": [
 			{
@@ -327,7 +241,9 @@
 		"id": 6,
 		"title": "PUP Smart-Track",
 		"subtitle": "006 - INTERNAL PROJECT",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
 		"link": "https://pup-smart-track.vercel.app",
 		"images": [
@@ -424,6 +340,7 @@
 		"id": 7,
 		"title": "Bitbo AI",
 		"subtitle": "AI-Powered Platform",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
 		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
 		"link": "https://bitbo-ai.vercel.app",
@@ -496,7 +413,9 @@
 		"id": 8,
 		"title": "Flor De Grace",
 		"subtitle": "Business Management System",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": [
@@ -546,7 +465,9 @@
 		"id": 9,
 		"title": "SRG Website",
 		"subtitle": "Organization Portfolio",
+		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": "nextjs",
 		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
 		"link": "https://srg-website.vercel.app",
 		"images": ["srg-website/SrgWebsite1.png"],
@@ -575,6 +496,60 @@
 				"icon": "UserGroupIcon",
 				"name": "Team Profiles",
 				"description": "Detailed visual profiles for every SRG member, highlighting their unique contributions and roles."
+			}
+		]
+	},
+
+	{
+		"id": 10,
+		"title": "Novella & Presenza",
+		"subtitle": "Business Management System",
+		"category": "System Integration & Architecture",
+		"role": "Project Manager, Frontend Developer",
+		"techstack": "nextjs",
+		"description": "Novella & Presenza is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"link": "https://flor-de-grace.vercel.app",
+		"images": [
+			"flor-de-grace/FlorDeGrace_1.png",
+			"flor-de-grace/FlorDeGrace_2.png"
+		],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Student Management",
+				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Faculty Management",
+				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
+			}
+		]
+	},
+
+	{
+		"id": 11,
+		"title": "ITECHTIONARY",
+		"subtitle": "Business Management System",
+		"category": "Free Electives",
+		"role": "Full Stack",
+		"techstack": "nextjs",
+		"description": "ITECHTIONARY is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"link": "https://flor-de-grace.vercel.app",
+		"images": [
+			"flor-de-grace/FlorDeGrace_1.png",
+			"flor-de-grace/FlorDeGrace_2.png"
+		],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Student Management",
+				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Faculty Management",
+				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
 			}
 		]
 	}

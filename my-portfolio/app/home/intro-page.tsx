@@ -100,29 +100,33 @@ const IntroPage = () => {
 							working software — from full-stack web apps to clean, minimalist
 							interfaces.
 						</p>
-						<div className="flex flex-row gap-4 pt-2 w-full justify-center md:justify-start max-w-sm">
+
+						<div className="flex flex-row gap-3 pt-3 w-full justify-center md:justify-start max-w-sm">
 							<Link
 								href="/projects"
-								className="inline-flex items-center justify-center px-6 py-3 text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 shadow-md active:scale-95 group relative overflow-hidden"
+								// Added hover:scale-105 for the pop-up effect and hover:bg-teal-700 for the color change
+								className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-all duration-300 shadow-md active:scale-95 hover:scale-105 hover:bg-teal-700 group relative overflow-hidden"
 								style={{
 									fontFamily: "var(--font-poppins, sans-serif)",
 									backgroundColor: "var(--teal, #0d9488)",
-									borderRadius: "1rem",
+									borderRadius: "0.75rem",
 								}}
 							>
 								<span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
 								view my work
 							</Link>
+
 							<Link
 								href="/contact"
-								className="inline-flex items-center justify-center px-6 py-3 text-xs font-bold uppercase tracking-widest border transition-all duration-300 active:scale-95"
+								// Added hover:scale-105 for the pop-up effect and hover:bg-teal-200 for the color change
+								className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest border transition-all duration-300 active:scale-95 hover:scale-105 hover:bg-teal-200 hover:border-teal-400"
 								style={{
 									fontFamily: "var(--font-poppins, sans-serif)",
 									color: "var(--nav-teal, #115e59)",
 									borderColor: "rgba(13, 148, 136, 0.2)",
 									backgroundColor:
 										"var(--nav-bg-btn, rgba(187, 247, 237, 0.62))",
-									borderRadius: "1rem",
+									borderRadius: "0.75rem",
 								}}
 							>
 								Let's Talk
