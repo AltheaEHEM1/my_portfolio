@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "mabl Skills Certification: Foundations",
+		"image": "/assets/certification/mabl.jpg",
+		"description": "Foundational skills in test automation using mabl. This certification covers test creation, execution, and analysis within the mabl platform.",
+		"issuer": "mabl",
+		"date": "2026"
+	},
+	{
+		"id": 2,
+		"title": "Certified Associate in Application Defense (PUP-CAAD)",
+		"image": "/assets/certification/PUPCAAD.jpg",
+		"description": "Professional certification in application security defense, focusing on identifying vulnerabilities and implementing robust security controls.",
+		"issuer": "PUP",
+		"date": "2026"
+	},
+	{
+		"id": 3,
+		"title": "Saylor Academy CS406: Information Security",
+		"image": "/assets/certification/saylor.png",
+		"description": "Comprehensive course on information security principles, including cryptography, network security, and risk management.",
+		"issuer": "Saylor Academy",
+		"date": "2026"
+	}
+]
