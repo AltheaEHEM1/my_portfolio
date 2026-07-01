@@ -1,12 +1,16 @@
+import HeroSection from "@/components/hero/hero";
 import contactData from "@/data/contactme.json";
 import FlipContactCard from "./contact-card";
 import ContactForm from "./contact-form";
-import HeroContact from "./hero-contact";
 
 const Contact = () => {
 	return (
 		<div>
-			<HeroContact />
+			<HeroSection
+				image="/assets/bg-hero/contact_bg.png"
+				title="Contact"
+				description="Feel free to reach out for collaborations or inquiries."
+			/>
 
 			<section>
 				<p className="text-[15px] pt-5 text-teal font-valorant">

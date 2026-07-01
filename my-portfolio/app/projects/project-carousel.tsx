@@ -32,7 +32,7 @@ function ProjectPlaceholderSlide({ project }: ProjectPlaceholderSlideProps) {
 					<Image
 						src={`/assets/project-cover-picture/${project.images[0]}`}
 						alt={project.title}
-						fill // Required for absolute parent containers
+						fill
 						className="object-cover opacity-100"
 						sizes="(max-width: 768px) 100vw, 50vw"
 					/>
@@ -58,13 +58,12 @@ function FeaturedProjectsCarousel({
 	const activeProject = projects[activeIndex] ?? projects[0];
 
 	return (
-		<section className="relative z-10 flex w-full flex-col items-center overflow-hidden bg-transparent py-12">
-			<div className="z-40 mb-8 text-center">
+		<div className="relative z-10 flex w-full flex-col items-center overflow-hidden bg-transparent py-12">
+			<div className="z-40 mb-2 mt-5 text-center">
 				<h2
-					className="text-4xl font-bold uppercase tracking-widest md:text-5xl lg:text-6xl"
+					className="text-3xl font-valorant tracking-widest"
 					style={{
-						color: "var(--text-title2, #35A4B9)",
-						fontFamily: "var(--font-family-title, monospace)",
+						color: "var(--text-title2, #00000)",
 					}}
 				>
 					{activeProject.title}
@@ -73,7 +72,7 @@ function FeaturedProjectsCarousel({
 
 			<CurvedCarousel
 				items={projects}
-				className="mb-8 h-[350px] w-full sm:h-[450px] lg:h-[500px]"
+				className="mb-3 h-112.5 w-full"
 				autoplay={true}
 				autoplayDelay={4000}
 				onActiveIndexChange={setActiveIndex}
@@ -86,44 +85,46 @@ function FeaturedProjectsCarousel({
 				)}
 			/>
 
-			<div className="relative z-40 flex items-center justify-center gap-6 md:gap-12">
+			<div className="relative z-40 flex items-center justify-center gap-4 md:gap-4">
+				{/* Previous Button */}
 				<button
 					type="button"
 					onClick={() => swiperInstance?.slidePrev()}
-					className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-white text-white transition-all hover:scale-105 hover:bg-white/10 md:h-12 md:w-12"
+					className="group flex h-5 w-5 shrink-0 cursor-pointer items-center justify-center rounded-lg border border-border bg-teal-pale text-teal transition-all hover:scale-105 hover:bg-teal hover:text-white"
 				>
-					<ChevronLeft size={24} strokeWidth={2.5} className="-ml-[2px]" />
+					<ChevronLeft size={15} strokeWidth={2.5} />
 				</button>
 
+				{/* View Button */}
 				<button
 					type="button"
-					onClick={() => {
-						router.push(`/projects/${activeProject.id}`);
-					}}
-					className="h-12 cursor-pointer rounded-2xl bg-[#2563EB] px-10 text-lg font-bold text-white shadow-[0_0_20px_rgba(37,99,235,0.5)] transition-all hover:scale-105 hover:bg-blue-600 md:h-14 md:px-16"
-					style={{ fontFamily: "var(--font-family, sans-serif)" }}
+					onClick={() => router.push(`/projects/${activeProject.id}`)}
+					className="font-mono flex h-8 items-center justify-center rounded-lg border border-teal/30 bg-teal-pale px-6 text-sm tracking-[0.2em] text-teal shadow-lg backdrop-blur-md transition-all hover:scale-105 hover:bg-teal hover:text-white md:px-8"
 				>
-					View
+					View Project
 				</button>
 
+				{/* Next Button */}
 				<button
 					type="button"
 					onClick={() => swiperInstance?.slideNext()}
-					className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-white text-white transition-all hover:scale-105 hover:bg-white/10 md:h-12 md:w-12"
+					className="group flex h-5 w-5 shrink-0 cursor-pointer items-center justify-center rounded-lg border border-border bg-teal-pale text-teal transition-all hover:scale-105 hover:bg-teal hover:text-white"
 				>
-					<ChevronRight size={24} strokeWidth={2.5} className="-mr-[2px]" />
+					<ChevronRight size={15} strokeWidth={2.5} />
 				</button>
 			</div>
 
-			<div className="relative z-40 mt-8 w-full max-w-3xl px-4">
-				<div className="rounded-2xl border border-white/5 bg-[#000814]/70 p-6 shadow-[0_0_40px_rgba(0,10,30,0.8)] backdrop-blur-xl md:p-8">
-					<p className="line-clamp-3 text-center text-xs leading-relaxed text-gray-300 md:text-sm md:leading-loose">
+			{/* Description Card */}
+			<div className="relative z-40 mt-6 w-full max-w-2xl px-4">
+				<div className="relative rounded-xl border border-border bg-background/50 p-4 backdrop-blur-md shadow-sm">
+					<p className="line-clamp-3 text-center text-xs leading-relaxed text-muted-foreground md:text-sm md:leading-loose tracking-wide">
 						{activeProject.description}
 					</p>
 				</div>
 			</div>
 
-			<div className="z-40 mt-8 flex items-center justify-center gap-3">
+			{/* Pagination Dots */}
+			<div className="z-40 mt-6 flex items-center justify-center gap-2">
 				{projects.map((project, index) => (
 					<button
 						type="button"
@@ -131,14 +132,14 @@ function FeaturedProjectsCarousel({
 						onClick={() => swiperInstance?.slideToLoop(index)}
 						className={`cursor-pointer rounded-full transition-all duration-300 ${
 							index === activeIndex
-								? "h-4 w-4 scale-110 bg-gray-200 shadow-[0_0_10px_rgba(255,255,255,0.8)]"
-								: "h-3 w-3 bg-gray-600 hover:bg-gray-400"
+								? "h-2 w-6 bg-teal shadow-[0_0_8px_var(--teal)]"
+								: "h-2 w-2 bg-border hover:bg-teal/50"
 						}`}
 						aria-label={`Go to slide ${index + 1}`}
 					/>
 				))}
 			</div>
-		</section>
+		</div>
 	);
 }
 

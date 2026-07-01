@@ -6,12 +6,15 @@ const Projects = () => {
 	return (
 		<>
 			<HeroSection
-				subtitle="----// 001 - GET TO KNOW ME"
+				image="/assets/bg-hero/project_bg.png"
 				title="Projects"
-				description="this is the projects page"
+				description="Explore my latest work, technical experiments, and creative projects."
 			/>
 			<ProjectsCarousel />
-			<ProjectGrid />
+
+			<section>
+				<ProjectGrid />
+			</section>
 		</>
 	);
 };

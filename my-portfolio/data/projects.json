@@ -2,10 +2,10 @@
 	{
 		"id": 1,
 		"title": "Faith, Hope, Love",
-		"subtitle": "FHL - Internal Project",
+		"subtitle": "Healthcare Service Website",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["Reactjs","Docker Compose"],
 		"description": "The Faith Hope Love Clinic Website is an online healthcare information and service platform designed to provide patients with convenient access to clinic information, medical services, and communication channels. The system serves as a centralized digital interface that enables users to explore available healthcare services, learn about the clinic, and easily connect with medical professionals.",
 		"link": "https://faithhopelove-clinic.vercel.app",
 		"images": [
@@ -71,7 +71,7 @@
 		"subtitle": "GFMIC - E-Commerce Platform",
 		"category": "Capstone",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["Python", "Django", "Docker Compose"],
 		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
 		"link": "https://gfmic-ecommerce.vercel.app",
 		"images": [
@@ -146,13 +146,13 @@
 	},
 
 	{
-		"id": 4,
+		"id": 3,
 		"title": "Yo - etz | AI Interview",
-		"subtitle": "// 004 - INTERNAL PROJECT",
+		"subtitle": "AI-Driven Admissions Support Platform",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
-		"description": "The AI-Assisted Initial Interview System is a structured digital pre-interview platform designed to support and enhance the admissions process of the Polytechnic University of the Philippines (QC and Caloocan campuses).\n\nThe system standardizes how applicant interviews are conducted by providing a controlled environment for structured and semi-structured questioning, ensuring consistency, fairness, and documentation across all academic programs.\n\nApplicants complete an AI-guided video interview, where their responses are recorded, transcribed, and summarized into a structured report. These reports are then made accessible to faculty members to support the final face-to-face evaluation.\n\nThis platform does not replace faculty decision-making. Instead, it serves as a support tool that improves transparency, reduces bias from memory-based evaluations, and ensures that all applicants are assessed using a consistent baseline.",
+		"techstack": ["Next typescript", "Django", "Postgres", "Meta-Llama-3-8B-Instruct LLM", "Docker Compose"],
+		"description": "The AI-Assisted Initial Interview System is a digital platform designed to standardize and support the admissions process at PUP (QC and Caloocan). By conducting AI-guided video interviews, the system captures and summarizes applicant responses into structured reports for faculty review. It serves as a tool to improve transparency, reduce bias, and ensure a consistent assessment baseline, while leaving final evaluations to faculty decision-makers.",
 		"link": "https://yo-etz-ai-interview.vercel.app",
 		"images": [
 			"yoetz/AiINterview.jpg",
@@ -195,12 +195,12 @@
 	},
 
 	{
-		"id": 5,
+		"id": 4,
 		"title": "StewardFM",
 		"subtitle": "Facility Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["Python", "Django", "Docker Compose"],
 		"description": "StewardFM is a comprehensive facility management system designed to streamline operations, maintenance tracking, and resource allocation for organizations. It provides an intuitive dashboard for managing assets, scheduling maintenance tasks, and generating insightful reports for facility administrators.",
 		"link": "https://stewardfm.vercel.app",
 		"images": [
@@ -238,12 +238,12 @@
 	},
 
 	{
-		"id": 6,
+		"id": 5,
 		"title": "PUP Smart-Track",
-		"subtitle": "006 - INTERNAL PROJECT",
+		"subtitle": "Inventory Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["React", "Django","PostgreSQL","Docker Compose"],
 		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
 		"link": "https://pup-smart-track.vercel.app",
 		"images": [
@@ -337,11 +337,12 @@
 	},
 
 	{
-		"id": 7,
-		"title": "Bitbo AI",
-		"subtitle": "AI-Powered Platform",
+		"id": 6,
+		"title": "BITBo AI | BITBo Portal",
+		"subtitle": "Barangay IT Robot AI-Powered Platform",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
+		"techstack": ["React", "Django", "Docker Compose"],
 		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
 		"link": "https://bitbo-ai.vercel.app",
 		"images": ["BitboAI/BITBO AI.png"],
@@ -410,12 +411,12 @@
 	},
 
 	{
-		"id": 8,
+		"id": 7,
 		"title": "Flor De Grace",
-		"subtitle": "Business Management System",
+		"subtitle": "Student Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["Reactjs","PostgreSQL","Docker Compose"],
 		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": [
@@ -462,12 +463,12 @@
 	},
 
 	{
-		"id": 9,
+		"id": 8,
 		"title": "SRG Website",
 		"subtitle": "Organization Portfolio",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": "nextjs",
+		"techstack": ["Reactjs","Docker Compose"],
 		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
 		"link": "https://srg-website.vercel.app",
 		"images": ["srg-website/SrgWebsite1.png"],
@@ -501,56 +502,158 @@
 	},
 
 	{
-		"id": 10,
+		"id": 9,
 		"title": "Novella & Presenza",
-		"subtitle": "Business Management System",
+		"subtitle": "Library Management System | Attendance Management System",
 		"category": "System Integration & Architecture",
 		"role": "Project Manager, Frontend Developer",
-		"techstack": "nextjs",
-		"description": "Novella & Presenza is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"techstack": "PHP, Laravel",
+		"description": "Novella & Presenza is a unified administrative ecosystem that integrates two distinct but interconnected platforms: 'Novella,' a comprehensive Library Management System, and 'Presenza,' an automated Attendance Management System. The end-to-end development lifecycle was directed from project planning and scope to full-scale module implementation and core system logic. Development of these integrated systems involved analyzing complex workflows and translating requirements into effective technical solutions, while also heading the frontend development and UI design to transform prototypes into a responsive, high-performance interface with robust field validations. Built upon a shared data architecture, these systems operate as a single integrated unit, allowing for seamless synchronization of user data and activity logs. This integration eliminates data silos, ensuring that a user's library interactions and facility attendance records are linked within a centralized hub. By bridging these two domains, the platform enables administrators to conduct cross-module reporting, gain holistic insights into facility utilization, and minimize manual data reconciliation.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": [
-			"flor-de-grace/FlorDeGrace_1.png",
-			"flor-de-grace/FlorDeGrace_2.png"
+			"Novella/Novella.png",
+			"Novella/Presenza.png"
 		],
 		"features": [
 			{
-				"icon": "Squares2X2Icon",
-				"name": "Student Management",
-				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+				"name": "Integrated System Architecture",
+				"description": "A centralized data hub that links Novella and Presenza, ensuring real-time synchronization of user profiles and operational logs."
 			},
 			{
-				"icon": "Squares2X2Icon",
-				"name": "Faculty Management",
-				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
+				"name": "Intelligent Book Cataloging",
+				"description": "Full CRUD management for library collections, including dynamic categorization, real-time stock status, and shelf-location tracking."
+			},
+			{
+				"name": "Smart Attendance Tracking",
+				"description": "High-efficiency time-in/time-out logging for employees and visitors, providing an accurate, timestamped trail of facility usage."
+			},
+			{
+				"name": "Unified Data Architecture",
+				"description": "Ensures data integrity across both modules, preventing duplicate profiles and allowing for cross-referenced reporting between library and attendance data."
+			},
+			{
+				"name": "Operational Analytics",
+				"description": "Centralized reporting tools that visualize facility traffic, resource circulation trends, and peak occupancy hours to assist in data-driven planning."
 			}
 		]
 	},
 
 	{
-		"id": 11,
-		"title": "ITECHTIONARY",
-		"subtitle": "Business Management System",
+        "id": 10,
+        "title": "ITECHTIONARY",
+        "subtitle": "IT Dictionary Mobile Application",
+        "category": "Free Electives",
+        "role": "Overall Developer",
+        "techstack": ["FlutterFlow", "Firebase", "Docker Compose"],
+        "description": "ITECHTIONARY is a specialized mobile reference application designed to serve as a comprehensive glossary for the IT industry. End-to-end development was directed using FlutterFlow and Firebase to build a categorized dictionary application for IT students. System architecture and categorization logic were designed to ensure efficient information retrieval and an intuitive learning experience. Furthermore, the full SDLC was managed by bridging the gap between Firebase backend infrastructure and a high-performance mobile interface, while technical documentation and database schemas were authored to establish a robust foundation for system reliability and future scalability. The application provides students and professionals with instant access to a vast database of technical terminology, ranging from software development and networking to cybersecurity and hardware engineering, aiming to bridge the knowledge gap by offering clear, concise definitions that ensure complex technical jargon is easily understandable for users at any skill level.",
+        "images": ["Itechtionary/Itechtionary.png"],
+        "features": [
+            {
+                "icon": "BookOpenIcon",
+                "name": "Comprehensive IT Glossary",
+                "description": "An extensive, searchable database covering a wide spectrum of IT domains, including programming languages, networking protocols, and cybersecurity concepts."
+            },
+            {
+                "icon": "MagnifyingGlassIcon",
+                "name": "Advanced Search & Filtering",
+                "description": "Intuitive search functionality that allows users to quickly locate specific technical terms and filter results by technology category."
+            },
+            {
+                "icon": "BookmarkIcon",
+                "name": "Personalized Library",
+                "description": "A bookmarking feature that lets users save complex terms to a personal collection for quick review and future reference."
+            },
+            {
+                "icon": "CloudArrowDownIcon",
+                "name": "Cloud-Synced Data",
+                "description": "Leverages Firebase to ensure the glossary database is always up-to-date and accessible across devices, with seamless performance."
+            }
+        ]
+    },
+
+	{
+        "id": 11,
+        "title": "PureHealth",
+        "subtitle": "Business Management System",
+        "category": "Free Electives",
+        "role": "Overall Developer",
+        "techstack": "PHP Laravel",
+        "description": "PureHealth is a robust business management system designed to streamline operational workflows and administrative processes for health-focused enterprises. Intuitive UI/UX layouts were designed to transform complex requirements into high-fidelity prototypes, complemented by the development of responsive frontend components to ensure a high-performance experience across all devices. By bridging design and code, visual assets were implemented with a focus on usability and interactive logic, while reusable UI component libraries were built to maintain consistency and streamline development. Furthermore, system architectures and flowcharts were created to map out technical logic and user journeys, ensuring the platform provides integrated tools for efficient business administration, data management, and operational reporting through a centralized digital platform.",
+        "images": ["Purehealth/Purehealth.png"],
+        "features": [
+            {
+                "icon": "Squares2X2Icon",
+                "name": "Operational Management",
+                "description": "Comprehensive resource registration, profile handling, and tracking across business cycles."
+            },
+            {
+                "icon": "Squares2X2Icon",
+                "name": "Access Control",
+                "description": "Account creation, verification, role management, and status control for personnel."
+            }
+        ]
+    },
+
+	{
+		"id": 12,
+		"title": "Serenitel",
+		"subtitle": "Hotel Management System",
 		"category": "Free Electives",
-		"role": "Full Stack",
-		"techstack": "nextjs",
-		"description": "ITECHTIONARY is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
-		"link": "https://flor-de-grace.vercel.app",
+		"role": "Overall Developer",
+		"techstack": "C#",
+		"description": "Serenitel is a sophisticated Hotel Management System engineered to optimize hospitality operations and elevate guest service standards. The end-to-end UI/UX design process was led to transform complex technical requirements into high-fidelity, interactive prototypes. By architecting a responsive frontend utilizing modern frameworks, a seamless and intuitive user experience was ensured across all devices. Furthermore, comprehensive design systems and UI standards were established, creating reusable components to maintain visual consistency and development efficiency. The transition from design to implementation was also directed, overseeing frontend execution to ensure high-performance interface standards throughout the platform's lifecycle.",
 		"images": [
-			"flor-de-grace/FlorDeGrace_1.png",
-			"flor-de-grace/FlorDeGrace_2.png"
+			"Serenitel/Serenitel.png"
 		],
 		"features": [
 			{
 				"icon": "Squares2X2Icon",
-				"name": "Student Management",
-				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+				"name": "Guest Management",
+				"description": "Comprehensive guest registration, profile management, and history tracking across booking cycles."
 			},
 			{
 				"icon": "Squares2X2Icon",
-				"name": "Faculty Management",
-				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
+				"name": "Staff & Operations",
+				"description": "Streamlined personnel account creation, role-based access control, and status monitoring for hotel operations."
+			},
+			{
+				"icon": "CalendarDaysIcon",
+				"name": "Booking & Reservation System",
+				"description": "An intuitive reservation engine that manages room availability, check-in/check-out processes, and real-time booking status updates."
 			}
 		]
-	}
+	},
+
+	{
+    "id": 13,
+    "title": "Laurelcrest",
+    "subtitle": "Student Management System",
+    "category": "Free Electives",
+    "role": "Overall Developer",
+    "techstack": [
+        "Asp.net",
+        "MSSQL"
+    ],
+    "description": "Laurelcrest is a comprehensive Student Management System designed to streamline academic operations for educational institutions. The end-to-end system was architected by building a responsive interface and transitioning into full-scale module development for all user roles. All core functions, including complex data processing and interactive features, were engineered to ensure a high-performance and reliable system. Additionally, robust Role-Based Access Control (RBAC) was implemented to manage secure permissions, collaborating with the team to successfully meet all technical goals while providing integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+    "images": [
+        "Laurelcrest/Laurelcrest.png"
+    ],
+    "features": [
+        {
+            "icon": "UserGroupIcon",
+            "name": "Student Lifecycle Management",
+            "description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+        },
+        {
+            "icon": "ShieldCheckIcon",
+            "name": "Role-Based Access Control",
+            "description": "Secure faculty account creation, verification, and role management with precise status control for active and inactive personnel."
+        },
+        {
+            "icon": "AcademicCapIcon",
+            "name": "Academic Reporting",
+            "description": "Centralized platform for managing faculty workloads, attendance logs, and automated academic reporting."
+        }
+    ]
+}
 ]
