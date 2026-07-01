@@ -3,9 +3,10 @@ import HeroSection from "@/components/hero/hero";
 const Blog = () => {
 	return (
 		<HeroSection
+			image="/assets/bg-hero/contact_bg.png"
 			subtitle="----// 001 - GET TO KNOW ME"
-			title="Blog"
-			description="this is the blog page"
+			title="Projects"
+			description="this is the projects page"
 		/>
 	);
 };

@@ -117,7 +117,7 @@ function CurvedCarousel({
 						modifier: 1.15,
 						slideShadows: false,
 					}}
-					className="h-full !overflow-visible"
+					className="h-full overflow-visible!"
 				>
 					{items.map((item, index) => (
 						<SwiperSlide
