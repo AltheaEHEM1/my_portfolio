@@ -4,10 +4,16 @@ import Link from "next/link";
 
 export default function Forbidden403() {
 	return (
-		<div
-			data-page-type="forbidden"
-			className="flex flex-col items-center justify-center text-center"
-		>
+		<>
+			<style>{`
+				#global-nav-header, #global-scroll-to-top, #global-footer {
+					display: none !important;
+				}
+			`}</style>
+			<div
+				data-page-type="forbidden"
+				className="flex flex-col items-center justify-center text-center min-h-100 p-6"
+			>
 			{/* Animated SVG Illustration */}
 			<motion.div
 				initial={{ opacity: 0, y: -20 }}
@@ -54,5 +60,6 @@ export default function Forbidden403() {
 				</Link>
 			</motion.div>
 		</div>
+		</>
 	);
 }

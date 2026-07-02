@@ -57,13 +57,35 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${rajdhani.variable} ${spaceMono.variable} h-full antialiased`}
+			suppressHydrationWarning
 		>
+			<head>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+							(function() {
+								try {
+									var savedTheme = localStorage.getItem('theme');
+									var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+									if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+										document.documentElement.classList.add('dark');
+									} else {
+										document.documentElement.classList.remove('dark');
+									}
+								} catch (e) {}
+							})();
+						`,
+					}}
+				/>
+			</head>
 			<body className="min-h-full flex flex-col relative bg-background text-foreground">
 				{/* Background Design */}
 				<MatrixBackground />
 
 				{/* Navbar */}
-				<NavHeader />
+				<div id="global-nav-header">
+					<NavHeader />
+				</div>
 
 				{/* Main Content Safe Layer */}
 				<main className="relative z-10 mb-10">
@@ -73,10 +95,12 @@ export default function RootLayout({
 				</main>
 
 				{/* Scroll to Top Button */}
-				<ScrollToTop />
+				<div id="global-scroll-to-top">
+					<ScrollToTop />
+				</div>
 
 				{/* Footer */}
-				<footer className="mt-auto">
+				<footer id="global-footer" className="mt-auto">
 					<Footer />
 				</footer>
 			</body>

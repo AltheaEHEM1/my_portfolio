@@ -4,7 +4,9 @@ import IntroPage from "./home/intro-page";
 import SkillsCategories from "./home/skill-categories";
 import Skills from "./home/skills";
 
-const Home = () => {
+const Home = async () => {
+	await new Promise((resolve) => setTimeout(resolve, 2000));
+
 	return (
 		<div className="w-full px-4 md:px-0">
 			<IntroPage />

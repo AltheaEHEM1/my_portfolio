@@ -3,7 +3,9 @@ import contactData from "@/data/contactme.json";
 import FlipContactCard from "./contact-card";
 import ContactForm from "./contact-form";
 
-const Contact = () => {
+const Contact = async () => {
+	await new Promise((resolve) => setTimeout(resolve, 2000));
+
 	return (
 		<div>
 			<HeroSection
