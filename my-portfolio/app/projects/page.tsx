@@ -2,7 +2,9 @@ import ProjectsCarousel from "@/app/projects/project-carousel";
 import ProjectGrid from "@/app/projects/project-grid";
 import HeroSection from "@/components/hero/hero";
 
-const Projects = () => {
+const Projects = async () => {
+	await new Promise((resolve) => setTimeout(resolve, 2000));
+
 	return (
 		<>
 			<HeroSection
