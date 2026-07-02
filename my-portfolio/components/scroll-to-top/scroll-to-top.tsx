@@ -1,12 +1,46 @@
 "use client";
 
 import { ChevronUp } from "lucide-react";
+import { usePathname } from "next/navigation";
 import type React from "react";
+import { useEffect, useState } from "react";
 
-export default function ScrollToTop(): React.JSX.Element {
+export default function ScrollToTop(): React.JSX.Element | null {
+	const pathname = usePathname();
+	const [mounted, setMounted] = useState(false);
+	const [shouldHide, setShouldHide] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Re-check page type whenever pathname changes
+	useEffect(() => {
+		if (!mounted) return;
+
+		const checkPageType = () => {
+			const errorPage = document.querySelector(
+				'[data-page-type="error"], [data-page-type="forbidden"], [data-page-type="not-found"]',
+			);
+			setShouldHide(!!errorPage);
+		};
+
+		// Check immediately
+		checkPageType();
+
+		// Schedule check on next tick to ensure child page content is fully in DOM
+		const timer = setTimeout(checkPageType, 0);
+
+		return () => clearTimeout(timer);
+	}, [pathname, mounted]);
+
 	const scrollToTop = (): void => {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
+
+	if (!mounted || shouldHide) {
+		return null;
+	}
 
 	return (
 		<button

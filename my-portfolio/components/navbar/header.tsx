@@ -69,9 +69,11 @@ export default function NavHeader(): React.JSX.Element {
 					<div className="hidden md:flex items-center">
 						<ul className="flex items-center space-x-1">
 							{navItems.map((item) => {
-								const isActive = item.href === "/" 
-									? pathname === "/" 
-									: pathname === item.href || pathname.startsWith(`${item.href}/`);
+								const isActive =
+									item.href === "/"
+										? pathname === "/"
+										: pathname === item.href ||
+											pathname.startsWith(`${item.href}/`);
 								return (
 									<li key={item.name}>
 										<Link
@@ -169,9 +171,11 @@ export default function NavHeader(): React.JSX.Element {
 			>
 				<ul className="px-4 py-3 space-y-1 bg-(--nav-bg-color) backdrop-blur-md">
 					{navItems.map((item) => {
-						const isActive = item.href === "/" 
-							? pathname === "/" 
-							: pathname === item.href || pathname.startsWith(`${item.href}/`);
+						const isActive =
+							item.href === "/"
+								? pathname === "/"
+								: pathname === item.href ||
+									pathname.startsWith(`${item.href}/`);
 						return (
 							<li key={item.name}>
 								<Link

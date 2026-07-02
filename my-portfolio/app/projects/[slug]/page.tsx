@@ -1,10 +1,9 @@
 "use client";
-import React from 'react';
 
 import { type Easing, motion, type Variants } from "framer-motion";
-import { notFound, useRouter } from "next/navigation";
-import { use, useEffect, useRef } from "react";
 import { Briefcase, Code2, Layers } from "lucide-react";
+import { notFound, useRouter } from "next/navigation";
+import React, { use, useEffect, useRef } from "react";
 
 import FeaturesAndFunctionalities from "@/app/projects/[slug]/feature-functionalities";
 import HeroProject from "@/app/projects/[slug]/hero-project";
@@ -35,9 +34,9 @@ interface Project {
 	id: number;
 	title: string;
 	subtitle?: string;
-	category: string;      
-    role: string;          
-    techstack: string[];
+	category: string;
+	role: string;
+	techstack: string[];
 	description: string;
 	link?: string;
 	images?: string[];
@@ -87,36 +86,35 @@ export function BaseProjectDetails({
 
 	return (
 		<div>
-			<HeroProject
-				title={project.title}
-				subtitle={project.subtitle}
-			/>
+			<HeroProject title={project.title} subtitle={project.subtitle} />
 			<section className="relative z-10 flex w-full flex-col">
 				<motion.section
-					className="w-full px-2 flex flex-wrap" initial="hidden" whileInView="visible"
+					className="w-full px-2 flex flex-wrap"
+					initial="hidden"
+					whileInView="visible"
 					viewport={{ once: true, amount: 0.1 }}
 				>
 					{/* Left */}
 					<div className="order-1 flex w-full flex-col lg:w-7/12">
 						<motion.div
-							className="group relative mb-3 overflow-hidden rounded-xl border border-black" variants={fadeUp} custom={0}
+							className="group relative mb-3 overflow-hidden rounded-xl border border-black"
+							variants={fadeUp}
+							custom={0}
 						>
-							<MiniCarousel
-								images={project.images ?? []}
-								alt={project.title}
-							/>
+							<MiniCarousel images={project.images ?? []} alt={project.title} />
 						</motion.div>
 
 						{/* Main Container */}
 						<div className="flex justify-between items-start gap-4">
-							
 							{/* Left Side: Role and Tech Stack */}
 							<div className="flex flex-col">
 								{/* Role Header */}
 								<div className="flex items-center gap-3">
 									<div className="flex items-center gap-2 text-teal">
 										<Briefcase size={16} strokeWidth={2.5} />
-										<span className="font-mono text-teal-dark text-xs">{project.role}</span>
+										<span className="font-mono text-teal-dark text-xs">
+											{project.role}
+										</span>
 									</div>
 								</div>
 
@@ -126,14 +124,21 @@ export function BaseProjectDetails({
 										<Code2 size={16} strokeWidth={2.5} />
 									</div>
 									<div className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-xs text-teal-dark">
-										{((typeof project.techstack === 'string' 
-											? (project.techstack as string).split(',').map((t: string) => t.trim()) 
-											: (Array.isArray(project.techstack) ? project.techstack : [])
-										) as string[]).map((tech: string, index: number, arr: string[]) => (
+										{(
+											(typeof project.techstack === "string"
+												? (project.techstack as string)
+														.split(",")
+														.map((t: string) => t.trim())
+												: Array.isArray(project.techstack)
+													? project.techstack
+													: []) as string[]
+										).map((tech: string, index: number, arr: string[]) => (
 											<React.Fragment key={index}>
 												<span>{tech}</span>
 												{index < arr.length - 1 && (
-													<span className="text-teal-dark/30 font-light select-none">|</span>
+													<span className="text-teal-dark/30 font-light select-none">
+														|
+													</span>
 												)}
 											</React.Fragment>
 										))}
@@ -150,22 +155,20 @@ export function BaseProjectDetails({
 									{project.category}
 								</span>
 							</div>
-
 						</div>
 					</div>
 
 					{/* Right */}
 					<div className="order-2 mb-8 flex w-full mt-3 flex-col lg:mb-0 lg:w-5/12 pl-0 lg:pl-8">
-						<motion.div
-							className="flex flex-col"
-							variants={fadeUp}
-							custom={1}
-						>
+						<motion.div className="flex flex-col" variants={fadeUp} custom={1}>
 							<div className="flex flex-col">
 								{/* Description */}
 								<div className="space-y-4">
 									{project.description.split("\n\n").map((paragraph) => (
-										<p key={paragraph.substring(0, 20)} className="text-sm text-justify font-mono font-light">
+										<p
+											key={paragraph.substring(0, 20)}
+											className="text-sm text-justify font-mono font-light"
+										>
 											{paragraph.trim()}
 										</p>
 									))}
@@ -180,22 +183,21 @@ export function BaseProjectDetails({
 									rel="noopener noreferrer"
 									className="group inline-flex items-center gap-2 text-sm font-bold text-teal-dark mt-5 hover:opacity-70 transition-opacity"
 								>
-									View Project 
+									View Project
 									<span className="text-lg">→</span>
 								</a>
 							)}
 						</motion.div>
 					</div>
-
 				</motion.section>
 
 				<motion.div variants={fadeUp} custom={2}>
 					<h1 className="mb-3 mt-7 text-base font-bold uppercase tracking-[0.19em] sm:text-lg text-teal-dark -font-geist-mono">
-							Features & Functionalities:
+						Features & Functionalities:
 					</h1>
 					<FeaturesAndFunctionalities features={project.features ?? []} />
 				</motion.div>
-				
+
 				{/* Other Projects Section */}
 				{otherProjects.length > 0 && (
 					<>

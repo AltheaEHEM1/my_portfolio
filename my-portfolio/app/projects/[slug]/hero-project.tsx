@@ -7,9 +7,9 @@ interface HeroSectionProps {
 	description?: string;
 }
 
-const HeroProject = ({ 
-    title = "HeroSection", 
-    subtitle = "Management System"
+const HeroProject = ({
+	title = "HeroSection",
+	subtitle = "Management System",
 }: HeroSectionProps) => {
 	return (
 		<div className="w-full text-center py-15 relative overflow-hidden h-40">
@@ -23,9 +23,7 @@ const HeroProject = ({
 			<div className="absolute inset-0 bg-black/50 pointer-events-none z-10"></div>
 			<div className="flex flex-col items-center justify-center relative z-20 text-white">
 				<h1 className="text-3xl font-valorant">{title}</h1>
-				<p className="text-xs font-mono">
-					{subtitle}
-				</p>
+				<p className="text-xs font-mono">{subtitle}</p>
 			</div>
 		</div>
 	);
