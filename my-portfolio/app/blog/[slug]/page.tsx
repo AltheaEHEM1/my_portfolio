@@ -23,7 +23,7 @@ export default function IndividualBlog({
     const display = useTransform(rounded, (latest) => text.slice(0, latest));
     const start = () =>
       animate(count, text.length, {
-        duration: text.length * 0.005, 
+        duration: text.length * 0.005,
         ease: "linear",
       });
     return { display, start };
@@ -34,11 +34,13 @@ export default function IndividualBlog({
   useEffect(() => {
     if (post) {
       const sequence = async () => {
-        setStep(1); 
+        // Simulate a loading state for the skeleton
+        await new Promise((r) => setTimeout(r, 1500));
+        setStep(1);
         await new Promise((r) => setTimeout(r, 200));
-        setStep(2); 
+        setStep(2);
         await new Promise((r) => setTimeout(r, 200));
-        setStep(3); 
+        setStep(3);
         await content.start();
         setStep(4);
       };
@@ -61,14 +63,27 @@ export default function IndividualBlog({
       />
 
       <article className="max-w-5xl mx-auto px-6 py-20">
-        <div className="mb-12">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-500 border-b border-slate-300 hover:border-cyan-600 dark:border-slate-700 dark:hover:border-cyan-500 transition-colors"
-          >
-            ← BACK TO LOGS
-          </Link>
-        </div>
+        {step === 0 ? (
+          <div className="animate-pulse space-y-8">
+            <div className="h-6 w-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+            <div className="h-4 w-48 bg-slate-200 dark:bg-slate-800 rounded mt-12"></div>
+            <div className="h-10 w-3/4 bg-slate-200 dark:bg-slate-800 rounded"></div>
+            <div className="space-y-4 pt-4">
+              <div className="h-4 w-full bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div className="h-4 w-full bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div className="h-4 w-5/6 bg-slate-200 dark:bg-slate-800 rounded"></div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="mb-12">
+              <Link
+                href="/blog"
+                className="inline-flex items-center text-sm font-bold text-slate-500 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-500 border-b border-slate-300 hover:border-cyan-600 dark:border-slate-700 dark:hover:border-cyan-500 transition-colors"
+              >
+                ← BACK TO LOGS
+              </Link>
+            </div>
 
         {step >= 1 && (
           <motion.div
@@ -84,7 +99,7 @@ export default function IndividualBlog({
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-8 text-slate-900 dark:text-white"
+            className="text-3xl md:text-3xl font-bold mb-8 text-slate-900 dark:text-white"
           >
             {post.title}
           </motion.h1>
@@ -96,6 +111,8 @@ export default function IndividualBlog({
           >
             <motion.p>{content.display}</motion.p>
           </motion.div>
+        )}
+          </>
         )}
       </article>
     </main>

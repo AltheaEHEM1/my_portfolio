@@ -2,7 +2,10 @@ import HeroSection from "@/components/hero/hero";
 import blogPosts from "@/data/blog.json";
 import Link from "next/link";
 
-const Blog = () => {
+const Blog = async () => {
+  // Simulate network request to trigger the Next.js suspense boundary (loading.tsx)
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+
   return (
     <main className="min-h-screentext-slate-200">
       <HeroSection
