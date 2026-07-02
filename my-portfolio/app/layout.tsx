@@ -7,6 +7,7 @@ import {
 	Space_Mono,
 } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 import MatrixBackground from "../components/background/hero-background";
 import Footer from "../components/footer/footer";
@@ -103,6 +104,8 @@ export default function RootLayout({
 				<footer id="global-footer" className="mt-auto">
 					<Footer />
 				</footer>
+
+				<Toaster richColors position="top-right" />
 			</body>
 		</html>
 	);
