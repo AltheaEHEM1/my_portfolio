@@ -18,7 +18,7 @@ const Blog = () => {
 				{blogPosts.map((post) => (
 					<article
 					key={post.id}
-					className="group flex flex-col border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 hover:border-cyan-500/50"
+					className="group flex flex-col border border-slate-200 dark:border-slate-800 p-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 hover:border-cyan-500/50"
 					>
 					{/* Category and Date */}
 					<div className="text-cyan-600 dark:text-cyan-500 text-xs font-semibold tracking-wider mb-3 uppercase">
@@ -31,7 +31,7 @@ const Blog = () => {
 					</h2>
 
 					{/* Excerpt */}
-					<p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+					<p className="text-slate-600 dark:text-slate-400 text-sm font-mono leading-relaxed mb-6 flex-grow">
 						{post.excerpt}
 					</p>
 
@@ -46,12 +46,7 @@ const Blog = () => {
 					</article>
 				))}
 				</div>
-			  
 		</section>
-		  
-
-
-
     </main>
   );
 };

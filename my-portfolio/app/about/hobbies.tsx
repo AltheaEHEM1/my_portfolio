@@ -16,7 +16,7 @@ const Hobbies: FC = () => {
 				{hobbiesData.map((hobby: Hobby) => (
 					<div
 						key={hobby.id}
-						className="group relative h-80 w-full overflow-hidden rounded-xl shadow-lg cursor-pointer border border-white"
+						className="group relative h-80 w-full overflow-hidden rounded-xl shadow-lg cursor-pointer border border-teal"
 					>
 						<Image
 							src={hobby.image}

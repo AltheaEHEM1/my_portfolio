@@ -13,7 +13,7 @@ const Home = async () => {
 
 			<section className="max-w-7xl mx-auto">
 				{/* Skills Section remains the same */}
-				<p className="text-[15px] pt-20 text-teal font-valorant">
+				<p className="text-[20px] pt-15 text-teal font-valorant">
 					{"01 ----// TECHNICAL SKILLS "}
 				</p>
 				<div className="grid lg:grid-cols-12 items-center w-full">
@@ -32,7 +32,7 @@ const Home = async () => {
 
 					{/* Left Column (Experience) */}
 					<div className="lg:col-span-6 px-4">
-						<p className="text-[15px] mb-2 text-teal font-valorant text-center">
+						<p className="text-[20px] mb-2 text-teal font-valorant text-center">
 							{"02 ----// EXPERIENCES "}
 						</p>
 						<Experience />
@@ -40,7 +40,7 @@ const Home = async () => {
 
 					{/* Right Column (Education) */}
 					<div className="lg:col-span-6 px-4">
-						<p className="text-[15px] mb-2 text-teal font-valorant text-center">
+						<p className="text-[20px] mb-2 text-teal font-valorant text-center">
 							{"03 ----// EDUCATION "}
 						</p>
 						<Education />
