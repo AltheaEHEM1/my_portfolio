@@ -1,9 +1,10 @@
 "use client";
 
 import { useActionState, useEffect, useState } from "react";
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 import { submitContact } from "./actions";
 import { SubmitButton } from "./submit-button";
-import { toast } from "sonner"; 
+import { toast } from "sonner";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -54,9 +55,9 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="relative w-full flex flex-col lg:flex-row items-stretch rounded-2xl border border-teal/20 bg-background/20 backdrop-blur-xs overflow-hidden group">
+        <AnimateStagger className="relative w-full flex flex-col lg:flex-row items-stretch rounded-2xl border border-teal/20 bg-background/20 backdrop-blur-xs overflow-hidden group">
             {/* Sidebar Content */}
-            <div className="w-full lg:w-1/3 relative p-8 md:p-12 flex flex-col justify-between bg-linear-to-b from-teal/8 to-teal/1 border-b lg:border-b-0 lg:border-r border-teal/20">
+            <AnimateItem className="w-full lg:w-1/3 relative p-8 md:p-12 flex flex-col justify-between bg-linear-to-b from-teal/8 to-teal/1 border-b lg:border-b-0 lg:border-r border-teal/20">
                 <div>
                     <h1 className="text-2xl md:text-3xl font-oxanium font-bold tracking-wide text-foreground leading-tight mb-3">
                         Let's get in touch.
@@ -79,13 +80,11 @@ const ContactForm = () => {
                         amazing together.
                     </p>
                 </div>
-            </div>
+            </AnimateItem>
 
             {/* Form Content */}
-            <form
-                action={formAction}
-                className="w-full lg:w-2/3 md:p-15 flex flex-col gap-4 relative z-10 bg-transparent font-poppins"
-            >
+            <AnimateItem className="w-full lg:w-2/3 md:p-15 relative z-10 bg-transparent font-poppins">
+                <form action={formAction} className="flex flex-col gap-4 h-full">
 
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
                     <div className="flex flex-col gap-1 flex-1">
@@ -176,8 +175,9 @@ const ContactForm = () => {
                 <div className="mt-auto">
                     <SubmitButton />
                 </div>
-            </form>
-        </div>
+                </form>
+            </AnimateItem>
+        </AnimateStagger>
     );
 };
 

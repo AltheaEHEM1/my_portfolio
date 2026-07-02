@@ -1,0 +1,41 @@
+"use client";
+
+import blogPosts from "@/data/blog.json";
+import Link from "next/link";
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
+
+const BlogPostsGrid = () => {
+	return (
+		<AnimateStagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			{blogPosts.map((post) => (
+				<AnimateItem key={post.id}>
+					<article className="group flex flex-col border border-slate-200 dark:border-slate-800 p-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 hover:border-cyan-500/50">
+						<div className="text-cyan-600 dark:text-cyan-500 text-xs font-semibold tracking-wider mb-3 uppercase">
+							{post.category} • {post.date}
+						</div>
+
+						<h2 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+							{post.title}
+						</h2>
+
+						<p className="text-slate-600 dark:text-slate-400 text-sm font-mono leading-relaxed mb-6 flex-grow">
+							{post.excerpt}
+						</p>
+
+						<Link
+							href={`/blog/${post.id}`}
+							className="inline-flex items-center text-sm font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors"
+						>
+							READ LOG
+							<span className="ml-2 transform transition-transform group-hover:translate-x-1">
+								→
+							</span>
+						</Link>
+					</article>
+				</AnimateItem>
+			))}
+		</AnimateStagger>
+	);
+};
+
+export default BlogPostsGrid;

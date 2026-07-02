@@ -1,6 +1,7 @@
 "use client";
 
 import SkillCategoriesData from "../../data/skill-categories.json";
+import { AnimateItem, AnimateStagger } from "../page-animate-provider";
 
 interface SkillCategory {
 	category: string;
@@ -12,10 +13,9 @@ const SkillCategories = () => {
 
 	return (
 		<div className="w-full mx-auto py-2 px-6 md:px-10 selection:bg-teal-500/30">
-			{/* Timeline Wrapper */}
-			<div className="relative border-l-2 border-slate-200/60 dark:border-slate-800 pl-8 ml-3 space-y-5">
+			<AnimateStagger className="relative border-l-2 border-slate-200/60 dark:border-slate-800 pl-8 ml-3 space-y-5">
 				{data.map((item: SkillCategory) => (
-					<div key={item.category} className="relative group">
+					<AnimateItem key={item.category} className="relative group">
 						<div className="absolute -left-10.25 flex items-center justify-center">
 							<div className="w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 group-hover:bg-teal-500 transition-all duration-300 ring-4 ring-transparent group-hover:ring-teal-500/20 shadow-sm" />
 						</div>
@@ -37,9 +37,9 @@ const SkillCategories = () => {
 								))}
 							</div>
 						</div>
-					</div>
+					</AnimateItem>
 				))}
-			</div>
+			</AnimateStagger>
 		</div>
 	);
 };
