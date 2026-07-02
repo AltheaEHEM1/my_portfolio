@@ -83,7 +83,9 @@ export default function RootLayout({
 				<MatrixBackground />
 
 				{/* Navbar */}
-				<NavHeader />
+				<div id="global-nav-header">
+					<NavHeader />
+				</div>
 
 				{/* Main Content Safe Layer */}
 				<main className="relative z-10 mb-10">
@@ -93,10 +95,12 @@ export default function RootLayout({
 				</main>
 
 				{/* Scroll to Top Button */}
-				<ScrollToTop />
+				<div id="global-scroll-to-top">
+					<ScrollToTop />
+				</div>
 
 				{/* Footer */}
-				<footer className="mt-auto">
+				<footer id="global-footer" className="mt-auto">
 					<Footer />
 				</footer>
 			</body>

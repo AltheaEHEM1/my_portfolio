@@ -14,10 +14,16 @@ export default function ErrorPage({
 		error.message.toLowerCase().includes("network");
 
 	return (
-		<div
-			data-page-type="error"
-			className="flex min-h-100 flex-col items-center justify-center p-6 text-center"
-		>
+		<>
+			<style>{`
+				#global-nav-header, #global-scroll-to-top, #global-footer {
+					display: none !important;
+				}
+			`}</style>
+			<div
+				data-page-type="error"
+				className="flex min-h-100 flex-col items-center justify-center p-6 text-center"
+			>
 			{/* Abstract Error Motif */}
 			<motion.div
 				initial={{ opacity: 0, scale: 0.9 }}
@@ -46,5 +52,6 @@ export default function ErrorPage({
 				Back to Home
 			</Link>
 		</div>
+		</>
 	);
 }

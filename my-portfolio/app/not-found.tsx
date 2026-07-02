@@ -5,10 +5,16 @@ import Link from "next/link";
 
 export default function NotFound404() {
 	return (
-		<div
-			data-page-type="not-found"
-			className="flex flex-col items-center justify-center text-center"
-		>
+		<>
+			<style>{`
+				#global-nav-header, #global-scroll-to-top, #global-footer {
+					display: none !important;
+				}
+			`}</style>
+			<div
+				data-page-type="not-found"
+				className="flex flex-col items-center justify-center text-center min-h-100 p-6"
+			>
 			{/* Roadblock Illustration */}
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}
@@ -73,5 +79,6 @@ export default function NotFound404() {
 				Back to Home
 			</Link>
 		</div>
+		</>
 	);
 }
