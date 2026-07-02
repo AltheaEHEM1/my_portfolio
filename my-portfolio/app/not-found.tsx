@@ -48,12 +48,14 @@ export default function NotFound404() {
 				<motion.div
 					animate={{ y: [0, -10, 0] }}
 					transition={{ repeat: Infinity, duration: 2 }}
-					className="absolute -bottom-10 left-10 w-16 h-20 bg-orange-600 rounded-t-sm clip-cone"
+					className="absolute -bottom-10 left-10 w-16 h-20 bg-orange-600 rounded-t-sm"
+					style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
 				/>
 				<motion.div
 					animate={{ y: [0, -10, 0] }}
 					transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
-					className="absolute -bottom-10 right-10 w-16 h-20 bg-orange-600 rounded-t-sm clip-cone"
+					className="absolute -bottom-10 right-10 w-16 h-20 bg-orange-600 rounded-t-sm"
+					style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
 				/>
 			</motion.div>
 
@@ -70,12 +72,6 @@ export default function NotFound404() {
 			>
 				Back to Home
 			</Link>
-
-			<style jsx>{`
-        .clip-cone {
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        }
-      `}</style>
 		</div>
 	);
 }
