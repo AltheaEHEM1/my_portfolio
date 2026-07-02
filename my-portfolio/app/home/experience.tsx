@@ -1,15 +1,16 @@
+"use client";
+
 import ExperienceData from "../../data/experience.json";
+import { AnimateItem, AnimateStagger } from "../page-animate-provider";
 
 const Experience = () => {
 	return (
-		<div className="w-full py-8 space-y-6">
+		<AnimateStagger className="w-full py-8 space-y-6">
 			{ExperienceData.map((exp) => (
-				<div
+				<AnimateItem
 					key={exp.id}
 					className="relative flex justify-center lg:justify-end lg:pr-8 group"
 				>
-					{/* The Dot */}
-
 					<div className="absolute -right-2 top-6 hidden lg:block w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 z-10" />
 
 					<div className="relative w-full max-w-lg border border-black/20 dark:border-border rounded-xl p-5 bg-transparent font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl">
@@ -29,9 +30,9 @@ const Experience = () => {
 
 						<p className="text-xs text-slate-500 italic">📍 {exp.location}</p>
 					</div>
-				</div>
+				</AnimateItem>
 			))}
-		</div>
+		</AnimateStagger>
 	);
 };
 

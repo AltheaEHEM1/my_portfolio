@@ -6,7 +6,6 @@ import {
     Rajdhani,
     Space_Mono,
 } from "next/font/google";
-import { Toaster } from "sonner"; // Added import
 import "./globals.css";
 
 import MatrixBackground from "../components/background/hero-background";
@@ -64,49 +63,40 @@ export default function RootLayout({
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
-                            (function() {
-                                try {
-                                    var savedTheme = localStorage.getItem('theme');
-                                    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                                    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                                        document.documentElement.classList.add('dark');
-                                    } else {
-                                        document.documentElement.classList.remove('dark');
-                                    }
-                                } catch (e) {}
-                            })();
-                        `,
+							(function() {
+								try {
+									var savedTheme = localStorage.getItem('theme');
+									var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+									if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+										document.documentElement.classList.add('dark');
+									} else {
+										document.documentElement.classList.remove('dark');
+									}
+								} catch (e) {}
+							})();
+						`,
                     }}
                 />
             </head>
             <body className="min-h-full flex flex-col relative bg-background text-foreground">
-                <Toaster richColors position="top-right" />
-                
                 {/* Background Design */}
                 <MatrixBackground />
 
-                {/* Navbar - Fixed and Sticky */}
-                <div id="global-nav-header" className="sticky top-0 z-50">
-                    <NavHeader />
-                </div>
+                {/* Navbar */}
+                <NavHeader />
 
-                {/* Main Content */}
-                <main className="relative z-10 mb-10 flex-grow">
+                {/* Main Content Safe Layer */}
+                <main className="relative z-10 mb-10">
                     <PageAnimateProvider>
                         <div className="w-full">{children}</div>
                     </PageAnimateProvider>
                 </main>
 
-                {/* Scroll to Top */}
-                <div 
-					id="global-scroll-to-top" 
-					className="flex pt-10 justify-center"
-					>
-						<ScrollToTop />
-				</div>
+                {/* Scroll to Top Button */}
+                <ScrollToTop />
 
                 {/* Footer */}
-                <footer id="global-footer" className="mt-auto relative z-10">
+                <footer className="mt-auto">
                     <Footer />
                 </footer>
             </body>

@@ -43,8 +43,7 @@ export default function ScrollToTop(): React.JSX.Element | null {
 	}
 
 	return (
-		<button
-			type="button"
+		<button type="button"
 			onClick={scrollToTop}
 			className="flex flex-col items-center mb-5 group cursor-pointer transition-all hover:-translate-y-1"
 			aria-label="Scroll to top"
