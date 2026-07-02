@@ -15,7 +15,7 @@ export default function Loading() {
     return <ProjectsSkeleton />;
   } else if (pathname === "/contact") {
     return <ContactSkeleton />;
-  } else if (pathname === "/blog") {
+  } else if (pathname?.startsWith("/blog")) {
     return <BlogSkeleton />;
   }
 
@@ -255,11 +255,33 @@ function ContactSkeleton() {
 function BlogSkeleton() {
   return (
     <div className="w-full px-4 md:px-0">
+      {/* Hero Section Skeleton */}
       <div className="w-full text-center py-15 relative overflow-hidden h-40 flex flex-col items-center justify-center">
         <Skeleton className="absolute inset-0 h-full w-full" />
         <Skeleton className="h-8 w-40 rounded-xl z-20 mb-2" />
         <Skeleton className="h-4 w-64 rounded-lg z-20" />
       </div>
+
+      {/* Blog Posts Grid Skeleton */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div
+              key={i}
+              className="flex flex-col border border-slate-200 dark:border-slate-800 p-6 rounded-xl h-[280px]"
+            >
+              <Skeleton className="h-3 w-32 mb-4 rounded-md" />
+              <Skeleton className="h-6 w-3/4 mb-4 rounded-md" />
+              <div className="space-y-2 mb-6 flex-grow">
+                <Skeleton className="h-4 w-full rounded-md" />
+                <Skeleton className="h-4 w-full rounded-md" />
+                <Skeleton className="h-4 w-5/6 rounded-md" />
+              </div>
+              <Skeleton className="h-4 w-24 rounded-md" />
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

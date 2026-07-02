@@ -15,13 +15,13 @@ const Contact = async () => {
 			/>
 
 			<section>
-				<p className="text-[15px] pt-5 text-teal font-valorant">
+				<p className="text-[20px] py-5 text-teal font-valorant">
 					{"01 ----// CONTACT ME FORM"}
 				</p>
 
 				<ContactForm />
 
-				<p className="text-[15px] pt-20 text-teal font-valorant">
+				<p className="text-[20px] pt-20 text-teal font-valorant">
 					{"02 ----// CONTACT ME THROUGH"}
 				</p>
 

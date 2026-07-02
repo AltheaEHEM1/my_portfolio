@@ -3,7 +3,7 @@
 import { useActionState, useEffect, useState } from "react";
 import { submitContact } from "./actions";
 import { SubmitButton } from "./submit-button";
-import { toast } from "sonner"; // 1. Import toast
+import { toast } from "sonner"; 
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
