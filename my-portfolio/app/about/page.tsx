@@ -6,7 +6,7 @@ const About = async () => {
 	await new Promise((resolve) => setTimeout(resolve, 2000));
 
 	return (
-		<section className="max-w-7xl mx-auto">
+		<section className="max-w-7xl mx-auto px-4">
 			<HeaderAbout />
 
 			<p className="text-[20px] pt-20 text-teal font-valorant">

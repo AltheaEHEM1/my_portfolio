@@ -46,11 +46,11 @@ const IntroPage = () => {
 					<div className="md:col-span-8 flex flex-col items-center md:items-start text-center md:text-left pb-4 order-2 px-2">
 						<div className="relative z-0 opacity-35 font-black tracking-widest mt-8 pointer-events-none select-none font-valorant">
 							<div className="flex flex-col">
-								<h2 className="text-teal-500 dark:text-teal-300 text-stroke-black dark:text-stroke-white paint-order-stroke text-[45px] leading-[1]">
+								<h2 className="text-teal-500 dark:text-teal-300 text-stroke-black dark:text-stroke-white paint-order-stroke text-3xl md:text-[45px] leading-[1]">
 								hi, i am
 								</h2>
 
-								<h1 className="text-teal-500 dark:text-teal-300 text-stroke-black dark:text-stroke-white paint-order-stroke text-[90px] leading-[1]">
+								<h1 className="text-teal-500 dark:text-teal-300 text-stroke-black dark:text-stroke-white paint-order-stroke text-5xl sm:text-6xl md:text-[90px] leading-[1]">
 								ALTHEA AMOR
 								</h1>
 							</div>

@@ -14,7 +14,7 @@ const Contact = async () => {
 				description="Feel free to reach out for collaborations or inquiries."
 			/>
 
-			<section>
+			<section className="max-w-7xl mx-auto px-4">
 				<p className="text-[20px] py-5 text-teal font-valorant">
 					{"01 ----// CONTACT ME FORM"}
 				</p>
