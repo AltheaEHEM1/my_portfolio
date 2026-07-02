@@ -1,8 +1,8 @@
 "use client";
 
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 import contactData from "@/data/contactme.json";
 import FlipContactCard from "./contact-card";
-import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 
 const ContactCardsGrid = () => {
 	return (

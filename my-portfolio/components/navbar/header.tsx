@@ -32,7 +32,7 @@ export default function NavHeader(): React.JSX.Element {
 	// Close mobile menu on page transition
 	useEffect(() => {
 		setIsMenuOpen(false);
-	}, [pathname]);
+	}, []);
 
 	const toggleDarkMode = () => {
 		const isDark = document.documentElement.classList.contains("dark");
@@ -73,15 +73,16 @@ export default function NavHeader(): React.JSX.Element {
 									item.href === "/"
 										? pathname === "/"
 										: pathname === item.href ||
-										pathname.startsWith(`${item.href}/`);
+											pathname.startsWith(`${item.href}/`);
 								return (
 									<li key={item.name}>
 										<Link
 											href={item.href}
-											className={`px-4 py-2.5 text-xs tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
-												? "bg-(--nav-bg-btn) text-(--nav-teal)"
-												: "text-(--nav-text-color) hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-												}`}
+											className={`px-4 py-2.5 text-xs tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${
+												isActive
+													? "bg-(--nav-bg-btn) text-(--nav-teal)"
+													: "text-(--nav-text-color) hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+											}`}
 										>
 											{item.name}
 										</Link>
@@ -162,10 +163,11 @@ export default function NavHeader(): React.JSX.Element {
 
 			{/* Mobile Menu Dropdown */}
 			<div
-				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
-					? "max-h-64 border-t border-(--nav-border-color) opacity-100"
-					: "max-h-0 opacity-0 pointer-events-none"
-					}`}
+				className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+					isMenuOpen
+						? "max-h-64 border-t border-(--nav-border-color) opacity-100"
+						: "max-h-0 opacity-0 pointer-events-none"
+				}`}
 			>
 				<ul className="px-4 py-3 space-y-1 bg-(--nav-bg-color) backdrop-blur-md">
 					{navItems.map((item) => {
@@ -173,15 +175,16 @@ export default function NavHeader(): React.JSX.Element {
 							item.href === "/"
 								? pathname === "/"
 								: pathname === item.href ||
-								pathname.startsWith(`${item.href}/`);
+									pathname.startsWith(`${item.href}/`);
 						return (
 							<li key={item.name}>
 								<Link
 									href={item.href}
-									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${isActive
-										? "bg-(--nav-bg-btn) text-(--nav-teal)"
-										: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
-										}`}
+									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${
+										isActive
+											? "bg-(--nav-bg-btn) text-(--nav-teal)"
+											: "text-slate-600 dark:text-slate-300 hover:text-(--nav-teal) dark:hover:text-teal-200 hover:bg-(--nav-bg-hover)"
+									}`}
 								>
 									{item.name}
 								</Link>

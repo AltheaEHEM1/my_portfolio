@@ -1,8 +1,8 @@
 "use client";
 
-import blogPosts from "@/data/blog.json";
 import Link from "next/link";
 import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
+import blogPosts from "@/data/blog.json";
 
 const BlogPostsGrid = () => {
 	return (

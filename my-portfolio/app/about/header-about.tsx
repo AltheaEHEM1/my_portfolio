@@ -48,12 +48,12 @@ const HeaderAbout = () => {
 	useEffect(() => {
 		if (isInView && step === 0) {
 			const sequence = async () => {
-				await name.start(); 
-				setStep(1); 
+				await name.start();
+				setStep(1);
 				await new Promise((r) => setTimeout(r, 300));
-				setStep(2); 
-				await body.start(); 
-				setStep(3); 
+				setStep(2);
+				await body.start();
+				setStep(3);
 			};
 			sequence();
 		}
@@ -70,7 +70,7 @@ const HeaderAbout = () => {
 				className="md:col-span-5 relative flex justify-center md:justify-end"
 			>
 				{/* Changed max-w-xs to max-w-sm or max-w-md for a larger footprint */}
-				<div className="relative group w-full max-w-sm md:max-w-md"> 
+				<div className="relative group w-full max-w-sm md:max-w-md">
 					<div className="aspect-4/5 overflow-hidden border border-teal-500/20 rounded-2xl shadow-inner relative transition-all duration-300 group-hover:border-teal-500/50">
 						<div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0 pointer-events-none p-4">
 							<h2
@@ -87,11 +87,11 @@ const HeaderAbout = () => {
 								Portfolio Portfolio Portfolio Portfolio
 							</h2>
 						</div>
-						<Image 
-							src="/assets/avatar.png" 
-							alt="Althea" 
-							fill 
-							className="object-cover" 
+						<Image
+							src="/assets/avatar.png"
+							alt="Althea"
+							fill
+							className="object-cover"
 						/>
 					</div>
 				</div>
@@ -105,7 +105,10 @@ const HeaderAbout = () => {
 
 				{/* 2. Badge */}
 				{step >= 1 && (
-					<motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+					<motion.div
+						initial={{ opacity: 0, y: 10 }}
+						animate={{ opacity: 1, y: 0 }}
+					>
 						{/* Added dark mode background/text classes */}
 						<Badge className="bg-teal-100/50 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">
 							<span className="size-1 rounded-full bg-teal-700 dark:bg-teal-400 animate-pulse"></span>

@@ -22,7 +22,10 @@ const Home = async () => {
 					<AnimateSection delay={1} className="lg:col-span-5 w-full">
 						<SkillsCategories />
 					</AnimateSection>
-					<AnimateSection delay={2} className="lg:col-span-7 w-full flex justify-center">
+					<AnimateSection
+						delay={2}
+						className="lg:col-span-7 w-full flex justify-center"
+					>
 						<Skills />
 					</AnimateSection>
 				</div>

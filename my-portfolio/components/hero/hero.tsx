@@ -28,8 +28,12 @@ const HeroSection = ({
 
 			{/* Content Container */}
 			<div className="flex flex-col items-center justify-center relative z-20 text-white px-4">
-				<h1 className="text-2xl sm:text-3xl md:text-4xl font-valorant">{title}</h1>
-				<p className="text-[10px] sm:text-xs md:text-sm font-poppins text-gray-200 mt-2 max-w-2xl">{description}</p>
+				<h1 className="text-2xl sm:text-3xl md:text-4xl font-valorant">
+					{title}
+				</h1>
+				<p className="text-[10px] sm:text-xs md:text-sm font-poppins text-gray-200 mt-2 max-w-2xl">
+					{description}
+				</p>
 			</div>
 		</div>
 	);

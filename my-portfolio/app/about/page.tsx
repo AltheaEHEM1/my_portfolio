@@ -1,7 +1,7 @@
+import { AnimateSection } from "../page-animate-provider";
 import Certification from "./certification";
 import HeaderAbout from "./header-about";
 import Hobbies from "./hobbies";
-import { AnimateSection } from "../page-animate-provider";
 
 const About = async () => {
 	await new Promise((resolve) => setTimeout(resolve, 2000));

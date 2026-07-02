@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { Swiper as SwiperClass } from "swiper";
-import projectsData from "@/data/projects.json";
 import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
+import projectsData from "@/data/projects.json";
 import CurvedCarousel from "../projects/curved-carousel";
 
 // Define the shape of your project data
@@ -72,20 +72,20 @@ function FeaturedProjectsCarousel({
 			</AnimateItem>
 
 			<AnimateItem className="w-full">
-			<CurvedCarousel
-				items={projects}
-				className="mb-3 h-112.5 w-full"
-				autoplay={true}
-				autoplayDelay={4000}
-				onActiveIndexChange={setActiveIndex}
-				onSwiper={setSwiperInstance}
-				renderSlide={(project: Project, index: number) => (
-					<ProjectPlaceholderSlide
-						project={project}
-						isActive={index === activeIndex}
-					/>
-				)}
-			/>
+				<CurvedCarousel
+					items={projects}
+					className="mb-3 h-112.5 w-full"
+					autoplay={true}
+					autoplayDelay={4000}
+					onActiveIndexChange={setActiveIndex}
+					onSwiper={setSwiperInstance}
+					renderSlide={(project: Project, index: number) => (
+						<ProjectPlaceholderSlide
+							project={project}
+							isActive={index === activeIndex}
+						/>
+					)}
+				/>
 			</AnimateItem>
 
 			<AnimateItem className="relative z-40 flex items-center justify-center gap-4 md:gap-4">

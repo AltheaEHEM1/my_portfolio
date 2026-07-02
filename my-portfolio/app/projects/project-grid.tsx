@@ -1,8 +1,8 @@
 "use client";
 
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 import ProjectCards from "@/app/projects/project-cards";
 import allProjects from "@/data/projects.json";
-import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 
 const GRID_PROJECTS = allProjects;
 

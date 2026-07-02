@@ -1,7 +1,7 @@
+import { AnimateSection } from "@/app/page-animate-provider";
 import HeroSection from "@/components/hero/hero";
 import ContactCardsGrid from "./contact-cards-grid";
 import ContactForm from "./contact-form";
-import { AnimateSection } from "@/app/page-animate-provider";
 
 const Contact = async () => {
 	await new Promise((resolve) => setTimeout(resolve, 2000));
