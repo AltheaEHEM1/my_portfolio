@@ -45,13 +45,10 @@ export default function FeaturesAndFunctionalities({
 				features.length > 4 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1"
 			}`}
 		>
-			{features.map((feature, idx) => {
+			{features.map((feature) => {
 				const IconComponent = getIcon(feature.icon);
 				return (
-					<div
-						key={`${feature.name}-${idx}`}
-						className="flex items-start gap-2"
-					>
+					<div key={feature.name} className="flex items-start gap-2">
 						<div className="shrink-0 mt-0.5">
 							<IconComponent className="w-5 h-5 text-black" />
 						</div>

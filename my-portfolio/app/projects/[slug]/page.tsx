@@ -133,7 +133,7 @@ export function BaseProjectDetails({
 													? project.techstack
 													: []) as string[]
 										).map((tech: string, index: number, arr: string[]) => (
-											<React.Fragment key={index}>
+											<React.Fragment key={tech}>
 												<span>{tech}</span>
 												{index < arr.length - 1 && (
 													<span className="text-teal-dark/30 font-light select-none">
