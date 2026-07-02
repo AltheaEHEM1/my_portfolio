@@ -1,11 +1,12 @@
 "use client";
 
 import { useActionState, useEffect, useState } from "react";
+import { toast } from "sonner";
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 import { submitContact } from "./actions";
 import { SubmitButton } from "./submit-button";
 
 const ContactForm = () => {
-	// 1. Initialize local form state
 	const [formData, setFormData] = useState({
 		firstName: "",
 		lastName: "",
@@ -13,11 +14,10 @@ const ContactForm = () => {
 		message: "",
 	});
 
-	// 2. Initialize action and error state once
 	const [state, formAction] = useActionState(submitContact, {});
 	const [errors, setErrors] = useState<Record<string, string>>({});
 
-	// 3. Side effect to clear form on successful submission
+	// 2. Trigger toasts in your useEffect
 	useEffect(() => {
 		if (state?.success) {
 			setFormData({
@@ -26,6 +26,9 @@ const ContactForm = () => {
 				email: "",
 				message: "",
 			});
+			toast.success("Message received. I'll get back to you soon!");
+		} else if (state?.error) {
+			toast.error(state.error || "Failed to send message.");
 		}
 	}, [state]);
 
@@ -52,9 +55,9 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="relative w-full flex flex-col lg:flex-row items-stretch rounded-2xl border border-teal/20 bg-background/20 backdrop-blur-xs overflow-hidden group">
+		<AnimateStagger className="relative w-full flex flex-col lg:flex-row items-stretch rounded-2xl border border-teal/20 bg-background/20 backdrop-blur-xs overflow-hidden group">
 			{/* Sidebar Content */}
-			<div className="w-full lg:w-1/3 relative p-8 md:p-12 flex flex-col justify-between bg-linear-to-b from-teal/8 to-teal/1 border-b lg:border-b-0 lg:border-r border-teal/20">
+			<AnimateItem className="w-full lg:w-1/3 relative p-8 md:p-12 flex flex-col justify-between bg-linear-to-b from-teal/8 to-teal/1 border-b lg:border-b-0 lg:border-r border-teal/20">
 				<div>
 					<h1 className="text-2xl md:text-3xl font-oxanium font-bold tracking-wide text-foreground leading-tight mb-3">
 						Let's get in touch.
@@ -77,115 +80,103 @@ const ContactForm = () => {
 						amazing together.
 					</p>
 				</div>
-			</div>
+			</AnimateItem>
 
 			{/* Form Content */}
-			<form
-				action={formAction}
-				className="w-full lg:w-2/3 md:p-15 flex flex-col gap-4 relative z-10 bg-transparent font-poppins"
-			>
-				{state?.success && (
-					<div className="rounded-lg border border-teal/30 bg-teal/10 px-3 py-2 text-xs text-teal">
-						✓ Transmission received.
+			<AnimateItem className="w-full lg:w-2/3 md:p-15 relative z-10 bg-transparent font-poppins">
+				<form action={formAction} className="flex flex-col gap-4 h-full">
+					<div className="flex flex-col sm:flex-row gap-4 w-full">
+						<div className="flex flex-col gap-1 flex-1">
+							<label
+								htmlFor="LastName"
+								className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
+							>
+								Last Name <span className="text-red-500">*</span>
+							</label>
+							<input
+								id="LastName"
+								name="lastName"
+								type="text"
+								placeholder="Enter Last Name"
+								maxLength={50}
+								required
+								value={formData.lastName}
+								onChange={handleInputChange}
+								className="w-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none placeholder:text-muted-foreground/50"
+							/>
+							{errors.lastName && (
+								<p className="text-[10px] text-red-400">{errors.lastName}</p>
+							)}
+						</div>
+						<div className="flex flex-col gap-1 flex-1">
+							<label
+								htmlFor="FirstName"
+								className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
+							>
+								First Name <span className="text-red-500">*</span>
+							</label>
+							<input
+								id="FirstName"
+								name="firstName"
+								type="text"
+								placeholder="Enter First Name"
+								maxLength={50}
+								required
+								value={formData.firstName}
+								onChange={handleInputChange}
+								className="w-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none placeholder:text-muted-foreground/50"
+							/>
+							{errors.firstName && (
+								<p className="text-[10px] text-red-400">{errors.firstName}</p>
+							)}
+						</div>
 					</div>
-				)}
-				{state?.error && (
-					<div className="rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-xs text-red-400">
-						⚠ {state.error}
-					</div>
-				)}
 
-				<div className="flex flex-col sm:flex-row gap-4 w-full">
-					<div className="flex flex-col gap-1 flex-1">
+					<div className="flex flex-col gap-1">
 						<label
-							htmlFor="LastName"
+							htmlFor="Email"
 							className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
 						>
-							Last Name <span className="text-red-500">*</span>
+							Email Address <span className="text-red-500">*</span>
 						</label>
 						<input
-							id="LastName"
-							name="lastName"
-							type="text"
-							placeholder="Enter Last Name"
+							id="Email"
+							name="email"
+							type="email"
 							maxLength={50}
+							placeholder="example@gmail.com"
 							required
-							value={formData.lastName}
+							value={formData.email}
 							onChange={handleInputChange}
 							className="w-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none placeholder:text-muted-foreground/50"
 						/>
-						{errors.lastName && (
-							<p className="text-[10px] text-red-400">{errors.lastName}</p>
-						)}
 					</div>
-					<div className="flex flex-col gap-1 flex-1">
+
+					<div className="flex flex-col gap-1 grow">
 						<label
-							htmlFor="FirstName"
+							htmlFor="Message"
 							className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
 						>
-							First Name <span className="text-red-500">*</span>
+							Message <span className="text-red-500">*</span>
 						</label>
-						<input
-							id="FirstName"
-							name="firstName"
-							type="text"
-							placeholder="Enter First Name"
-							maxLength={50}
+						<textarea
+							id="Message"
+							name="message"
 							required
-							value={formData.firstName}
+							placeholder="Type a message"
+							rows={6}
+							value={formData.message}
 							onChange={handleInputChange}
-							className="w-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none placeholder:text-muted-foreground/50"
+							className="w-full h-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none resize-none placeholder:text-muted-foreground/50"
 						/>
-						{errors.firstName && (
-							<p className="text-[10px] text-red-400">{errors.firstName}</p>
-						)}
 					</div>
-				</div>
 
-				<div className="flex flex-col gap-1">
-					<label
-						htmlFor="Email"
-						className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
-					>
-						Email Address <span className="text-red-500">*</span>
-					</label>
-					<input
-						id="Email"
-						name="email"
-						type="email"
-						maxLength={50}
-						placeholder="example@gmail.com"
-						required
-						value={formData.email}
-						onChange={handleInputChange}
-						className="w-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none placeholder:text-muted-foreground/50"
-					/>
-				</div>
-
-				<div className="flex flex-col gap-1 grow">
-					<label
-						htmlFor="Message"
-						className="text-[10px] uppercase tracking-wider text-text/80 pl-1"
-					>
-						Message <span className="text-red-500">*</span>
-					</label>
-					<textarea
-						id="Message"
-						name="message"
-						required
-						placeholder="Type a message"
-						rows={6}
-						value={formData.message}
-						onChange={handleInputChange}
-						className="w-full h-full rounded-lg border border-teal/20 bg-background/40 p-3 text-sm focus:border-teal outline-none resize-none placeholder:text-muted-foreground/50"
-					/>
-				</div>
-
-				<div className="mt-auto">
-					<SubmitButton />
-				</div>
-			</form>
-		</div>
+					<div className="mt-auto">
+						<SubmitButton />
+					</div>
+				</form>
+			</AnimateItem>
+		</AnimateStagger>
 	);
 };
 

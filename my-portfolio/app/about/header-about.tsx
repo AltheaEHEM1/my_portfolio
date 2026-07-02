@@ -48,12 +48,12 @@ const HeaderAbout = () => {
 	useEffect(() => {
 		if (isInView && step === 0) {
 			const sequence = async () => {
-				await name.start(); // Wait for name to finish
-				setStep(1); // Trigger Badge
+				await name.start();
+				setStep(1);
 				await new Promise((r) => setTimeout(r, 300));
-				setStep(2); // Trigger Paragraph
-				await body.start(); // Wait for body to finish
-				setStep(3); // Trigger Buttons
+				setStep(2);
+				await body.start();
+				setStep(3);
 			};
 			sequence();
 		}
@@ -69,15 +69,15 @@ const HeaderAbout = () => {
 				animate={{ opacity: 1, scale: 1 }}
 				className="md:col-span-5 relative flex justify-center md:justify-end"
 			>
-				<div className="relative group w-full max-w-xs">
+				{/* Changed max-w-xs to max-w-sm or max-w-md for a larger footprint */}
+				<div className="relative group w-full max-w-sm md:max-w-md">
 					<div className="aspect-4/5 overflow-hidden border border-teal-500/20 rounded-2xl shadow-inner relative transition-all duration-300 group-hover:border-teal-500/50">
-						{/* Background Text Layer: Positioned absolutely to sit behind, not touching the avatar */}
 						<div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0 pointer-events-none p-4">
 							<h2
-								className="text-teal-600 tracking-widest uppercase rotate-[-5deg] opacity-20 select-none text-center"
+								className="text-teal-600 dark:text-teal-400 tracking-widest uppercase rotate-[-5deg] opacity-20 select-none text-center"
 								style={{
-									fontSize: "50px",
-									WebkitTextStroke: "3px #000000",
+									fontSize: "clamp(40px, 8vw, 80px)",
+									WebkitTextStroke: "3px var(--text)",
 									paintOrder: "stroke fill",
 									lineHeight: "1.2",
 									fontFamily: "var(--font-valorant, sans-serif)",
@@ -87,17 +87,19 @@ const HeaderAbout = () => {
 								Portfolio Portfolio Portfolio Portfolio
 							</h2>
 						</div>
-
-						{/* Avatar Layer: Position remains exactly as before */}
-						<Image src="/assets/avatar.png" alt="Althea" fill />
+						<Image
+							src="/assets/avatar.png"
+							alt="Althea"
+							fill
+							className="object-cover"
+						/>
 					</div>
 				</div>
 			</motion.div>
 
-			{/* Content Column */}
 			<div className="md:col-span-6 pt-5 text-center md:text-left">
 				{/* 1. Name */}
-				<h2 className="text-3xl font-valorant text-gray-900 min-h-10">
+				<h2 className="text-4xl font-valorant text-foreground min-h-10">
 					<motion.span>{name.display}</motion.span>
 				</h2>
 
@@ -107,8 +109,9 @@ const HeaderAbout = () => {
 						initial={{ opacity: 0, y: 10 }}
 						animate={{ opacity: 1, y: 0 }}
 					>
-						<Badge className="bg-green-100 text-green-700">
-							<span className="size-1 rounded-full bg-teal-700 animate-pulse"></span>
+						{/* Added dark mode background/text classes */}
+						<Badge className="bg-teal-100/50 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">
+							<span className="size-1 rounded-full bg-teal-700 dark:bg-teal-400 animate-pulse"></span>
 							{"// Designing Solution · Building Reality"}
 						</Badge>
 					</motion.div>
@@ -119,7 +122,7 @@ const HeaderAbout = () => {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						className="mt-5 text-gray-700 text-xs font-mono text-justify whitespace-pre-wrap"
+						className="mt-5 text-muted-foreground text-sm font-mono text-justify whitespace-pre-wrap"
 					>
 						<motion.span>{body.display}</motion.span>
 					</motion.div>
@@ -132,33 +135,20 @@ const HeaderAbout = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="flex flex-row gap-3 justify-center md:justify-start w-full max-w-sm mt-5"
 					>
-						{/* View My Work Link */}
+						{/* View My Work - Using theme colors */}
 						<Link
 							href="/projects"
-							className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-all duration-300 shadow-md active:scale-95 hover:scale-105 hover:bg-teal-700 group relative overflow-hidden"
-							style={{
-								fontFamily: "var(--font-poppins, sans-serif)",
-								backgroundColor: "var(--teal, #0d9488)",
-								borderRadius: "0.75rem",
-							}}
+							className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-all duration-300 shadow-md active:scale-95 hover:scale-105 hover:bg-teal-700 bg-teal-600 rounded-xl group relative overflow-hidden"
 						>
 							<span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
 							view my work
 						</Link>
 
-						{/* Download CV Link */}
+						{/* Download CV - Using theme borders/backgrounds */}
 						<Link
 							href="/assets/Althea_Amor_Asis_CV.pdf"
 							target="_blank"
-							rel="noopener noreferrer"
-							className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest border transition-all duration-300 active:scale-95 hover:scale-105 hover:bg-teal-200 hover:border-teal-400"
-							style={{
-								fontFamily: "var(--font-poppins, sans-serif)",
-								color: "var(--nav-teal, #115e59)",
-								borderColor: "rgba(13, 148, 136, 0.2)",
-								backgroundColor: "var(--nav-bg-btn, rgba(187, 247, 237, 0.62))",
-								borderRadius: "0.75rem",
-							}}
+							className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest border transition-all duration-300 active:scale-95 hover:scale-105 bg-teal-50 border-teal-200 text-teal-800 dark:bg-teal-900/20 dark:border-teal-800 dark:text-teal-200 hover:bg-teal-100 dark:hover:bg-teal-800/40 rounded-xl"
 						>
 							Download CV
 						</Link>

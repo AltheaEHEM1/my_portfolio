@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import certs from "../../data/certification.json";
+import { AnimateItem, AnimateStagger } from "../page-animate-provider";
 
 interface Certification {
 	id: string | number;
@@ -17,27 +18,30 @@ export default function Certification() {
 	const [activeCert, setActiveCert] = useState<Certification>(certs[0]);
 
 	return (
-		<div className="flex w-full gap-12 px-15 pt-3 divide-x divide-border">
-			<aside className="w-80 shrink-0 pr-12">
+		<AnimateStagger className="flex w-full gap-12 px-15 pt-3 divide-x divide-border">
+			<AnimateItem className="w-80 shrink-0 pr-12">
 				<nav>
-					{certs.map((cert) => (
-						<button
-							type="button"
-							key={cert.id}
-							onClick={() => setActiveCert(cert)}
-							className={`w-full text-left px-3 py-2 text-base font-medium transition-all rounded-lg border ${
-								activeCert.id === cert.id
-									? "bg-teal-pale border-teal text-teal-dark shadow-sm"
-									: "border-transparent hover:bg-muted text-foreground"
-							}`}
-						>
-							{cert.title}
-						</button>
-					))}
+					<AnimateStagger className="space-y-1">
+						{certs.map((cert) => (
+							<AnimateItem key={cert.id}>
+								<button
+									type="button"
+									onClick={() => setActiveCert(cert)}
+									className={`w-full text-left px-3 py-2 text-base font-medium transition-all rounded-lg border ${
+										activeCert.id === cert.id
+											? "bg-teal-pale border-teal text-teal-dark shadow-sm"
+											: "border-transparent hover:bg-muted text-foreground"
+									}`}
+								>
+									{cert.title}
+								</button>
+							</AnimateItem>
+						))}
+					</AnimateStagger>
 				</nav>
-			</aside>
+			</AnimateItem>
 
-			<main className="flex-1">
+			<AnimateItem className="flex-1">
 				<h1 className="font-valorant text-lg text-foreground tracking-tight">
 					{activeCert.title}
 				</h1>
@@ -66,7 +70,7 @@ export default function Certification() {
 						{activeCert.description}
 					</p>
 				</div>
-			</main>
-		</div>
+			</AnimateItem>
+		</AnimateStagger>
 	);
 }

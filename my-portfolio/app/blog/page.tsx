@@ -1,13 +1,26 @@
+import BlogPostsGrid from "@/app/blog/blog-posts-grid";
+import { AnimateSection } from "@/app/page-animate-provider";
 import HeroSection from "@/components/hero/hero";
 
-const Blog = () => {
+const Blog = async () => {
+	// Simulate network request to trigger the Next.js suspense boundary (loading.tsx)
+	await new Promise((resolve) => setTimeout(resolve, 1500));
+
 	return (
-		<HeroSection
-			image="/assets/bg-hero/contact_bg.png"
-			subtitle="----// 001 - GET TO KNOW ME"
-			title="Projects"
-			description="this is the projects page"
-		/>
+		<main className="min-h-screentext-slate-200">
+			<AnimateSection>
+				<HeroSection
+					image="/assets/bg-hero/contact_bg.png"
+					subtitle="----// 002 - KNOWLEDGE BASE"
+					title="Developer Log"
+					description="Insights, technical deep dives, and reflections."
+				/>
+			</AnimateSection>
+
+			<section className="max-w-6xl mx-auto px-6 py-20">
+				<BlogPostsGrid />
+			</section>
+		</main>
 	);
 };
 

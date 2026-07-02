@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { Swiper as SwiperClass } from "swiper";
+import { AnimateItem, AnimateStagger } from "@/app/page-animate-provider";
 import projectsData from "@/data/projects.json";
 import CurvedCarousel from "../projects/curved-carousel";
 
@@ -58,8 +59,8 @@ function FeaturedProjectsCarousel({
 	const activeProject = projects[activeIndex] ?? projects[0];
 
 	return (
-		<div className="relative z-10 flex w-full flex-col items-center overflow-hidden bg-transparent py-12">
-			<div className="z-40 mb-2 mt-5 text-center">
+		<AnimateStagger className="relative z-10 flex w-full flex-col items-center overflow-hidden bg-transparent py-12">
+			<AnimateItem className="z-40 mb-2 mt-5 text-center">
 				<h2
 					className="text-3xl font-valorant tracking-widest"
 					style={{
@@ -68,24 +69,26 @@ function FeaturedProjectsCarousel({
 				>
 					{activeProject.title}
 				</h2>
-			</div>
+			</AnimateItem>
 
-			<CurvedCarousel
-				items={projects}
-				className="mb-3 h-112.5 w-full"
-				autoplay={true}
-				autoplayDelay={4000}
-				onActiveIndexChange={setActiveIndex}
-				onSwiper={setSwiperInstance}
-				renderSlide={(project: Project, index: number) => (
-					<ProjectPlaceholderSlide
-						project={project}
-						isActive={index === activeIndex}
-					/>
-				)}
-			/>
+			<AnimateItem className="w-full">
+				<CurvedCarousel
+					items={projects}
+					className="mb-3 h-112.5 w-full"
+					autoplay={true}
+					autoplayDelay={4000}
+					onActiveIndexChange={setActiveIndex}
+					onSwiper={setSwiperInstance}
+					renderSlide={(project: Project, index: number) => (
+						<ProjectPlaceholderSlide
+							project={project}
+							isActive={index === activeIndex}
+						/>
+					)}
+				/>
+			</AnimateItem>
 
-			<div className="relative z-40 flex items-center justify-center gap-4 md:gap-4">
+			<AnimateItem className="relative z-40 flex items-center justify-center gap-4 md:gap-4">
 				{/* Previous Button */}
 				<button
 					type="button"
@@ -112,19 +115,19 @@ function FeaturedProjectsCarousel({
 				>
 					<ChevronRight size={15} strokeWidth={2.5} />
 				</button>
-			</div>
+			</AnimateItem>
 
 			{/* Description Card */}
-			<div className="relative z-40 mt-6 w-full max-w-2xl px-4">
+			<AnimateItem className="relative z-40 mt-6 w-full max-w-2xl px-4">
 				<div className="relative rounded-xl border border-border bg-background/50 p-4 backdrop-blur-md shadow-sm">
 					<p className="line-clamp-3 text-center text-xs leading-relaxed text-muted-foreground md:text-sm md:leading-loose tracking-wide">
 						{activeProject.description}
 					</p>
 				</div>
-			</div>
+			</AnimateItem>
 
 			{/* Pagination Dots */}
-			<div className="z-40 mt-6 flex items-center justify-center gap-2">
+			<AnimateItem className="z-40 mt-6 flex items-center justify-center gap-2">
 				{projects.map((project, index) => (
 					<button
 						type="button"
@@ -138,8 +141,8 @@ function FeaturedProjectsCarousel({
 						aria-label={`Go to slide ${index + 1}`}
 					/>
 				))}
-			</div>
-		</div>
+			</AnimateItem>
+		</AnimateStagger>
 	);
 }
 

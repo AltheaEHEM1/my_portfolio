@@ -6,6 +6,7 @@ import {
 	Rajdhani,
 	Space_Mono,
 } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 import MatrixBackground from "../components/background/hero-background";
@@ -57,7 +58,23 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${rajdhani.variable} ${spaceMono.variable} h-full antialiased`}
+			suppressHydrationWarning
 		>
+			<head>
+				<Script id="theme-init" strategy="beforeInteractive">
+					{`(function() {
+						try {
+							var savedTheme = localStorage.getItem('theme');
+							var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+							if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+								document.documentElement.classList.add('dark');
+							} else {
+								document.documentElement.classList.remove('dark');
+							}
+						} catch (e) {}
+					})();`}
+				</Script>
+			</head>
 			<body className="min-h-full flex flex-col relative bg-background text-foreground">
 				{/* Background Design */}
 				<MatrixBackground />
