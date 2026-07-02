@@ -1,0 +1,655 @@
+[
+	{
+		"id": 1,
+		"title": "Faith, Hope, Love",
+		"subtitle": "Healthcare Service Website",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["Reactjs", "Docker Compose"],
+		"description": "The Faith Hope Love Clinic Website is an online healthcare information and service platform designed to provide patients with convenient access to clinic information, medical services, and communication channels. The system serves as a centralized digital interface that enables users to explore available healthcare services, learn about the clinic, and easily connect with medical professionals.",
+		"link": "https://faithhopelove-clinic.vercel.app",
+		"images": [
+			"failth-hope-love/FaithHopeLove1.png",
+			"failth-hope-love/FaithHopeLove2.png",
+			"failth-hope-love/FaithHopeLove3.png",
+			"failth-hope-love/FaithHopeLove4.png",
+			"failth-hope-love/FaithHopeLove5.png",
+			"failth-hope-love/FaithHopeLove6.png"
+		],
+		"features": [
+			{
+				"icon": "HomeIcon",
+				"name": "Dashboard (Home Page)",
+				"description": "A dynamic central hub providing quick access to clinic highlights, essential services, and patient resources."
+			},
+			{
+				"icon": "InformationCircleIcon",
+				"name": "About Management",
+				"description": "Showcases the clinic’s mission, vision, and heritage, building a foundation of trust with patients."
+			},
+			{
+				"icon": "SparklesIcon",
+				"name": "Specializations / Services Management",
+				"description": "Detailed showcase of diverse medical specializations and healthcare services offered by the clinic."
+			},
+			{
+				"icon": "ChatBubbleBottomCenterTextIcon",
+				"name": "Testimonials Management",
+				"description": "Integrated feedback system featuring patient testimonials and success stories to validate service quality."
+			},
+			{
+				"icon": "AcademicCapIcon",
+				"name": "Certificates and Affiliations Display",
+				"description": "Highlights official medical certifications, professional affiliations, and industry recognitions."
+			},
+			{
+				"icon": "PhoneIcon",
+				"name": "Contact Information Module",
+				"description": "Centralized contact hub with integrated maps, emergency contact details, and direct communication channels."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Search Function Module",
+				"description": "Advanced search functionality enabling patients to quickly locate specific services, doctors, or medical departments."
+			},
+			{
+				"icon": "Bars3Icon",
+				"name": "Navigation Menu Module",
+				"description": "Seamless and responsive navigation structure designed for intuitive user journeys across the entire platform."
+			},
+			{
+				"icon": "QueueListIcon",
+				"name": "Footer Information Module",
+				"description": "Comprehensive footer containing site-wide links, social media integration, and essential legal information."
+			}
+		]
+	},
+
+	{
+		"id": 2,
+		"title": "GFMIC E-Commerce",
+		"subtitle": "GFMIC - E-Commerce Platform",
+		"category": "Capstone",
+		"role": "Frontend Developer",
+		"techstack": ["Python", "Django", "Docker Compose"],
+		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
+		"link": "https://gfmic-ecommerce.vercel.app",
+		"images": [
+			"GfmicEcommerce/GfmicEcommerce1.png",
+			"GfmicEcommerce/GfmicEcommerce2.png",
+			"GfmicEcommerce/GfmicEcommerce3.png",
+			"GfmicEcommerce/GfmicEcommerce4.png",
+			"GfmicEcommerce/GfmicEcommerce5.png",
+			"GfmicEcommerce/GfmicEcommerce6.png",
+			"GfmicEcommerce/GfmicEcommerce7.png",
+			"GfmicEcommerce/GfmicEcommerce8.png",
+			"GfmicEcommerce/GfmicEcommerce9.png",
+			"GfmicEcommerce/gfmic-ecommerce.png"
+		],
+		"features": [
+			{
+				"icon": "UserGroupIcon",
+				"name": "User Management",
+				"description": "Comprehensive tools for handling customer profiles, roles, and secure authentication flows."
+			},
+			{
+				"icon": "ArchiveBoxIcon",
+				"name": "Product Management",
+				"description": "Easily add, categorize, and track product listings, variations, and rich media assets."
+			},
+			{
+				"icon": "ClipboardDocumentListIcon",
+				"name": "Inventory & Order Management",
+				"description": "Track stock levels, fulfill customer orders, and manage automated shipping updates in real-time."
+			},
+			{
+				"icon": "CreditCardIcon",
+				"name": "Payment System Integration",
+				"description": "Secure, seamless checkout experiences with unified support for major payment gateways."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Dashboard & Analytics",
+				"description": "Interactive data visualizations offering key insights into sales performance and customer trends."
+			},
+			{
+				"icon": "BellAlertIcon",
+				"name": "Notification System",
+				"description": "Automated email and in-app alerts to keep users updated on order statuses and promotions."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Search & Filtering",
+				"description": "High-performance queries and faceted search to quickly connect buyers with exactly what they want."
+			},
+			{
+				"icon": "PaintBrushIcon",
+				"name": "User Interface (UI/UX)",
+				"description": "Modern, responsive, and accessible interface built to maximize conversion rates across all devices."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Security Features",
+				"description": "Robust data protection frameworks, automated threat mitigation, and secure transaction handling."
+			},
+			{
+				"icon": "Cog8ToothIcon",
+				"name": "Admin Panel",
+				"description": "A centralized control hub to manage the entire storefront operation efficiently from one place."
+			},
+			{
+				"icon": "BoltIcon",
+				"name": "Scalability & Performance Optimization",
+				"description": "Optimized system architecture ensuring lightning-fast load times even during high-traffic events."
+			}
+		]
+	},
+
+	{
+		"id": 3,
+		"title": "Yo - etz | AI Interview",
+		"subtitle": "AI-Driven Admissions Support Platform",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": [
+			"Next typescript",
+			"Django",
+			"Postgres",
+			"Meta-Llama-3-8B-Instruct LLM",
+			"Docker Compose"
+		],
+		"description": "The AI-Assisted Initial Interview System is a digital platform designed to standardize and support the admissions process at PUP (QC and Caloocan). By conducting AI-guided video interviews, the system captures and summarizes applicant responses into structured reports for faculty review. It serves as a tool to improve transparency, reduce bias, and ensure a consistent assessment baseline, while leaving final evaluations to faculty decision-makers.",
+		"link": "https://yo-etz-ai-interview.vercel.app",
+		"images": [
+			"yoetz/AiINterview.jpg",
+			"yoetz/ApplicantList.jpg",
+			"yoetz/Dashboard.jpg",
+			"yoetz/FacultyLogin.jpg",
+			"yoetz/Profile.jpg",
+			"yoetz/QuestionsFinal.jpg",
+			"yoetz/StudentLogin.jpg",
+			"yoetz/Submission.jpg",
+			"yoetz/SubmissionSuccess.jpg"
+		],
+		"features": [
+			{
+				"icon": "CpuChipIcon",
+				"name": "AI-Guided Interviews",
+				"description": "Structured, program-based questions with intelligent follow-ups for a consistent and engaging interview experience."
+			},
+			{
+				"icon": "SparklesIcon",
+				"name": "AI-Powered Insights",
+				"description": "Instant transcription, structured summaries, and key insights—turning responses into meaningful data."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Instant Interview Reports",
+				"description": "Downloadable, well-structured reports combining transcripts and summaries for easy review."
+			},
+			{
+				"icon": "Cog6ToothIcon",
+				"name": "Centralized Administration",
+				"description": "Manage question banks, interview settings, and applicant eligibility—all in one place."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Transparent & Traceable",
+				"description": "Built-in audit logs ensure every action is recorded, secure, and accountable."
+			}
+		]
+	},
+
+	{
+		"id": 4,
+		"title": "StewardFM",
+		"subtitle": "Facility Management System",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["Python", "Django", "Docker Compose"],
+		"description": "StewardFM is a comprehensive facility management system designed to streamline operations, maintenance tracking, and resource allocation for organizations. It provides an intuitive dashboard for managing assets, scheduling maintenance tasks, and generating insightful reports for facility administrators.",
+		"link": "https://stewardfm.vercel.app",
+		"images": [
+			"stewardfm/StewardFm1.png",
+			"stewardfm/StewardFm2.png",
+			"stewardfm/StewardFm3.png"
+		],
+		"features": [
+			{
+				"icon": "CubeIcon",
+				"name": "Asset Lifecycle Management",
+				"description": "Comprehensive tracking of organizational resources from specialized acquisition to final decommissioning."
+			},
+			{
+				"icon": "CalendarDaysIcon",
+				"name": "Preventive Maintenance",
+				"description": "Automated scheduling and tracking of routine upkeep to ensure operational continuity."
+			},
+			{
+				"icon": "WrenchIcon",
+				"name": "Work Order Tracking",
+				"description": "Streamlined maintenance request system with efficient assignment and status monitoring."
+			},
+			{
+				"icon": "HomeIcon",
+				"name": "Facility Resource Allocation",
+				"description": "Optimized management of physical spaces, rooms, and equipment across multiple locations."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Reporting & Insights",
+				"description": "Data-driven dashboards providing deep visibility into facility health and operational costs."
+			}
+		]
+	},
+
+	{
+		"id": 5,
+		"title": "PUP Smart-Track",
+		"subtitle": "Inventory Management System",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["React", "Django", "PostgreSQL", "Docker Compose"],
+		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
+		"link": "https://pup-smart-track.vercel.app",
+		"images": [
+			"pup-smart-track/PupSmartTrack1.png",
+			"pup-smart-track/PupSmartTrack2.png",
+			"pup-smart-track/PupSmartTrack3.png",
+			"pup-smart-track/PupSmartTrack4.png",
+			"pup-smart-track/PupSmartTrack5.png",
+			"pup-smart-track/PupSmartTrack6.png",
+			"pup-smart-track/PupSmartTrack7.png",
+			"pup-smart-track/PupSmartTrack8.png",
+			"pup-smart-track/PupSmartTrack9.png"
+		],
+		"features": [
+			{
+				"icon": "SquaresPlusIcon",
+				"name": "Asset Management (Master Data)",
+				"description": "Centralized repository for all organizational assets, ensuring data integrity and a single source of truth."
+			},
+			{
+				"icon": "DeviceTabletIcon",
+				"name": "ICT Equipment Management (ICS)",
+				"description": "Maintain a dynamic registry of IT equipments, allowing for seamless updates and real-time tracking of digital infrastructure."
+			},
+			{
+				"icon": "ArrowPathIcon",
+				"name": "Asset Status Management",
+				"description": "Real-time visibility into the lifecycle of assets, from active use and repair to disposal."
+			},
+			{
+				"icon": "BuildingOfficeIcon",
+				"name": "Offices Management",
+				"description": "Organize and map assets across different office locations and personnel."
+			},
+			{
+				"icon": "ComputerDesktopIcon",
+				"name": "Office Equipment Inventory",
+				"description": "A comprehensive listing of general workspace resources to support daily functions."
+			},
+			{
+				"icon": "WrenchScrewdriverIcon",
+				"name": "Maintenance Management",
+				"description": "Schedule and track routine upkeep for buildings, grounds, and equipments."
+			},
+			{
+				"icon": "ClipboardDocumentCheckIcon",
+				"name": "Maintenance Request & Approval",
+				"description": "Streamlined workflow for reporting issues and obtaining formal authorization for repairs."
+			},
+			{
+				"icon": "TrashIcon",
+				"name": "Disposal Management",
+				"description": "Standardized procedures for decommissioning assets while maintaining regulatory compliance."
+			},
+			{
+				"icon": "ArrowsRightLeftIcon",
+				"name": "Bulk Disposal Processing",
+				"description": "Efficiently manage the simultaneous disposal of multiple assets to save time and administrative effort."
+			},
+			{
+				"icon": "MapPinIcon",
+				"name": "Local Disposal Processing",
+				"description": "Easily manage the removal or disposal of assets directly at their specific branch or office location."
+			},
+			{
+				"icon": "UserCheckIcon",
+				"name": "Accountability Clearance",
+				"description": "Verify that all assigned equipment is returned or accounted for during personnel offboarding."
+			},
+			{
+				"icon": "HandThumbUpIcon",
+				"name": "Request & Order Approval",
+				"description": "Multi-level authorization workflows for new acquisitions and internal asset requests."
+			},
+			{
+				"icon": "BellIcon",
+				"name": "Notifications System",
+				"description": "Automated alerts for maintenance schedules, pending approvals, and low inventory levels."
+			},
+			{
+				"icon": "DocumentChartBarIcon",
+				"name": "Reporting & Compliance",
+				"description": "Generate comprehensive audit-ready reports to meet organizational standards."
+			},
+			{
+				"icon": "UserGroupIcon",
+				"name": "Transfer of Accountability",
+				"description": "Formally reassign asset responsibility between employees or office locations."
+			}
+		]
+	},
+
+	{
+		"id": 6,
+		"title": "BITBo AI | BITBo Portal",
+		"subtitle": "Barangay IT Robot AI-Powered Platform",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["React", "Django", "Docker Compose"],
+		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
+		"link": "https://bitbo-ai.vercel.app",
+		"images": ["BitboAI/BITBO AI.png"],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Dashboard",
+				"description": "Provides an overview of system activities, statistics, and quick access to core modules."
+			},
+			{
+				"icon": "UsersIcon",
+				"name": "Residents Management",
+				"description": "Stores, updates, and manages resident profiles, household records, and demographic information."
+			},
+			{
+				"icon": "DocumentTextIcon",
+				"name": "Local Laws Management",
+				"description": "Organizes barangay ordinances, resolutions, and local policy documents for easy access."
+			},
+			{
+				"icon": "ClipboardDocumentListIcon",
+				"name": "Case Management",
+				"description": "Tracks complaints, disputes, and incident records with status monitoring and case history."
+			},
+			{
+				"icon": "BuildingStorefrontIcon",
+				"name": "Business Registration and Evaluation",
+				"description": "Handles business permit applications, registration details, and compliance evaluation."
+			},
+			{
+				"icon": "HomeModernIcon",
+				"name": "Building Registration and Evaluation",
+				"description": "Manages building records, ownership details, and inspection or assessment results."
+			},
+			{
+				"icon": "DocumentCheckIcon",
+				"name": "Permits and Certification Clearances Management",
+				"description": "Processes barangay clearances, certifications, and permit requests efficiently."
+			},
+			{
+				"icon": "HeartIcon",
+				"name": "Health Services Management",
+				"description": "Maintains health-related records, medical assistance requests, and service schedules."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Reports Management",
+				"description": "Generates downloadable reports and summaries for monitoring and decision-making."
+			},
+			{
+				"icon": "UserCircleIcon",
+				"name": "Account Management",
+				"description": "Controls user accounts, access levels, and authentication settings."
+			},
+			{
+				"icon": "ArrowPathRoundedSquareIcon",
+				"name": "Data Migration",
+				"description": "Transfers and imports existing records into the system securely and accurately."
+			},
+			{
+				"icon": "Cog6ToothIcon",
+				"name": "System Configuration",
+				"description": "Allows administrators to customize system settings, preferences, and operational rules."
+			}
+		]
+	},
+
+	{
+		"id": 7,
+		"title": "Flor De Grace",
+		"subtitle": "Student Management System",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["Reactjs", "PostgreSQL", "Docker Compose"],
+		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"link": "https://flor-de-grace.vercel.app",
+		"images": [
+			"flor-de-grace/FlorDeGrace_1.png",
+			"flor-de-grace/FlorDeGrace_2.png"
+		],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Student Management",
+				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Faculty Management",
+				"description": "Faculty account creation, verification, role management, and status control (active/inactive)."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Class & Schedule Management",
+				"description": "Assignment of faculty to subjects and sections with built-in conflict detection and scheduling validation."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Attendance Tracking",
+				"description": "Daily attendance recording with multiple status options (Present, Absent, Late, Excused) and remarks."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Leave Management",
+				"description": "Faculty leave request submission with admin approval and tracking workflows."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Academic Structure Setup",
+				"description": "Management of academic years, grade levels, subjects, and sections in a centralized system."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Reports & Monitoring",
+				"description": "Access to basic reports and system insights to support administrative decision-making."
+			}
+		]
+	},
+
+	{
+		"id": 8,
+		"title": "SRG Website",
+		"subtitle": "Organization Portfolio",
+		"category": "Software Research Group",
+		"role": "Frontend Developer",
+		"techstack": ["Reactjs", "Docker Compose"],
+		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
+		"link": "https://srg-website.vercel.app",
+		"images": ["srg-website/SrgWebsite1.png"],
+		"features": [
+			{
+				"icon": "IdentificationIcon",
+				"name": "Member Portfolio Hub",
+				"description": "A centralized platform showcasing individual member skills, experiences, and academic history."
+			},
+			{
+				"icon": "PhotoIcon",
+				"name": "Visual Project Gallery",
+				"description": "A dynamic showcase of organizational innovations, ongoing initiatives, and successful project completions."
+			},
+			{
+				"icon": "CalendarIcon",
+				"name": "Interactive Timeline",
+				"description": "An engaging journey through SRG's legacy, tracking growth and milestones across different generations."
+			},
+			{
+				"icon": "DevicePhoneMobileIcon",
+				"name": "Responsive Experience",
+				"description": "Modern, mobile-first design ensuring a premium user experience across all devices and screen sizes."
+			},
+			{
+				"icon": "UserGroupIcon",
+				"name": "Team Profiles",
+				"description": "Detailed visual profiles for every SRG member, highlighting their unique contributions and roles."
+			}
+		]
+	},
+
+	{
+		"id": 9,
+		"title": "Novella & Presenza",
+		"subtitle": "Library Management System | Attendance Management System",
+		"category": "System Integration & Architecture",
+		"role": "Project Manager, Frontend Developer",
+		"techstack": "PHP, Laravel",
+		"description": "Novella & Presenza is a unified administrative ecosystem that integrates two distinct but interconnected platforms: 'Novella,' a comprehensive Library Management System, and 'Presenza,' an automated Attendance Management System. The end-to-end development lifecycle was directed from project planning and scope to full-scale module implementation and core system logic. Development of these integrated systems involved analyzing complex workflows and translating requirements into effective technical solutions, while also heading the frontend development and UI design to transform prototypes into a responsive, high-performance interface with robust field validations. Built upon a shared data architecture, these systems operate as a single integrated unit, allowing for seamless synchronization of user data and activity logs. This integration eliminates data silos, ensuring that a user's library interactions and facility attendance records are linked within a centralized hub. By bridging these two domains, the platform enables administrators to conduct cross-module reporting, gain holistic insights into facility utilization, and minimize manual data reconciliation.",
+		"link": "https://flor-de-grace.vercel.app",
+		"images": ["Novella/Novella.png", "Novella/Presenza.png"],
+		"features": [
+			{
+				"name": "Integrated System Architecture",
+				"description": "A centralized data hub that links Novella and Presenza, ensuring real-time synchronization of user profiles and operational logs."
+			},
+			{
+				"name": "Intelligent Book Cataloging",
+				"description": "Full CRUD management for library collections, including dynamic categorization, real-time stock status, and shelf-location tracking."
+			},
+			{
+				"name": "Smart Attendance Tracking",
+				"description": "High-efficiency time-in/time-out logging for employees and visitors, providing an accurate, timestamped trail of facility usage."
+			},
+			{
+				"name": "Unified Data Architecture",
+				"description": "Ensures data integrity across both modules, preventing duplicate profiles and allowing for cross-referenced reporting between library and attendance data."
+			},
+			{
+				"name": "Operational Analytics",
+				"description": "Centralized reporting tools that visualize facility traffic, resource circulation trends, and peak occupancy hours to assist in data-driven planning."
+			}
+		]
+	},
+
+	{
+		"id": 10,
+		"title": "ITECHTIONARY",
+		"subtitle": "IT Dictionary Mobile Application",
+		"category": "Free Electives",
+		"role": "Overall Developer",
+		"techstack": ["FlutterFlow", "Firebase", "Docker Compose"],
+		"description": "ITECHTIONARY is a specialized mobile reference application designed to serve as a comprehensive glossary for the IT industry. End-to-end development was directed using FlutterFlow and Firebase to build a categorized dictionary application for IT students. System architecture and categorization logic were designed to ensure efficient information retrieval and an intuitive learning experience. Furthermore, the full SDLC was managed by bridging the gap between Firebase backend infrastructure and a high-performance mobile interface, while technical documentation and database schemas were authored to establish a robust foundation for system reliability and future scalability. The application provides students and professionals with instant access to a vast database of technical terminology, ranging from software development and networking to cybersecurity and hardware engineering, aiming to bridge the knowledge gap by offering clear, concise definitions that ensure complex technical jargon is easily understandable for users at any skill level.",
+		"images": ["Itechtionary/Itechtionary.png"],
+		"features": [
+			{
+				"icon": "BookOpenIcon",
+				"name": "Comprehensive IT Glossary",
+				"description": "An extensive, searchable database covering a wide spectrum of IT domains, including programming languages, networking protocols, and cybersecurity concepts."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Advanced Search & Filtering",
+				"description": "Intuitive search functionality that allows users to quickly locate specific technical terms and filter results by technology category."
+			},
+			{
+				"icon": "BookmarkIcon",
+				"name": "Personalized Library",
+				"description": "A bookmarking feature that lets users save complex terms to a personal collection for quick review and future reference."
+			},
+			{
+				"icon": "CloudArrowDownIcon",
+				"name": "Cloud-Synced Data",
+				"description": "Leverages Firebase to ensure the glossary database is always up-to-date and accessible across devices, with seamless performance."
+			}
+		]
+	},
+
+	{
+		"id": 11,
+		"title": "PureHealth",
+		"subtitle": "Business Management System",
+		"category": "Free Electives",
+		"role": "Overall Developer",
+		"techstack": "PHP Laravel",
+		"description": "PureHealth is a robust business management system designed to streamline operational workflows and administrative processes for health-focused enterprises. Intuitive UI/UX layouts were designed to transform complex requirements into high-fidelity prototypes, complemented by the development of responsive frontend components to ensure a high-performance experience across all devices. By bridging design and code, visual assets were implemented with a focus on usability and interactive logic, while reusable UI component libraries were built to maintain consistency and streamline development. Furthermore, system architectures and flowcharts were created to map out technical logic and user journeys, ensuring the platform provides integrated tools for efficient business administration, data management, and operational reporting through a centralized digital platform.",
+		"images": ["Purehealth/Purehealth.png"],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Operational Management",
+				"description": "Comprehensive resource registration, profile handling, and tracking across business cycles."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Access Control",
+				"description": "Account creation, verification, role management, and status control for personnel."
+			}
+		]
+	},
+
+	{
+		"id": 12,
+		"title": "Serenitel",
+		"subtitle": "Hotel Management System",
+		"category": "Free Electives",
+		"role": "Overall Developer",
+		"techstack": "C#",
+		"description": "Serenitel is a sophisticated Hotel Management System engineered to optimize hospitality operations and elevate guest service standards. The end-to-end UI/UX design process was led to transform complex technical requirements into high-fidelity, interactive prototypes. By architecting a responsive frontend utilizing modern frameworks, a seamless and intuitive user experience was ensured across all devices. Furthermore, comprehensive design systems and UI standards were established, creating reusable components to maintain visual consistency and development efficiency. The transition from design to implementation was also directed, overseeing frontend execution to ensure high-performance interface standards throughout the platform's lifecycle.",
+		"images": ["Serenitel/Serenitel.png"],
+		"features": [
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Guest Management",
+				"description": "Comprehensive guest registration, profile management, and history tracking across booking cycles."
+			},
+			{
+				"icon": "Squares2X2Icon",
+				"name": "Staff & Operations",
+				"description": "Streamlined personnel account creation, role-based access control, and status monitoring for hotel operations."
+			},
+			{
+				"icon": "CalendarDaysIcon",
+				"name": "Booking & Reservation System",
+				"description": "An intuitive reservation engine that manages room availability, check-in/check-out processes, and real-time booking status updates."
+			}
+		]
+	},
+
+	{
+		"id": 13,
+		"title": "Laurelcrest",
+		"subtitle": "Student Management System",
+		"category": "Free Electives",
+		"role": "Overall Developer",
+		"techstack": ["Asp.net", "MSSQL"],
+		"description": "Laurelcrest is a comprehensive Student Management System designed to streamline academic operations for educational institutions. The end-to-end system was architected by building a responsive interface and transitioning into full-scale module development for all user roles. All core functions, including complex data processing and interactive features, were engineered to ensure a high-performance and reliable system. Additionally, robust Role-Based Access Control (RBAC) was implemented to manage secure permissions, collaborating with the team to successfully meet all technical goals while providing integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
+		"images": ["Laurelcrest/Laurelcrest.png"],
+		"features": [
+			{
+				"icon": "UserGroupIcon",
+				"name": "Student Lifecycle Management",
+				"description": "Comprehensive student registration, profile handling, and promotion tracking across academic years."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Role-Based Access Control",
+				"description": "Secure faculty account creation, verification, and role management with precise status control for active and inactive personnel."
+			},
+			{
+				"icon": "AcademicCapIcon",
+				"name": "Academic Reporting",
+				"description": "Centralized platform for managing faculty workloads, attendance logs, and automated academic reporting."
+			}
+		]
+	}
+]
