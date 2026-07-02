@@ -4,7 +4,7 @@ interface HeroSectionProps {
 	title?: string;
 	subtitle?: string;
 	description?: string;
-	image?: string; 
+	image?: string;
 }
 
 const HeroSection = ({
