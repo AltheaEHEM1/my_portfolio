@@ -12,6 +12,7 @@ const Projects = async () => {
 				title="Projects"
 				description="Explore my latest work, technical experiments, and creative projects."
 			/>
+
 			<ProjectsCarousel />
 
 			<section>
