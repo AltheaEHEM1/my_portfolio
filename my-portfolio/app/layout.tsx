@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 import MatrixBackground from "../components/background/hero-background";
 import Footer from "../components/footer/footer";
@@ -96,6 +97,11 @@ export default function RootLayout({
 				<footer className="mt-auto">
 					<Footer />
 				</footer>
+
+				{/* Toaster overlay */}
+				<div className="absolute z-[9999]">
+					<Toaster richColors position="top-right" />
+				</div>
 			</body>
 		</html>
 	);

@@ -106,7 +106,7 @@ export function BaseProjectDetails({
 
 						{/* Main Container */}
 						<div className="flex justify-between items-start gap-4">
-							{/* Left Side: Role and Tech Stack */}
+							{/* Role and Tech Stack */}
 							<div className="flex flex-col">
 								{/* Role Header */}
 								<div className="flex items-center gap-3">
@@ -146,7 +146,7 @@ export function BaseProjectDetails({
 								</div>
 							</div>
 
-							{/* Right Side: Category Footer */}
+							{/* Category Footer */}
 							<div className="flex items-center gap-2 mt-1 shrink-0">
 								<div className="text-teal">
 									<Layers size={16} strokeWidth={2.5} />

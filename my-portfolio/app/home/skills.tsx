@@ -48,7 +48,7 @@ const Skills = () => {
 	return (
 		<article
 			ref={containerRef}
-			className="relative h-[300px] md:h-140 w-full flex items-center justify-center transition-all duration-500 ease-out overflow-hidden md:overflow-visible scale-75 md:scale-100"
+			className="relative h-[300px] md:h-[560px] w-full flex items-center justify-center transition-all duration-500 ease-out overflow-hidden md:overflow-visible scale-75 md:scale-100"
 			onMouseMove={handleMouseMove}
 			onMouseLeave={() => setMousePos({ x: 0, y: 0 })}
 			style={{
@@ -111,7 +111,6 @@ const Skills = () => {
 								} as React.CSSProperties
 							}
 						>
-							{/* FIXED: Removed the borders completely to make icons look seamlessly clean */}
 							<button
 								type="button"
 								className="w-14 h-14 bg-slate-800 border-0 rounded-lg p-2 transition-all duration-300 shadow-lg flex items-center justify-center"

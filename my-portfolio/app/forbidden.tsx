@@ -1,4 +1,5 @@
-"use client"; // Required for Framer Motion
+"use client"; 
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 

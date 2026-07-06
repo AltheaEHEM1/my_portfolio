@@ -11,7 +11,7 @@ export default function Footer(): React.JSX.Element {
 			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1px bg-linear-to-r from-transparent via-teal to-transparent opacity-0 group-hover/footer:opacity-100 transition-opacity duration-700" />
 
 			<div className="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between flex-wrap gap-4 relative z-10">
-				{/* Brand Logo Token - Scaled down from text-lg to text-sm */}
+				{/* Brand Logo Token */}
 				<span className="inline-block font-valorant font-bold text-sm tracking-wide transition-all duration-500 ease-out hover:scale-105">
 					{/* Opening Bracket */}
 					<span className="text-teal">&lt;&nbsp;</span>

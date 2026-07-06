@@ -18,7 +18,7 @@ const BlogPostsGrid = () => {
 							{post.title}
 						</h2>
 
-						<p className="text-slate-600 dark:text-slate-400 text-sm font-mono leading-relaxed mb-6 flex-grow">
+						<p className="text-slate-600 dark:text-slate-400 text-sm font-mono leading-relaxed mb-6 grow">
 							{post.excerpt}
 						</p>
 

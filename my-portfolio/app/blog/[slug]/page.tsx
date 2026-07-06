@@ -14,39 +14,39 @@ export default function IndividualBlog({
 }) {
 	const { slug } = use(params);
 	const post = blogPosts.find((p) => p.id === slug);
+
 	const [step, setStep] = useState(0);
 
-	// Helper to create typing effect
-	const useTyping = (text: string) => {
-		const count = useMotionValue(0);
-		const rounded = useTransform(count, (latest) => Math.round(latest));
-		const display = useTransform(rounded, (latest) => text.slice(0, latest));
-		const start = () =>
-			animate(count, text.length, {
-				duration: text.length * 0.005,
-				ease: "linear",
-			});
-		return { display, start };
-	};
-
-	const content = useTyping(post?.content || "");
+	// 1. Initialize Motion Values at the top level
+	const count = useMotionValue(0);
+	const rounded = useTransform(count, (latest) => Math.round(latest));
+	const display = useTransform(
+		rounded,
+		(latest) => post?.content?.slice(0, latest) || "",
+	);
 
 	useEffect(() => {
-		if (post) {
-			const sequence = async () => {
-				// Simulate a loading state for the skeleton
-				await new Promise((r) => setTimeout(r, 1500));
-				setStep(1);
-				await new Promise((r) => setTimeout(r, 200));
-				setStep(2);
-				await new Promise((r) => setTimeout(r, 200));
-				setStep(3);
-				await content.start();
-				setStep(4);
-			};
-			sequence();
-		}
-	}, [post, content.start]);
+		if (!post) return;
+
+		const sequence = async () => {
+			// Small delay for entrance
+			await new Promise((r) => setTimeout(r, 1500));
+			setStep(1);
+			await new Promise((r) => setTimeout(r, 200));
+			setStep(2);
+			await new Promise((r) => setTimeout(r, 200));
+			setStep(3);
+
+			// 2. Perform the animation directly using the motion value
+			await animate(count, post.content.length, {
+				duration: post.content.length * 0.004,
+				ease: "linear",
+			});
+			setStep(4);
+		};
+
+		sequence();
+	}, [post, count]); // Dependencies are stable
 
 	if (!post) {
 		notFound();
@@ -62,7 +62,7 @@ export default function IndividualBlog({
 				description="Insights, technical deep dives, and reflections."
 			/>
 
-			<article className="max-w-5xl mx-auto px-6 py-20">
+			<article className="max-w-5xl mx-auto px-6 py-10">
 				{step === 0 ? (
 					<div className="animate-pulse space-y-8">
 						<div className="h-6 w-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
@@ -106,9 +106,10 @@ export default function IndividualBlog({
 						)}
 
 						{step >= 3 && (
-							<motion.div className="prose dark:prose-invert font-mono prose-slate prose-lg max-w-none text-justify">
-								<motion.p>{content.display}</motion.p>
-							</motion.div>
+							<div className="prose dark:prose-invert font-mono prose-slate prose-lg max-w-none text-justify">
+								{/* 3. Render the motion-transformed value */}
+								<motion.p>{display}</motion.p>
+							</div>
 						)}
 					</>
 				)}

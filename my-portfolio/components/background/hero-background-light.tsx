@@ -83,7 +83,7 @@ export default function HeroBackgroundLight(): React.JSX.Element {
                 }
             `}</style>
 
-			{/* ===== Falling Leaves Layer ===== */}
+			{/* Falling Leaves Layer */}
 			{leaves.map((leaf) => {
 				const leafStyle: React.CSSProperties & {
 					"--leaf-rotate-start"?: string;

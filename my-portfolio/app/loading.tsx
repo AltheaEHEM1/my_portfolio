@@ -22,19 +22,17 @@ export default function Loading() {
 	// Fallback generic skeleton
 	return (
 		<div className="flex flex-col space-y-6 w-full px-4 md:px-0 max-w-7xl mx-auto mt-20 animate-pulse">
-			<Skeleton className="h-[300px] w-full rounded-2xl" />
+			<Skeleton className="h-75 w-full rounded-2xl" />
 			<div className="space-y-4">
-				<Skeleton className="h-6 w-[250px]" />
-				<Skeleton className="h-4 w-[200px]" />
-				<Skeleton className="h-4 w-[300px]" />
+				<Skeleton className="h-6 w-62.5" />
+				<Skeleton className="h-4 w-50" />
+				<Skeleton className="h-4 w-75" />
 			</div>
 		</div>
 	);
 }
 
-// -----------------------------------------------------------------------------
 // HOME SKELETON
-// -----------------------------------------------------------------------------
 function HomeSkeleton() {
 	return (
 		<div className="w-full px-4 md:px-0">
@@ -52,7 +50,7 @@ function HomeSkeleton() {
 				</div>
 
 				<div className="w-full md:w-1/2 flex justify-center mt-5 md:mt-0 z-10">
-					<Skeleton className="w-64 h-64 md:w-[350px] md:h-[350px] rounded-full" />
+					<Skeleton className="w-64 h-64 md:w-87.5 md:h-87.5 rounded-full" />
 				</div>
 			</div>
 
@@ -82,7 +80,7 @@ function HomeSkeleton() {
 					</div>
 
 					<div className="lg:col-span-7 w-full flex justify-center">
-						<div className="relative h-[25rem] w-full flex items-center justify-center">
+						<div className="relative h-100 w-full flex items-center justify-center">
 							<Skeleton className="w-64 h-64 rounded-full blur-[100px] opacity-20" />
 							<Skeleton className="absolute w-20 h-20 rounded-full" />
 						</div>
@@ -104,7 +102,7 @@ function HomeSkeleton() {
 									className="relative flex justify-center lg:justify-end lg:pr-8"
 								>
 									<Skeleton className="absolute -right-2 top-6 hidden lg:block w-4 h-4 rounded-full" />
-									<Skeleton className="w-full max-w-lg h-[120px] rounded-xl" />
+									<Skeleton className="w-full max-w-lg h-30 rounded-xl" />
 								</div>
 							))}
 						</div>
@@ -121,7 +119,7 @@ function HomeSkeleton() {
 									className="relative flex justify-center lg:justify-start lg:pl-8"
 								>
 									<Skeleton className="absolute -left-2 top-6 hidden lg:block w-4 h-4 rounded-full" />
-									<Skeleton className="w-full max-w-lg h-[120px] rounded-xl" />
+									<Skeleton className="w-full max-w-lg h-30 rounded-xl" />
 								</div>
 							))}
 						</div>
@@ -132,9 +130,7 @@ function HomeSkeleton() {
 	);
 }
 
-// -----------------------------------------------------------------------------
 // ABOUT SKELETON
-// -----------------------------------------------------------------------------
 function AboutSkeleton() {
 	return (
 		<div className="w-full px-4 md:px-0">
@@ -143,7 +139,7 @@ function AboutSkeleton() {
 				<div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12 pt-2 items-center">
 					<div className="md:col-span-5 relative flex justify-center md:justify-end">
 						<div className="relative w-full max-w-xs">
-							<Skeleton className="aspect-[4/5] w-full rounded-2xl" />
+							<Skeleton className="aspect-4/5 w-full rounded-2xl" />
 						</div>
 					</div>
 					<div className="md:col-span-6 pt-5 flex flex-col items-center md:items-start text-center md:text-left space-y-5">
@@ -181,9 +177,7 @@ function AboutSkeleton() {
 	);
 }
 
-// -----------------------------------------------------------------------------
 // PROJECTS SKELETON
-// -----------------------------------------------------------------------------
 function ProjectsSkeleton() {
 	return (
 		<div className="w-full px-4 md:px-0">
@@ -203,7 +197,7 @@ function ProjectsSkeleton() {
 			<section className="max-w-7xl mx-auto mt-12 mb-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{[1, 2, 3, 4, 5, 6].map((i) => (
-						<Skeleton key={i} className="h-[350px] w-full rounded-2xl" />
+						<Skeleton key={i} className="h-87.5 w-full rounded-2xl" />
 					))}
 				</div>
 			</section>
@@ -211,9 +205,7 @@ function ProjectsSkeleton() {
 	);
 }
 
-// -----------------------------------------------------------------------------
 // CONTACT SKELETON
-// -----------------------------------------------------------------------------
 function ContactSkeleton() {
 	return (
 		<div className="w-full px-4 md:px-0">
@@ -249,7 +241,7 @@ function ContactSkeleton() {
 					{[1, 2, 3].map((i) => (
 						<Skeleton
 							key={i}
-							className="h-40 w-full max-w-[300px] rounded-2xl"
+							className="h-40 w-full max-w-75 rounded-2xl"
 						/>
 					))}
 				</div>
@@ -258,9 +250,7 @@ function ContactSkeleton() {
 	);
 }
 
-// -----------------------------------------------------------------------------
 // BLOG SKELETON
-// -----------------------------------------------------------------------------
 function BlogSkeleton() {
 	return (
 		<div className="w-full px-4 md:px-0">
@@ -277,11 +267,11 @@ function BlogSkeleton() {
 					{[1, 2, 3, 4, 5, 6].map((i) => (
 						<div
 							key={i}
-							className="flex flex-col border border-slate-200 dark:border-slate-800 p-6 rounded-xl h-[280px]"
+							className="flex flex-col border border-slate-200 dark:border-slate-800 p-6 rounded-xl h-70"
 						>
 							<Skeleton className="h-3 w-32 mb-4 rounded-md" />
 							<Skeleton className="h-6 w-3/4 mb-4 rounded-md" />
-							<div className="space-y-2 mb-6 flex-grow">
+							<div className="space-y-2 mb-6 grow">
 								<Skeleton className="h-4 w-full rounded-md" />
 								<Skeleton className="h-4 w-full rounded-md" />
 								<Skeleton className="h-4 w-5/6 rounded-md" />

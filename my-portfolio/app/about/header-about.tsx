@@ -16,7 +16,6 @@ const HeaderAbout = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
-	// State to control the sequence of appearance
 	const [step, setStep] = useState(0);
 
 	const nameText = "ALTHEA AMOR J. ASIS";
@@ -36,7 +35,7 @@ const HeaderAbout = () => {
 		const display = useTransform(rounded, (latest) => text.slice(0, latest));
 		const start = () =>
 			animate(count, text.length, {
-				duration: text.length * 0.02,
+				duration: text.length * 0.004,
 				ease: "linear",
 			});
 		return { display, start };
@@ -50,7 +49,7 @@ const HeaderAbout = () => {
 			const sequence = async () => {
 				await name.start();
 				setStep(1);
-				await new Promise((r) => setTimeout(r, 300));
+				await new Promise((r) => setTimeout(r, 100));
 				setStep(2);
 				await body.start();
 				setStep(3);
@@ -135,7 +134,7 @@ const HeaderAbout = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="flex flex-row gap-3 justify-center md:justify-start w-full max-w-sm mt-5"
 					>
-						{/* View My Work - Using theme colors */}
+						{/* View My Work */}
 						<Link
 							href="/projects"
 							className="inline-flex items-center justify-center px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-all duration-300 shadow-md active:scale-95 hover:scale-105 hover:bg-teal-700 bg-teal-600 rounded-xl group relative overflow-hidden"
@@ -144,7 +143,6 @@ const HeaderAbout = () => {
 							view my work
 						</Link>
 
-						{/* Download CV - Using theme borders/backgrounds */}
 						<Link
 							href="/assets/Althea_Amor_Asis_CV.pdf"
 							target="_blank"
