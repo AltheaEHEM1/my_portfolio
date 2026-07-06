@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 import MatrixBackground from "../components/background/hero-background";
 import Footer from "../components/footer/footer";
@@ -85,6 +86,7 @@ export default function RootLayout({
 				{/* Main Content Safe Layer */}
 				<main className="relative z-10 mb-10">
 					<PageAnimateProvider>
+						<Toaster richColors position="top-right" />
 						<div className="w-full">{children}</div>
 					</PageAnimateProvider>
 				</main>

@@ -111,7 +111,6 @@ const Skills = () => {
 								} as React.CSSProperties
 							}
 						>
-							{/* FIXED: Removed the borders completely to make icons look seamlessly clean */}
 							<button
 								type="button"
 								className="w-14 h-14 bg-slate-800 border-0 rounded-lg p-2 transition-all duration-300 shadow-lg flex items-center justify-center"

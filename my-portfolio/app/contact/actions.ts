@@ -26,7 +26,6 @@ export async function submitContact(
 		return { error: "Name must be 50 characters or fewer." };
 	}
 
-	// Alphanumeric + space validation (includes 0-9)
 	const nameRegex = /^[a-zA-Z0-9\s]+$/;
 	if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
 		return { error: "Name must only contain letters, numbers, and spaces." };
