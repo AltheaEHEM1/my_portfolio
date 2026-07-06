@@ -3,7 +3,6 @@ import { AnimateSection } from "@/app/page-animate-provider";
 import HeroSection from "@/components/hero/hero";
 
 const Blog = async () => {
-	// Simulate network request to trigger the Next.js suspense boundary (loading.tsx)
 	await new Promise((resolve) => setTimeout(resolve, 1500));
 
 	return (

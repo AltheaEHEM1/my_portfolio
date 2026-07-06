@@ -9,6 +9,24 @@ export interface ContactFormState {
 	error?: string;
 }
 
+// Helper: Consolidates name validation
+const validateName = (name: string): string | null => {
+	if (name.length > 50) return "Name must be 50 characters or fewer.";
+
+	if (!/^[a-zA-Z0-9\s'.-]+$/.test(name))
+		return "Name contains invalid characters.";
+
+	if (/\s{2,}/.test(name)) return "Name must not contain consecutive spaces.";
+
+	if (/['.-]{2,}/.test(name))
+		return "Name must not contain consecutive symbols.";
+
+	if (/^['.-]|['.-]$/.test(name))
+		return "Name cannot start or end with a symbol.";
+
+	return null;
+};
+
 export async function submitContact(
 	_prev: ContactFormState | null,
 	formData: FormData,
@@ -18,71 +36,59 @@ export async function submitContact(
 	const email = formData.get("email")?.toString().trim() ?? "";
 	const message = formData.get("message")?.toString().trim() ?? "";
 
+	// 1. Basic Presence Validation
 	if (!firstName || !lastName || !email || !message) {
 		return { error: "All fields are required." };
 	}
 
-	if (firstName.length > 50 || lastName.length > 50) {
-		return { error: "Name must be 50 characters or fewer." };
-	}
+	// 2. Name Validation
+	const nameError = validateName(firstName) || validateName(lastName);
+	if (nameError) return { error: nameError };
 
-	// Alphanumeric + space validation (includes 0-9)
-	const nameRegex = /^[a-zA-Z0-9\s]+$/;
-	if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
-		return { error: "Name must only contain letters, numbers, and spaces." };
-	}
-
-	if (/\s{2,}/.test(firstName) || /\s{2,}/.test(lastName)) {
-		return { error: "Name must not contain consecutive spaces." };
-	}
-
+	// 3. Email Validation
 	if (!/^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email)) {
 		return { error: "Email must be a valid @gmail.com address." };
 	}
 
-	console.log("Transmission successful:", {
-		firstName,
-		lastName,
-		email,
-		message,
-	});
+	// 4. Sanitization
+	const sanitize = (str: string) =>
+		str.replace(/[&<>"']/g, (m) => {
+			const map: Record<string, string> = {
+				"&": "&amp;",
+				"<": "&lt;",
+				">": "&gt;",
+				'"': "&quot;",
+				"'": "&#39;",
+			};
+			return map[m] || m;
+		});
+
+	const cleanFirstName = sanitize(firstName);
+	const cleanLastName = sanitize(lastName);
+	const cleanMessage = sanitize(message).replace(/\n/g, "<br />");
 
 	try {
 		const { error } = await resend.emails.send({
 			from: "Portfolio Contact Form <onboarding@resend.dev>",
 			to: process.env.MY_EMAIL as string,
-			subject: `New Message from ${firstName} ${lastName}`,
+			subject: `New Message from ${cleanFirstName} ${cleanLastName}`,
 			replyTo: email,
 			html: `
-        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px;">
+        <div style="font-family: sans-serif; max-width: 600px; padding: 20px;">
             <h2 style="color: #0d9488;">New Contact Request</h2>
-            <p>You have received a new message from your portfolio website:</p>
-            
-            <div style="background-color: #f9fafb; padding: 15px; border-radius: 6px;">
-                <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-                <p><strong>Email:</strong> ${email}</p>
-            </div>
-            
+            <p><strong>Name:</strong> ${cleanFirstName} ${cleanLastName}</p>
+            <p><strong>Email:</strong> ${email}</p>
             <h3 style="margin-top: 20px;">Message:</h3>
-            <p style="background-color: #ffffff; border-left: 4px solid #0d9488; padding: 10px; font-style: italic;">
-                ${message.replace(/\n/g, "<br />")}
+            <p style="background-color: #f9fafb; padding: 10px; border-left: 4px solid #0d9488;">
+                ${cleanMessage}
             </p>
-            
-            <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;" />
-            <p style="font-size: 12px; color: #6b7280;">Sent via Portfolio Contact Form</p>
-        </div>
-    `,
+        </div>`,
 		});
 
-		if (error) {
-			console.error("Email error:", error);
-			return { error: `Failed to send: ${error.message}` };
-		}
-
+		if (error) throw new Error(error.message);
 		return { success: true };
-	} catch (error) {
-		console.error("Email error:", error);
-		const errMsg = error instanceof Error ? error.message : String(error);
-		return { error: `Failed to send: ${errMsg}` };
+	} catch (err) {
+		console.error("Email error:", err);
+		return { error: "Failed to send message. Please try again later." };
 	}
 }

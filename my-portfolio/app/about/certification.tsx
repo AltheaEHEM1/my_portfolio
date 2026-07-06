@@ -45,13 +45,11 @@ export default function Certification() {
 				<h1 className="font-valorant text-lg text-foreground tracking-tight">
 					{activeCert.title}
 				</h1>
-				{/* Metadata Below Title */}
 				<div className="flex gap-3 text-xs text-teal font-medium mb-5 uppercase tracking-wider">
 					<span>{activeCert.issuer}</span>
 					<span>|</span>
 					<span>{activeCert.date}</span>
 				</div>
-
 				<div className="w-full max-w-1xl aspect-video bg-muted rounded-xl overflow-hidden mb-4 border border-border flex items-center justify-center">
 					<Image
 						src={activeCert.image}
@@ -61,7 +59,6 @@ export default function Certification() {
 						className="object-contain w-full h-full p-2"
 					/>
 				</div>
-
 				<div className="max-w-1xl">
 					<h3 className="font-valorant text-sm text-foreground uppercase tracking-wider">
 						About the Certificate

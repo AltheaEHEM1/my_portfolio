@@ -14,7 +14,6 @@ const HeroSection = ({
 }: HeroSectionProps) => {
 	return (
 		<div className="w-full text-center py-15 relative overflow-hidden h-40">
-			{/* Next.js Optimized Background Image */}
 			<Image
 				src={image}
 				alt={title}

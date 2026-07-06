@@ -53,7 +53,7 @@ export default function ScrollToTop(): React.JSX.Element | null {
 				{/* Chevron Icon */}
 				<ChevronUp
 					size={18}
-					className="mb-[-4px] transition-transform group-hover:scale-110"
+					className="mb-1 transition-transform group-hover:scale-110"
 					style={{ color: "var(--text-title)" }}
 				/>
 
