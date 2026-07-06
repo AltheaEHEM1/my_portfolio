@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AlertTriangle } from "lucide-react"; // Install: npm install lucide-react
+import { AlertTriangle } from "lucide-react"; 
 import Link from "next/link";
 
 export default function ErrorPage({
