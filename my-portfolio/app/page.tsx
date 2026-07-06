@@ -9,7 +9,7 @@ const Home = async () => {
 	await new Promise((resolve) => setTimeout(resolve, 2000));
 
 	return (
-		<div className="w-full px-4 md:px-0">
+		<div className="w-full px-4 md:px-8 xl:px-0">
 			<IntroPage />
 
 			<section className="max-w-7xl mx-auto">

@@ -18,16 +18,16 @@ export default function Certification() {
 	const [activeCert, setActiveCert] = useState<Certification>(certs[0]);
 
 	return (
-		<AnimateStagger className="flex w-full gap-12 px-15 pt-3 divide-x divide-border">
-			<AnimateItem className="w-80 shrink-0 pr-12">
-				<nav>
-					<AnimateStagger className="space-y-1">
+		<AnimateStagger className="flex flex-col md:flex-row w-full gap-6 md:gap-12 px-4 md:px-15 pt-3 md:divide-x divide-border">
+			<AnimateItem className="w-full md:w-80 shrink-0 md:pr-12">
+				<nav className="overflow-x-auto pb-4 md:pb-0 scrollbar-hide">
+					<AnimateStagger className="flex md:flex-col gap-2 md:gap-0 md:space-y-1 w-max md:w-full">
 						{certs.map((cert) => (
-							<AnimateItem key={cert.id}>
+							<AnimateItem key={cert.id} className="shrink-0">
 								<button
 									type="button"
 									onClick={() => setActiveCert(cert)}
-									className={`w-full text-left px-3 py-2 text-base font-medium transition-all rounded-lg border ${
+									className={`whitespace-nowrap md:whitespace-normal w-full text-left px-3 py-2 text-sm md:text-base font-medium transition-all rounded-lg border ${
 										activeCert.id === cert.id
 											? "bg-teal-pale border-teal text-teal-dark shadow-sm"
 											: "border-transparent hover:bg-muted text-foreground"

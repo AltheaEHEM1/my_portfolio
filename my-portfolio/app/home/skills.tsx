@@ -48,7 +48,7 @@ const Skills = () => {
 	return (
 		<article
 			ref={containerRef}
-			className="relative h-75 md:h-140 w-full flex items-center justify-center transition-all duration-500 ease-out overflow-hidden md:overflow-visible scale-75 md:scale-100"
+			className="relative h-[300px] md:h-[560px] w-full flex items-center justify-center transition-all duration-500 ease-out overflow-hidden md:overflow-visible scale-75 md:scale-100"
 			onMouseMove={handleMouseMove}
 			onMouseLeave={() => setMousePos({ x: 0, y: 0 })}
 			style={{

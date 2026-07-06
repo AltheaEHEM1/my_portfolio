@@ -180,6 +180,7 @@ export default function NavHeader(): React.JSX.Element {
 							<li key={item.name}>
 								<Link
 									href={item.href}
+									onClick={() => setIsMenuOpen(false)}
 									className={`block px-4 py-2.5 text-sm font-bold tracking-widest uppercase font-valorant rounded-xl transition-all duration-300 ${
 										isActive
 											? "bg-(--nav-bg-btn) text-(--nav-teal)"
