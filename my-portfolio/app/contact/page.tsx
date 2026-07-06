@@ -18,7 +18,7 @@ const Contact = async () => {
 
 			<section className="max-w-7xl mx-auto px-4">
 				<AnimateSection>
-					<p className="text-[20px] py-5 text-teal font-valorant">
+					<p className="text-[15px] py-5 text-teal font-valorant">
 						{"01 ----// CONTACT ME FORM"}
 					</p>
 				</AnimateSection>
@@ -26,7 +26,7 @@ const Contact = async () => {
 				<ContactForm />
 
 				<AnimateSection>
-					<p className="text-[20px] pt-20 text-teal font-valorant">
+					<p className="text-[15px] pt-15 text-teal font-valorant">
 						{"02 ----// CONTACT ME THROUGH"}
 					</p>
 				</AnimateSection>

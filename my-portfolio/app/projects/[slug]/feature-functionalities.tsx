@@ -49,7 +49,7 @@ export default function FeaturesAndFunctionalities({
 				const IconComponent = getIcon(feature.icon);
 				return (
 					<div key={feature.name} className="flex items-start gap-2">
-						<div className="shrink-0 mt-0.5">
+						<div className="shrink-0 font-mono mt-0.5">
 							<IconComponent className="w-5 h-5 text-black" />
 						</div>
 						<div className="flex flex-col">

@@ -86,7 +86,6 @@ export default function RootLayout({
 				{/* Main Content Safe Layer */}
 				<main className="relative z-10 mb-10">
 					<PageAnimateProvider>
-						<Toaster richColors position="top-right" />
 						<div className="w-full">{children}</div>
 					</PageAnimateProvider>
 				</main>
@@ -98,6 +97,11 @@ export default function RootLayout({
 				<footer className="mt-auto">
 					<Footer />
 				</footer>
+
+				{/* Toaster overlay */}
+				<div className="absolute z-[9999]">
+					<Toaster richColors position="top-right" />
+				</div>
 			</body>
 		</html>
 	);
