@@ -661,7 +661,14 @@
 		"role": "Full Stack Developer",
 		"techstack": ["Next.js 16", "Neon Postgres", "Drizzle ORM v2", "Zod", "Tailwind CSS v4", "Vercel Blob", "TypeScript", "Biome"],
 		"description": "LA full-stack blog platform featuring a public-facing interface for browsing articles and a secure, sidebar-driven admin panel for managing content, categories, and comment moderation. Built as a bootcamp project, it utilizes a modern stack to deliver a robust and functional blogging experience.",
-		"images": ["aaablogpost\blog_post1.png, aaablogpost\blog_post2.png, aaablogpost\blog_post3.png, aaablogpost\blog_post4.png, aaablogpost\blog_post5.png, aaablogpost\blog_post6.png,"],
+		"images": [
+			"aaablogpost/blog_post1.png",
+			"aaablogpost/blog_post2.png",
+			"aaablogpost/blog_post3.png",
+			"aaablogpost/blog_post4.png",
+			"aaablogpost/blog_post5.png",
+			"aaablogpost/blog_post6.png"
+		],
 		"features": [
 			{
             "icon": "UserGroupIcon",
