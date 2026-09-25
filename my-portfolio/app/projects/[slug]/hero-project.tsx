@@ -23,7 +23,7 @@ const HeroProject = ({
 			<div className="absolute inset-0 bg-black/50 pointer-events-none z-10"></div>
 			<div className="flex flex-col items-center justify-center relative z-20 text-white">
 				<h1 className="text-3xl font-valorant">{title}</h1>
-				<p className="text-xs font-mono">{subtitle}</p>
+				<p className="text-sm font-mono">{subtitle}</p>
 			</div>
 		</div>
 	);

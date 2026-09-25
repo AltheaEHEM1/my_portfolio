@@ -29,7 +29,7 @@ export default function Certification() {
 									onClick={() => setActiveCert(cert)}
 									className={`whitespace-nowrap md:whitespace-normal w-full text-left px-3 py-2 text-sm md:text-base font-medium transition-all rounded-lg border ${
 										activeCert.id === cert.id
-											? "bg-teal-pale border-teal text-teal-dark shadow-sm"
+											? "bg-teal-pale border-teal text shadow-sm"
 											: "border-transparent hover:bg-muted text-foreground"
 									}`}
 								>
@@ -42,7 +42,7 @@ export default function Certification() {
 			</AnimateItem>
 
 			<AnimateItem className="flex-1">
-				<h1 className="font-valorant text-lg text-foreground tracking-tight">
+				<h1 className="font-valorant text-lg text-foreground">
 					{activeCert.title}
 				</h1>
 				<div className="flex gap-3 text-xs text-teal font-medium mb-5 uppercase tracking-wider">
@@ -63,7 +63,7 @@ export default function Certification() {
 					<h3 className="font-valorant text-sm text-foreground uppercase tracking-wider">
 						About the Certificate
 					</h3>
-					<p className="text-base text-muted-foreground leading-relaxed">
+					<p className="text-base text-foreground/80 leading-relaxed">
 						{activeCert.description}
 					</p>
 				</div>

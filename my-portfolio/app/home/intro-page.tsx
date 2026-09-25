@@ -17,7 +17,7 @@ const IntroPage = () => {
 						<span className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
 					</div>
 
-					<span className="text-sm font-mono tracking-wider text-text opacity-60">
+					<span className="text-sm font-mono tracking-wider text-text">
 						home.tsx
 					</span>
 
@@ -82,7 +82,7 @@ const IntroPage = () => {
 												borderRadius: "0.75rem",
 											}}
 										>
-											<span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+											<span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
 											view my work
 										</Link>
 

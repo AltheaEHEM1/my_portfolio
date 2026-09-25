@@ -23,6 +23,12 @@ const About = async () => {
 				</p>
 			</AnimateSection>
 			<Hobbies />
+
+			<AnimateSection>
+				<p className="text-[20px] pt-20 text-teal font-valorant">
+					{"03 ----// Media "}
+				</p>
+			</AnimateSection>
 		</section>
 	);
 };
