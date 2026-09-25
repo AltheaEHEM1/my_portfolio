@@ -120,7 +120,7 @@ function FeaturedProjectsCarousel({
 			{/* Description Card */}
 			<AnimateItem className="relative z-40 mt-6 w-full max-w-2xl px-4">
 				<div className="relative rounded-xl border border-border bg-background/50 p-4 backdrop-blur-md shadow-sm">
-					<p className="line-clamp-3 text-center text-xs leading-relaxed text-muted-foreground md:text-sm md:leading-loose tracking-wide">
+					<p className="line-clamp-3 text-center text-xs leading-relaxed text-foreground/99 md:text-sm md:leading-loose tracking-wide">
 						{activeProject.description}
 					</p>
 				</div>

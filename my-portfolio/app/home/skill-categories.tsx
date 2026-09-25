@@ -21,7 +21,7 @@ const SkillCategories = () => {
 						</div>
 						{/* Content Container */}
 						<div className="space-y-2 transform transition-all duration-300 group-hover:translate-x-1">
-							<h5 className="text-lg font-bold font-mono uppercase text-muted-foreground group-hover:text-teal transition-colors duration-200">
+							<h5 className="text-lg font-bold font-mono uppercase text-foreground/90 group-hover:text-teal transition-colors duration-200">
 								{item.category}
 							</h5>
 
@@ -30,7 +30,7 @@ const SkillCategories = () => {
 								{item.items.map((skill: string) => (
 									<span
 										key={skill}
-										className="cursor-default rounded-lg px-3 py-1 text-[13px] transition-all duration-200 ease-in-out bg-muted text-muted-foreground border border-border/70 hover:-translate-y-0.5 hover:border-teal/40 hover:text-teal hover:bg-teal-pale"
+										className="cursor-default rounded-lg px-3 py-1 text-[13px] transition-all duration-200 ease-in-out bg-muted text-foreground/80 border border-border/70 hover:-translate-y-0.5 hover:border-teal/40 hover:text-teal hover:bg-teal-pale"
 									>
 										{skill}
 									</span>

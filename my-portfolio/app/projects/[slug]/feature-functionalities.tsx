@@ -48,17 +48,17 @@ export default function FeaturesAndFunctionalities({
 			{features.map((feature) => {
 				const IconComponent = getIcon(feature.icon);
 				return (
-					<div key={feature.name} className="flex items-start gap-2">
+					<div key={feature.name} className="flex items-start gap-7">
 						<div className="shrink-0 font-mono mt-0.5">
-							<IconComponent className="w-5 h-5 text-black" />
+							<IconComponent className="w-5 h-5 text" />
 						</div>
 						<div className="flex flex-col">
 							{feature.name && (
-								<h3 className="text-black font-bold text-[15px] leading-tight">
+								<h3 className="text-foreground/90 font-bold font-mono text-lg leading-tight">
 									{feature.name}
 								</h3>
 							)}
-							<p className="text-gray-700 text-[14px] leading-relaxed">
+							<p className="text-foreground/90 text-sm font-mono mt-2">
 								{feature.description}
 							</p>
 						</div>

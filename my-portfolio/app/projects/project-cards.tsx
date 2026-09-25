@@ -37,7 +37,7 @@ function ProjectCards({ project }: ProjectCardsProps) {
 					{project.title}
 				</h3>
 
-				<p className="line-clamp-3 text-xs leading-relaxed text-muted-foreground">
+				<p className="line-clamp-3 text-xs leading-relaxed text-foreground/85">
 					{project.description}
 				</p>
 			</div>
@@ -47,7 +47,7 @@ function ProjectCards({ project }: ProjectCardsProps) {
 				<button
 					type="button"
 					onClick={() => router.push(`/projects/${project.id}`)}
-					className="text-xs font-mono hover:text-teal"
+					className="text-xs font-mono mt-2 hover:text-teal"
 				>
 					View
 				</button>

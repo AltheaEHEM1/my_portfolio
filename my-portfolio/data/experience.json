@@ -1,5 +1,18 @@
 [
 	{
+		"id": "stratpoint-2026",
+		"role": "Software Engineer Intern",
+		"period": "2026",
+		"company": "Stratpoint Technologies, Inc.",
+		"location": "Mandaluyong, Philippines",
+		"description": "Developed responsive web applications using React and Tailwind CSS. Focused on optimizing performance and user experience.",
+		"images": [
+			"/assets/contact_bg.png",
+			"/assets/github_bg.png",
+			"/assets/linkedin_bg.png"
+		]
+	},
+	{
 		"id": "srg-2026",
 		"role": "Frontend Developer",
 		"period": "2025 – 2026",
