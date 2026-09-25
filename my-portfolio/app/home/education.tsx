@@ -1,21 +1,21 @@
 "use client";
 
-import { useState } from "react";
-import EducationModal from "@/components/modal/education-modal";
+// import { useState } from "react";
+// import EducationModal from "@/components/modal/education-modal";
 import education from "@/data/education.json";
 import { AnimateItem, AnimateStagger } from "../page-animate-provider";
 
-type EducationItem = (typeof education)[number];
+// type EducationItem = (typeof education)[number];
 
 const Education = () => {
-	const [isOpen, setIsOpen] = useState(false);
-	const [selectedEducation, setSelectedEducation] =
-		useState<EducationItem | null>(null);
+	// const [isOpen, setIsOpen] = useState(false);
+	// const [selectedEducation, setSelectedEducation] =
+	// 	useState<EducationItem | null>(null);
 
-	const handleCardClick = (item: EducationItem) => {
-		setSelectedEducation(item);
-		setIsOpen(true);
-	};
+	// const handleCardClick = (item: EducationItem) => {
+	// 	setSelectedEducation(item);
+	// 	setIsOpen(true);
+	// };
 
 	return (
 		<>
@@ -27,11 +27,8 @@ const Education = () => {
 					>
 						<div className="absolute -left-2 top-6 hidden lg:block w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 z-10" />
 
-						<button
-							type="button"
-							onClick={() => handleCardClick(edu)}
-							className="relative w-full max-w-lg cursor-pointer rounded-xl border border-black/40 bg-transparent p-5 text-left font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl"
-						>
+						{/* onClick={() => handleCardClick(edu)} */}
+						<div className="relative w-full max-w-lg rounded-xl border border-black/40 dark:border-border bg-transparent p-5 text-left font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl">
 							<div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
 								<h3 className="text-base font-bold text-foreground uppercase tracking-wide">
 									{edu.school}
@@ -40,19 +37,21 @@ const Education = () => {
 									{edu.period}
 								</span>
 							</div>
-							<p className="text-sm font-semibold text-muted-foreground">
+							<p className="text-sm font-semibold text-foreground/90">
 								{edu.degree}
 							</p>
-							<p className="text-xs text-slate-500 italic">📍 {edu.location}</p>
-						</button>
+							<p className="text-xs text-teal-dark italic">📍 {edu.location}</p>
+						</div>
 					</AnimateItem>
 				))}
 			</AnimateStagger>
+			{/*
 			<EducationModal
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
 				item={selectedEducation}
 			/>
+			*/}
 		</>
 	);
 };
