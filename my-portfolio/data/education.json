@@ -1,0 +1,23 @@
+[
+	{
+		"id": "pup-2022",
+        "school": "Polytechnic University of the Philippines",
+		"degree": "Bachelor of Science in Information Technology",
+		"period": "2022 – Present",
+		"location": "Quezon City, Philippines"
+	},
+	{
+        "id": "hsn-2022",
+		"school": "Holy Spirit National High School",
+		"degree": "Junior High School and Senior High School",
+		"period": "2016 – 2022",
+		"location": "Quezon City, Philippines"
+	},
+	{
+        "id": "asle-2016",
+		"school": "A.S.L.E. Learning School of Quezon City",
+		"degree": "Elementary Education",
+		"period": "2016",
+		"location": "Quezon City, Philippines"
+	}
+]
