@@ -97,7 +97,7 @@ export function BaseProjectDetails({
 					{/* Left */}
 					<div className="order-1 flex w-full flex-col lg:w-7/12">
 						<motion.div
-							className="group relative mb-3 overflow-hidden rounded-xl border border-black"
+							className="group relative mb-3 overflow-hidden rounded-xl border border-teal-dark/20 bg-teal-dark/5 shadow-lg shadow-teal-dark/10 transition-all hover:shadow-teal-dark/20"
 							variants={fadeUp}
 							custom={0}
 						>
@@ -107,12 +107,12 @@ export function BaseProjectDetails({
 						{/* Main Container */}
 						<div className="flex justify-between items-start gap-4">
 							{/* Role and Tech Stack */}
-							<div className="flex flex-col">
+							<div className="flex flex-col mt-5">
 								{/* Role Header */}
 								<div className="flex items-center gap-3">
-									<div className="flex items-center gap-2 text-teal">
-										<Briefcase size={16} strokeWidth={2.5} />
-										<span className="font-mono text-teal-dark text-xs">
+									<div className="flex items-center gap-2 text">
+										<Briefcase size={18} strokeWidth={2.5} />
+										<span className="font-mono text text-sm">
 											{project.role}
 										</span>
 									</div>
@@ -120,10 +120,10 @@ export function BaseProjectDetails({
 
 								{/* Tech Stack */}
 								<div className="flex items-center gap-3 mt-3">
-									<div className="text-teal-dark/60">
-										<Code2 size={16} strokeWidth={2.5} />
+									<div className="text">
+										<Code2 size={18} strokeWidth={2.5} />
 									</div>
-									<div className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-xs text-teal-dark">
+									<div className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-sm text">
 										{(
 											(typeof project.techstack === "string"
 												? (project.techstack as string)
@@ -147,11 +147,11 @@ export function BaseProjectDetails({
 							</div>
 
 							{/* Category Footer */}
-							<div className="flex items-center gap-2 mt-1 shrink-0">
-								<div className="text-teal">
-									<Layers size={16} strokeWidth={2.5} />
+							<div className="flex items-center gap-2 mt-5 shrink-0">
+								<div className="text">
+									<Layers size={18} strokeWidth={2.5} />
 								</div>
-								<span className="font-mono text-xs text-teal-dark whitespace-nowrap">
+								<span className="font-mono text-sm text whitespace-nowrap">
 									{project.category}
 								</span>
 							</div>
@@ -217,7 +217,7 @@ export function BaseProjectDetails({
 								variants={fadeUp}
 								custom={0}
 							>
-								<h1 className="font-valorant">Other Projects</h1>
+								<h1 className="font-valorant text-teal-dark">Other Projects</h1>
 							</motion.div>
 
 							<motion.div
@@ -227,8 +227,8 @@ export function BaseProjectDetails({
 							>
 								{otherProjects.map((proj) => (
 									<button
-										key={proj.id}
 										type="button"
+										key={proj.id}
 										className="cursor-pointer"
 										onClick={() => router.push(`/projects/${proj.id}`)}
 									>

@@ -1,6 +1,99 @@
 [
 	{
-		"id": 1,
+    "id": 1,
+    "title": "Projectnify",
+    "subtitle": "Project Management System",
+    "category": "Stratpoint Technologies",
+    "role": "Software Engineer",
+    "techstack": [
+        "Next.js 15",
+        "Neon",
+        "Drizzle ORM",
+        "Postgres",
+        "Clerk Authentication",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Pusher",
+        "tldraw"
+    ],
+    "description": "Manage projects with Projectnify: Organize tasks, collaborate seamlessly with your team, track real-time progress, and deliver milestones on time using our comprehensive suite of dynamic workspaces, multi-view layouts, and advanced collaboration tools built for modern engineering teams.",
+    "link": "https://projectnify-delta.vercel.app",
+    "images": [
+        "Projectnify/projectnify1.png",
+        "Projectnify/projectnify2.png",
+        "Projectnify/projectnify3.png",
+        "Projectnify/projectnify4.png"
+    ],
+		"features": [
+			{
+				"icon": "ViewColumnsIcon",
+				"name": "Multi-View Layouts (Board, List, Calendar)",
+				"description": "Seamlessly switch between multiple interactive project spaces. Use the drag-and-drop Kanban Board for agile workflows, structured Task Lists for detailed task management, and Project Calendars to stay on top of daily schedules."
+			},
+			{
+				"icon": "ChartBarIcon",
+				"name": "Project Scheduling (Gantt Chart & Timeline)",
+				"description": "Visualize deep project roadmaps across comprehensive Gantt charts and dynamic timelines with custom scaling to track task dependencies, milestones, and long-term project execution."
+			},
+			{
+				"icon": "UsersIcon",
+				"name": "Team Collaboration (Whiteboard)",
+				"description": "Brainstorm ideas, sketch workflows, and map out concepts instantly using interactive team whiteboards powered by tldraw, supported by real-time push notifications via Pusher."
+			},
+			{
+				"icon": "PresentationChartLineIcon",
+				"name": "Analytics & Tracking (Dashboard & Burndown Chart)",
+				"description": "Gain deep insights into project health and sprint velocity. Track performance metrics using dynamic burndown charts and keep a birds-eye view of all organizational updates through comprehensive global dashboards."
+			}
+		]
+	},
+
+	{
+    "id": 2,
+    "title": "<AAA.blog_post/>",
+    "subtitle": "Blog Management System",
+    "category": "Stratpoint Technologies",
+    "role": "Software Engineer",
+    "techstack": [
+        "Next.js",
+        "Neon",
+        "Tailwind CSS",
+        "TypeScript"
+    ],
+    "description": "A comprehensive Blog Management System designed for content creators and administrators. Features robust CRUD operations for publishing and editing articles, real-time comment moderation, advanced search capabilities, and category filters to streamline content discovery.",
+    "link": "https://blog-post-umber.vercel.app/blog",
+    "images": [
+        "BlogPost/blog_post1.png",
+        "BlogPost/blog_post2.png",
+        "BlogPost/blog_post3.png",
+        "BlogPost/blog_post4.png"
+    ],
+		"features": [
+			{
+				"icon": "DocumentTextIcon",
+				"name": "Full Blog CRUD Operations",
+				"description": "Seamlessly create, read, update, and delete blog posts through an intuitive administrative dashboard, allowing authors to manage publication workflows with ease."
+			},
+			{
+				"icon": "ChatBubbleBottomCenterTextIcon",
+				"name": "Comment Moderation",
+				"description": "Keep community spaces safe and engaging with robust comment moderation tools to review, approve, flag, or delete user feedback in real time."
+			},
+			{
+				"icon": "MagnifyingGlassIcon",
+				"name": "Advanced Search Bar",
+				"description": "Empower readers to find relevant articles instantly using a high-performance search bar optimized for speed and precise title or keyword matching."
+			},
+			{
+				"icon": "FunnelIcon",
+				"name": "Category & Status Filters",
+				"description": "Organize and sort content effortlessly using dynamic filters, enabling users to sort through posts based on categories, tags, or publishing status."
+			}
+		]
+	},
+	
+	{
+		"id": 3,
 		"title": "Faith, Hope, Love",
 		"subtitle": "Healthcare Service Website",
 		"category": "Software Research Group",
@@ -66,7 +159,7 @@
 	},
 
 	{
-		"id": 2,
+		"id": 4,
 		"title": "GFMIC E-Commerce",
 		"subtitle": "GFMIC - E-Commerce Platform",
 		"category": "Capstone",
@@ -146,7 +239,7 @@
 	},
 
 	{
-		"id": 3,
+		"id": 5,
 		"title": "Yo - etz | AI Interview",
 		"subtitle": "AI-Driven Admissions Support Platform",
 		"category": "Software Research Group",
@@ -201,7 +294,7 @@
 	},
 
 	{
-		"id": 4,
+		"id": 6,
 		"title": "StewardFM",
 		"subtitle": "Facility Management System",
 		"category": "Software Research Group",
@@ -244,7 +337,7 @@
 	},
 
 	{
-		"id": 5,
+		"id": 7,
 		"title": "PUP Smart-Track",
 		"subtitle": "Inventory Management System",
 		"category": "Software Research Group",
@@ -343,7 +436,7 @@
 	},
 
 	{
-		"id": 6,
+		"id": 8,
 		"title": "BITBo AI | BITBo Portal",
 		"subtitle": "Barangay IT Robot AI-Powered Platform",
 		"category": "Software Research Group",
@@ -417,7 +510,7 @@
 	},
 
 	{
-		"id": 7,
+		"id": 9,
 		"title": "Flor De Grace",
 		"subtitle": "Student Management System",
 		"category": "Software Research Group",
@@ -469,7 +562,7 @@
 	},
 
 	{
-		"id": 8,
+		"id": 10,
 		"title": "SRG Website",
 		"subtitle": "Organization Portfolio",
 		"category": "Software Research Group",
@@ -508,7 +601,7 @@
 	},
 
 	{
-		"id": 9,
+		"id": 11,
 		"title": "Novella & Presenza",
 		"subtitle": "Library Management System | Attendance Management System",
 		"category": "System Integration & Architecture",
@@ -542,7 +635,7 @@
 	},
 
 	{
-		"id": 10,
+		"id": 12,
 		"title": "ITECHTIONARY",
 		"subtitle": "IT Dictionary Mobile Application",
 		"category": "Free Electives",
@@ -575,7 +668,7 @@
 	},
 
 	{
-		"id": 11,
+		"id": 13,
 		"title": "PureHealth",
 		"subtitle": "Business Management System",
 		"category": "Free Electives",
@@ -598,7 +691,7 @@
 	},
 
 	{
-		"id": 12,
+		"id": 14,
 		"title": "Serenitel",
 		"subtitle": "Hotel Management System",
 		"category": "Free Electives",
@@ -626,7 +719,7 @@
 	},
 
 	{
-		"id": 13,
+		"id": 15,
 		"title": "Laurelcrest",
 		"subtitle": "Student Management System",
 		"category": "Free Electives",

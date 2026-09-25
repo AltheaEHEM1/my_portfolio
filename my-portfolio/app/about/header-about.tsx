@@ -20,7 +20,7 @@ const HeaderAbout = () => {
 
 	const nameText = "ALTHEA AMOR J. ASIS";
 	const bodyText =
-		"I'm a fourth year BS Information Technology student with a genuine love for building things that work.\n\n" +
+		"I'm a graduating BS Information Technology student with a genuine love for building things that work.\n\n" +
 		"Highly detail-oriented Information Technology student and aspiring professional specializing in software development. " +
 		"Proven background in UI/UX design, frontend development, and visual design, with a focus on building aesthetic and functional interfaces. " +
 		"Skilled in creating user flows, process flows, charts, and graphs to simplify complex systems and improve project flows. " +
@@ -121,7 +121,7 @@ const HeaderAbout = () => {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						className="mt-5 text-muted-foreground text-sm font-mono text-justify whitespace-pre-wrap"
+						className="mt-5 text-foreground/99 text-sm font-mono text-justify whitespace-pre-wrap"
 					>
 						<motion.span>{body.display}</motion.span>
 					</motion.div>
