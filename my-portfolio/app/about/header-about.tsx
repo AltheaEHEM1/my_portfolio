@@ -19,14 +19,11 @@ const HeaderAbout = () => {
 	const [step, setStep] = useState(0);
 
 	const nameText = "ALTHEA AMOR J. ASIS";
-	const bodyText =
-		"I'm a graduating BS Information Technology student with a genuine love for building things that work.\n\n" +
-		"Highly detail-oriented Information Technology student and aspiring professional specializing in software development. " +
-		"Proven background in UI/UX design, frontend development, and visual design, with a focus on building aesthetic and functional interfaces. " +
-		"Skilled in creating user flows, process flows, charts, and graphs to simplify complex systems and improve project flows. " +
-		"Continuously expanding technical knowledge by exploring emerging tools and modern design approaches.\n\n" +
-		"Currently deepening expertise in backend development and cybersecurity to ensure the creation of secure, data-driven, and scalable applications. " +
-		"Dedicated to professional growth and committed to becoming a well-rounded developer capable of handling the full software development lifecycle.";
+	const bodyText = `Software Engineer passionate about engineering reliable, well-crafted software solutions. Combines strong technical fundamentals with user-centered thinking to build intuitive, high-performance applications from start to finish.
+
+Skilled in translating complex system requirements into clear user flows, process diagrams, and functional architectures. Write clean, maintainable code with a strong focus on system performance, scalability, and seamless user experiences.
+
+Actively deepening expertise in backend engineering, database management, and cybersecurity principles to design secure, resilient systems from concept to deployment. Thrives in collaborative environments where clear communication, modern engineering standards, and practical problem-solving drive product success.`;
 
 	// Helper to create typing effect
 	const useTyping = (text: string) => {
@@ -69,7 +66,7 @@ const HeaderAbout = () => {
 				className="md:col-span-5 relative flex justify-center md:justify-end"
 			>
 				{/* Changed max-w-xs to max-w-sm or max-w-md for a larger footprint */}
-				<div className="relative group w-full max-w-sm md:max-w-md">
+				<div className="relative group w-full max-w-xs md:max-w-sm">
 					<div className="aspect-4/5 overflow-hidden border border-teal-500/20 rounded-2xl shadow-inner relative transition-all duration-300 group-hover:border-teal-500/50">
 						<div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0 pointer-events-none p-4">
 							<h2

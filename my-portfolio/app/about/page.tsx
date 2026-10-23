@@ -2,6 +2,7 @@ import { AnimateSection } from "../page-animate-provider";
 import Certification from "./certification";
 import HeaderAbout from "./header-about";
 import Hobbies from "./hobbies";
+import Media from "./media";
 
 const About = async () => {
 	await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -29,6 +30,7 @@ const About = async () => {
 					{"03 ----// Media "}
 				</p>
 			</AnimateSection>
+			<Media/>
 		</section>
 	);
 };
