@@ -25,10 +25,13 @@ const Education = () => {
 						key={edu.school}
 						className="relative flex justify-center lg:justify-start lg:pl-8 group"
 					>
-						<div className="absolute -left-2 top-6 hidden lg:block w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 z-10" />
+						<div className="absolute -left-2 top-6 hidden lg:block ">
+							<div className="w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 group-hover:bg-teal-500 transition-all duration-300 ring-4 ring-transparent group-hover:ring-teal-500/20 shadow-sm" />
+						</div>
 
 						{/* onClick={() => handleCardClick(edu)} */}
-						<div className="relative w-full max-w-lg rounded-xl border border-black/40 dark:border-border bg-transparent p-5 text-left font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl">
+						<div className="relative w-full max-w-lg border border-black/40 dark:border-border rounded-xl p-5 bg-transparent font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl hover:scale-[1.01]">
+						
 							<div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
 								<h3 className="text-base font-bold text-foreground uppercase tracking-wide">
 									{edu.school}
