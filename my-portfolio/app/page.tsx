@@ -18,6 +18,7 @@ const Home = async () => {
 						{"01 ----// TECHNICAL SKILLS "}
 					</p>
 				</AnimateSection>
+				
 				<div className="grid lg:grid-cols-12 items-center w-full">
 					<AnimateSection delay={1} className="lg:col-span-5 w-full">
 						<SkillsCategories />
