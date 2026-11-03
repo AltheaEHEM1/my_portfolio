@@ -33,7 +33,9 @@ const Experience = () => {
 						key={exp.id}
 						className="relative flex justify-center lg:justify-end lg:pr-8 group"
 					>
-						<div className="absolute -right-2 top-6 hidden lg:block w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 z-10" />
+						<div className="absolute -right-2 top-6 hidden lg:block ">
+							<div className="w-4 h-4 rounded-full border-2 border-teal-500 bg-white dark:bg-slate-950 group-hover:bg-teal-500 transition-all duration-300 ring-4 ring-transparent group-hover:ring-teal-500/20 shadow-sm" />
+						</div>
 
 						{/* onClick={() => handleCardClick(exp)} */}
 						<div className="relative w-full max-w-lg border border-black/40 dark:border-border rounded-xl p-5 bg-transparent font-mono transition-all duration-300 hover:border-teal/50 hover:shadow-xl hover:scale-[1.01]">

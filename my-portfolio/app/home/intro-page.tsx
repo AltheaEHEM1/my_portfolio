@@ -64,10 +64,7 @@ const IntroPage = () => {
 											color: "var(--text, #1a2e2a)",
 										}}
 									>
-										BS Information Technology student turning real-world
-										problems into seamless, high-performance software. Focused
-										on building clean, minimalist interfaces and reliable
-										technical solutions.
+										Information Technology Graduate & Software Developer dedicated to turning real-world challenges into seamless, intuitive, and high-performance software solutions.
 									</p>
 								</AnimateItem>
 
@@ -116,7 +113,7 @@ const IntroPage = () => {
 						borderRadius: "9999px",
 					}}
 				>
-					IT Student
+					IT Graduate
 				</AnimateItem>
 			</AnimateStagger>
 		</div>

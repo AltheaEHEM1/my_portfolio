@@ -121,10 +121,10 @@ function CurvedCarousel({
 				>
 					{items.map((item, index) => (
 						<SwiperSlide
-							key={item.carouselKey ?? item.id ?? index}
+							key={`${item.carouselKey ?? item.id ?? 'slide'}-${index}`}
 							className={slideClassName}
 						>
-							{renderSlide(item, index)}
+							{/* slide content */}
 						</SwiperSlide>
 					))}
 				</Swiper>
