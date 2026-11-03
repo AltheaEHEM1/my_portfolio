@@ -4,9 +4,13 @@
     "title": "Projectnify",
     "subtitle": "Project Management System",
     "category": "Stratpoint Technologies",
-    "role": "Software Engineer",
+    "role": [
+		"UI/UX Designer", 
+		"Software Engineer" 
+	],
     "techstack": [
-        "Next.js 15",
+        "Figma",
+		"Next.js 15",
         "Neon",
         "Drizzle ORM",
         "Postgres",
@@ -53,8 +57,12 @@
     "title": "<AAA.blog_post/>",
     "subtitle": "Blog Management System",
     "category": "Stratpoint Technologies",
-    "role": "Software Engineer",
+    "role": [
+		"UI/UX Designer", 
+		"Software Engineer" 
+	],
     "techstack": [
+		"Figma",
         "Next.js",
         "Neon",
         "Tailwind CSS",
@@ -163,8 +171,11 @@
 		"title": "GFMIC E-Commerce",
 		"subtitle": "GFMIC - E-Commerce Platform",
 		"category": "Capstone",
-		"role": "Frontend Developer",
-		"techstack": ["Python", "Django", "Docker Compose"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": [ "Figma", "Python", "Django", "Docker Compose"],
 		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
 		"link": "https://gfmic-ecommerce.vercel.app",
 		"images": [
@@ -243,8 +254,12 @@
 		"title": "Yo - etz | AI Interview",
 		"subtitle": "AI-Driven Admissions Support Platform",
 		"category": "Software Research Group",
-		"role": "Frontend Developer",
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
 		"techstack": [
+			"Figma",
 			"Next typescript",
 			"Django",
 			"Postgres",
@@ -341,8 +356,11 @@
 		"title": "PUP Smart-Track",
 		"subtitle": "Inventory Management System",
 		"category": "Software Research Group",
-		"role": "Frontend Developer",
-		"techstack": ["React", "Django", "PostgreSQL", "Docker Compose"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": [ "Figma", "React", "Django", "PostgreSQL", "Docker Compose"],
 		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
 		"link": "https://pup-smart-track.vercel.app",
 		"images": [
@@ -440,8 +458,11 @@
 		"title": "BITBo AI | BITBo Portal",
 		"subtitle": "Barangay IT Robot AI-Powered Platform",
 		"category": "Software Research Group",
-		"role": "Frontend Developer",
-		"techstack": ["React", "Django", "Docker Compose"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": ["Figma", "React", "Django", "Docker Compose"],
 		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
 		"link": "https://bitbo-ai.vercel.app",
 		"images": ["BitboAI/BITBO AI.png"],
@@ -515,7 +536,7 @@
 		"subtitle": "Student Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": ["Reactjs", "PostgreSQL", "Docker Compose"],
+		"techstack": ["Figma", "Reactjs", "PostgreSQL", "Docker Compose"],
 		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": [
@@ -566,8 +587,11 @@
 		"title": "SRG Website",
 		"subtitle": "Organization Portfolio",
 		"category": "Software Research Group",
-		"role": "Frontend Developer",
-		"techstack": ["Reactjs", "Docker Compose"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": ["Figma", "Reactjs", "Docker Compose"],
 		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
 		"link": "https://srg-website.vercel.app",
 		"images": ["srg-website/SrgWebsite1.png"],
@@ -605,8 +629,12 @@
 		"title": "Novella & Presenza",
 		"subtitle": "Library Management System | Attendance Management System",
 		"category": "System Integration & Architecture",
-		"role": "Project Manager, Frontend Developer",
-		"techstack": "PHP, Laravel",
+		"role": [
+			"UI/UX Designer",
+			"Project Manager", 
+			"Software Engineer" 
+		],
+		"techstack": "Figma, PHP, Laravel",
 		"description": "Novella & Presenza is a unified administrative ecosystem that integrates two distinct but interconnected platforms: 'Novella,' a comprehensive Library Management System, and 'Presenza,' an automated Attendance Management System. The end-to-end development lifecycle was directed from project planning and scope to full-scale module implementation and core system logic. Development of these integrated systems involved analyzing complex workflows and translating requirements into effective technical solutions, while also heading the frontend development and UI design to transform prototypes into a responsive, high-performance interface with robust field validations. Built upon a shared data architecture, these systems operate as a single integrated unit, allowing for seamless synchronization of user data and activity logs. This integration eliminates data silos, ensuring that a user's library interactions and facility attendance records are linked within a centralized hub. By bridging these two domains, the platform enables administrators to conduct cross-module reporting, gain holistic insights into facility utilization, and minimize manual data reconciliation.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": ["Novella/Novella.png", "Novella/Presenza.png"],
@@ -639,8 +667,11 @@
 		"title": "ITECHTIONARY",
 		"subtitle": "IT Dictionary Mobile Application",
 		"category": "Free Electives",
-		"role": "Overall Developer",
-		"techstack": ["FlutterFlow", "Firebase", "Docker Compose"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": [ "Figma", "FlutterFlow", "Firebase", "Docker Compose"],
 		"description": "ITECHTIONARY is a specialized mobile reference application designed to serve as a comprehensive glossary for the IT industry. End-to-end development was directed using FlutterFlow and Firebase to build a categorized dictionary application for IT students. System architecture and categorization logic were designed to ensure efficient information retrieval and an intuitive learning experience. Furthermore, the full SDLC was managed by bridging the gap between Firebase backend infrastructure and a high-performance mobile interface, while technical documentation and database schemas were authored to establish a robust foundation for system reliability and future scalability. The application provides students and professionals with instant access to a vast database of technical terminology, ranging from software development and networking to cybersecurity and hardware engineering, aiming to bridge the knowledge gap by offering clear, concise definitions that ensure complex technical jargon is easily understandable for users at any skill level.",
 		"images": ["Itechtionary/Itechtionary.png"],
 		"features": [
@@ -672,8 +703,11 @@
 		"title": "PureHealth",
 		"subtitle": "Business Management System",
 		"category": "Free Electives",
-		"role": "Overall Developer",
-		"techstack": "PHP Laravel",
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": "Figma, PHP Laravel",
 		"description": "PureHealth is a robust business management system designed to streamline operational workflows and administrative processes for health-focused enterprises. Intuitive UI/UX layouts were designed to transform complex requirements into high-fidelity prototypes, complemented by the development of responsive frontend components to ensure a high-performance experience across all devices. By bridging design and code, visual assets were implemented with a focus on usability and interactive logic, while reusable UI component libraries were built to maintain consistency and streamline development. Furthermore, system architectures and flowcharts were created to map out technical logic and user journeys, ensuring the platform provides integrated tools for efficient business administration, data management, and operational reporting through a centralized digital platform.",
 		"images": ["Purehealth/Purehealth.png"],
 		"features": [
@@ -695,8 +729,11 @@
 		"title": "Serenitel",
 		"subtitle": "Hotel Management System",
 		"category": "Free Electives",
-		"role": "Overall Developer",
-		"techstack": "C#",
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": "Figma, C#",
 		"description": "Serenitel is a sophisticated Hotel Management System engineered to optimize hospitality operations and elevate guest service standards. The end-to-end UI/UX design process was led to transform complex technical requirements into high-fidelity, interactive prototypes. By architecting a responsive frontend utilizing modern frameworks, a seamless and intuitive user experience was ensured across all devices. Furthermore, comprehensive design systems and UI standards were established, creating reusable components to maintain visual consistency and development efficiency. The transition from design to implementation was also directed, overseeing frontend execution to ensure high-performance interface standards throughout the platform's lifecycle.",
 		"images": ["Serenitel/Serenitel.png"],
 		"features": [
@@ -723,8 +760,11 @@
 		"title": "Laurelcrest",
 		"subtitle": "Student Management System",
 		"category": "Free Electives",
-		"role": "Overall Developer",
-		"techstack": ["Asp.net", "MSSQL"],
+		"role": [
+			"UI/UX Designer", 
+			"Software Engineer" 
+		],
+		"techstack": ["Figma", "Asp.net", "MSSQL"],
 		"description": "Laurelcrest is a comprehensive Student Management System designed to streamline academic operations for educational institutions. The end-to-end system was architected by building a responsive interface and transitioning into full-scale module development for all user roles. All core functions, including complex data processing and interactive features, were engineered to ensure a high-performance and reliable system. Additionally, robust Role-Based Access Control (RBAC) was implemented to manage secure permissions, collaborating with the team to successfully meet all technical goals while providing integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
 		"images": ["Laurelcrest/Laurelcrest.png"],
 		"features": [
@@ -744,5 +784,42 @@
 				"description": "Centralized platform for managing faculty workloads, attendance logs, and automated academic reporting."
 			}
 		]
+	},
+
+	{
+		"id": 14,
+		"title": "<AAA.blog_post/>",
+		"subtitle": "Blog Post Management System",
+		"category": "Free Electives",
+		"role": "Full Stack Developer",
+		"techstack": ["Next.js 16", "Neon Postgres", "Drizzle ORM v2", "Zod", "Tailwind CSS v4", "Vercel Blob", "TypeScript", "Biome"],
+		"description": "LA full-stack blog platform featuring a public-facing interface for browsing articles and a secure, sidebar-driven admin panel for managing content, categories, and comment moderation. Built as a bootcamp project, it utilizes a modern stack to deliver a robust and functional blogging experience.",
+		"images": [
+			"aaablogpost/blog_post1.png",
+			"aaablogpost/blog_post2.png",
+			"aaablogpost/blog_post3.png",
+			"aaablogpost/blog_post4.png",
+			"aaablogpost/blog_post5.png",
+			"aaablogpost/blog_post6.png"
+		],
+		"features": [
+			{
+            "icon": "UserGroupIcon",
+            "name": "Public-Facing Blog",
+            "description": "Visitors can browse published blog posts, view full articles, and submit comments which are held for admin approval."
+			},
+			{
+				"icon": "ShieldCheckIcon",
+				"name": "Admin Dashboard",
+				"description": "Sidebar-driven interface for full CRUD management of blogs, categories, and comment moderation."
+			},
+			{
+				"icon": "AcademicCapIcon",
+				"name": "Secure Content Handling",
+				"description": "Implements server-side actions for image uploads via Vercel Blob and secure comment moderation flows."
+			}
+		]
 	}
+
+
 ]
