@@ -131,7 +131,7 @@ function FeaturedProjectsCarousel({
 				{projects.map((project, index) => (
 					<button
 						type="button"
-						key={project.id}
+						key={`${project.id}-${index}`}
 						onClick={() => swiperInstance?.slideToLoop(index)}
 						className={`cursor-pointer rounded-full transition-all duration-300 ${
 							index === activeIndex
