@@ -175,7 +175,7 @@
 			"UI/UX Designer", 
 			"Software Engineer" 
 		],
-		"techstack": [ "Figma", "Python", "Django", "Docker Compose"],
+		"techstack": [ "Figma", "Python", "Django", "Docker"],
 		"description": "The GFMIC e-commerce platform is a centralized digital system designed to manage, promote, and distribute official GFMIC merchandise efficiently. It serves as a one-stop online hub where members and customers can easily browse, select, and purchase a wide range of GFMIC products, ensuring accessibility and convenience anytime and anywhere.",
 		"link": "https://gfmic-ecommerce.vercel.app",
 		"images": [
@@ -264,7 +264,7 @@
 			"Django",
 			"Postgres",
 			"Meta-Llama-3-8B-Instruct LLM",
-			"Docker Compose"
+			"Docker"
 		],
 		"description": "The AI-Assisted Initial Interview System is a digital platform designed to standardize and support the admissions process at PUP (QC and Caloocan). By conducting AI-guided video interviews, the system captures and summarizes applicant responses into structured reports for faculty review. It serves as a tool to improve transparency, reduce bias, and ensure a consistent assessment baseline, while leaving final evaluations to faculty decision-makers.",
 		"link": "https://yo-etz-ai-interview.vercel.app",
@@ -314,7 +314,7 @@
 		"subtitle": "Facility Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": ["Python", "Django", "Docker Compose"],
+		"techstack": ["Python", "Django", "Docker"],
 		"description": "StewardFM is a comprehensive facility management system designed to streamline operations, maintenance tracking, and resource allocation for organizations. It provides an intuitive dashboard for managing assets, scheduling maintenance tasks, and generating insightful reports for facility administrators.",
 		"link": "https://stewardfm.vercel.app",
 		"images": [
@@ -360,7 +360,7 @@
 			"UI/UX Designer", 
 			"Software Engineer" 
 		],
-		"techstack": [ "Figma", "React", "Django", "PostgreSQL", "Docker Compose"],
+		"techstack": [ "Figma", "React", "Django", "PostgreSQL", "Docker"],
 		"description": "The system is a centralized Asset and Maintenance Management Information System that manages equipment, inventory, maintenance, disposal, and approval processes in one platform. It enables efficient tracking of asset lifecycle, accountability, and status while streamlining requests and workflows through automated approvals and notifications. The system also provides comprehensive reporting to support decision-making, transparency, and audit compliance.",
 		"link": "https://pup-smart-track.vercel.app",
 		"images": [
@@ -462,7 +462,7 @@
 			"UI/UX Designer", 
 			"Software Engineer" 
 		],
-		"techstack": ["Figma", "React", "Django", "Docker Compose"],
+		"techstack": ["Figma", "React", "Django", "Docker"],
 		"description": "Bitbo (Barangay IT Robot) is an AI-enhanced integrated management system specifically developed for Philippine barangays. It combines traditional administrative tools with intelligent automation to manage citizen profiles, local legislation, case records, and health services, ensuring accessibility and efficiency in local government operations.",
 		"link": "https://bitbo-ai.vercel.app",
 		"images": ["BitboAI/BITBO AI.png"],
@@ -536,7 +536,7 @@
 		"subtitle": "Student Management System",
 		"category": "Software Research Group",
 		"role": "Frontend Developer",
-		"techstack": ["Figma", "Reactjs", "PostgreSQL", "Docker Compose"],
+		"techstack": ["Figma", "Reactjs", "PostgreSQL", "Docker"],
 		"description": "Flor De Grace Academy is a comprehensive school management system designed to streamline academic operations for educational institutions. It provides integrated tools for student registration, faculty workload management, attendance tracking, and academic reporting through a centralized digital platform.",
 		"link": "https://flor-de-grace.vercel.app",
 		"images": [
@@ -591,7 +591,7 @@
 			"UI/UX Designer", 
 			"Software Engineer" 
 		],
-		"techstack": ["Figma", "Reactjs", "Docker Compose"],
+		"techstack": ["Figma", "Reactjs", "Docker"],
 		"description": "The SRG Website is a comprehensive platform designed to showcase the talents, skills, and achievements of its members. It provides detailed portfolios highlighting individual expertise, experiences, and contributions. The site also features a record of members across generations, celebrating the organization’s history, growth, and community.\n\nAdditionally, it presents ongoing and completed projects, demonstrating collaborative efforts, innovations, and accomplishments. Overall, the website serves as an engaging hub for members, alumni, and visitors to explore the organization’s work, talents, and legacy.",
 		"link": "https://srg-website.vercel.app",
 		"images": ["srg-website/SrgWebsite1.png"],
@@ -671,7 +671,7 @@
 			"UI/UX Designer", 
 			"Software Engineer" 
 		],
-		"techstack": [ "Figma", "FlutterFlow", "Firebase", "Docker Compose"],
+		"techstack": [ "Figma", "FlutterFlow", "Firebase", "Docker"],
 		"description": "ITECHTIONARY is a specialized mobile reference application designed to serve as a comprehensive glossary for the IT industry. End-to-end development was directed using FlutterFlow and Firebase to build a categorized dictionary application for IT students. System architecture and categorization logic were designed to ensure efficient information retrieval and an intuitive learning experience. Furthermore, the full SDLC was managed by bridging the gap between Firebase backend infrastructure and a high-performance mobile interface, while technical documentation and database schemas were authored to establish a robust foundation for system reliability and future scalability. The application provides students and professionals with instant access to a vast database of technical terminology, ranging from software development and networking to cybersecurity and hardware engineering, aiming to bridge the knowledge gap by offering clear, concise definitions that ensure complex technical jargon is easily understandable for users at any skill level.",
 		"images": ["Itechtionary/Itechtionary.png"],
 		"features": [
